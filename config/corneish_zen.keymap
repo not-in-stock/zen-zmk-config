@@ -41,12 +41,12 @@
                               &kp LGUI     &mo 3  &kp SPACE            &kp RET                &trans   &kp RALT
                                    >;
                        };
-           bt_layer {label = "BT";
+           bt_layer {label = "CONFIG";
                      bindings = <
-     &trans        &trans        &trans        &trans        &trans        &trans          &trans  &trans  &trans  &trans  &trans  &trans
- &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4          &trans  &trans  &trans  &trans  &trans  &trans
-     &trans        &trans        &trans        &trans        &trans        &trans          &trans  &trans  &trans  &trans  &trans  &trans
-                                               &trans        &trans        &trans          &trans  &trans  &trans
+     &trans        &trans        &trans        &trans    &sys_reset   &bootloader          &bootloader  &sys_reset  &trans  &trans  &trans  &trans
+ &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4          &trans       &trans  &trans  &trans  &trans  &trans
+     &trans        &trans        &trans        &trans        &trans        &trans          &trans       &trans  &trans  &trans  &trans  &trans
+                                               &trans        &trans        &trans          &trans       &trans  &trans
                                 >;
                     };
           };
