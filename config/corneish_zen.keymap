@@ -32,6 +32,8 @@ SHIFT_MACRO(s_bt_sel_4, &bt BT_SEL 4, &bt BT_SEL 4 &bt BT_CLR)
 
 #define ___ &trans
 
+#define SC SEMI
+
 /* left-hand HRMs */
 ZMK_BEHAVIOR(hml, hold_tap,
     flavor = "balanced";
@@ -63,7 +65,7 @@ ZMK_LAYER(BASE,
 //╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮                          
     &kp TAB       &kp Q         &kp W         &kp E         &kp R         &kp T           &kp Y         &kp U         &kp I         &kp O         &kp P         &kp BSPC
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-    &kp LCTRL     &hml LGUI A   &hml LALT S   &hml LCTRL D  &hml LSHFT F  &kp G           &kp H         &hmr RSHFT J  &hmr RCTRL K  &hmr RALT L  &hmr RGUI SEMI &kp SQT
+    &kp LCTRL     &hml LGUI A   &hml LALT S   &hml LCTRL D  &hml LSHFT F  &kp G           &kp H         &hmr RSHFT J  &hmr RCTRL K  &hmr RALT L   &hmr RGUI SC  &kp SQT
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤     
     &kp LSHFT     &kp Z         &kp X         &kp C         &kp V         &kp B           &kp N         &kp M         &kp COMMA     &kp DOT       &kp FSLH      &kp RSHIFT
 //╰─────────────┼─────────────┴─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────┴─────────────╯     
@@ -84,7 +86,7 @@ ZMK_LAYER(NUMBER,
 )
 ZMK_LAYER(SYMBOL,
 //╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮                          
-    &kp ESC       &kp EXCL      &kp AT        &kp HASH      &kp DLLR      &kp PRCNT       &kp CARET     &kp LPAR      &kp AMPS      &kp RPAR    &kp KP_MULTIPLY &kp BSPC
+    &kp ESC       &kp EXCL      &kp AT        &kp HASH      &kp DLLR      &kp PRCNT       &kp CARET     &kp LPAR      &kp AMPS      &kp RPAR      &kp STAR      &kp BSPC
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
     &kp LCTRL     ___           ___           ___           ___           ___             &kp MINUS     &kp LBKT      &kp EQUAL     &kp RBKT      &kp BSLH      &kp GRAVE
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤     
