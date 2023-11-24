@@ -6,7 +6,7 @@
 #include "../zmk-nodefree-config/keypos_def/keypos_42keys.h"
 #include "../helper/macro.h"
 
-//#include "mouse.dtsi"
+#include "mouse.dtsi"
 
 #define QUICK_TAP_MS 175
 
