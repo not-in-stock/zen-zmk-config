@@ -8,6 +8,14 @@
 
 #include "mouse.dtsi"
 
+#define QUICK_TAP_MS 175
+
+&lt {  // layer-tap config
+    flavor = "balanced";
+    tapping-term-ms = <200>;
+    quick-tap-ms = <QUICK_TAP_MS>;
+};
+
 //shift macros for BT contorols
 SHIFT_MACRO(s_bt_sel_0, &bt BT_SEL 0, &bt BT_SEL 0 &bt BT_CLR)
 SHIFT_MACRO(s_bt_sel_1, &bt BT_SEL 1, &bt BT_SEL 1 &bt BT_CLR)
@@ -44,7 +52,7 @@ SHIFT_MACRO(s_bt_sel_4, &bt BT_SEL 4, &bt BT_SEL 4 &bt BT_CLR)
 ZMK_BEHAVIOR(hml, hold_tap,
     flavor = "balanced";
     tapping-term-ms = <5000>;
-    quick-tap-ms = <175>;                // repeat on tap-into-hold
+    quick-tap-ms = <QUICK_TAP_MS>;                // repeat on tap-into-hold
     require-prior-idle-ms = <260>;
     bindings = <&kp>, <&kp>;
     hold-trigger-on-release;             // delay positional check until key-release
@@ -55,18 +63,21 @@ ZMK_BEHAVIOR(hml, hold_tap,
 ZMK_BEHAVIOR(hmr, hold_tap,
     flavor = "balanced";
     tapping-term-ms = <5000>;
-    quick-tap-ms = <175>;                // repeat on tap-into-hold
+    quick-tap-ms = <QUICK_TAP_MS>;                // repeat on tap-into-hold
     require-prior-idle-ms = <260>;
     bindings = <&kp>, <&kp>;
     hold-trigger-on-release;             // delay positional check until key-release
     hold-trigger-key-positions = <KEYS_L THUMBS>;
 )
+/* smart mouse */
+
 
 /* layer names */
 #define DEF 0
 #define NAV 1
 #define SYM 2
 #define CFG 3
+#define MOS 4
 
 ZMK_LAYER(BASE,
 //╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮                          
@@ -76,7 +87,7 @@ ZMK_LAYER(BASE,
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤     
     &kp LSHFT     &kp Z         &kp X         &kp C         &kp V         &kp B           &kp N         &kp M         &kp COMMA     &kp DOT       &kp FSLH      &kp RSHIFT
 //╰─────────────┼─────────────┴─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────┴─────────────╯     
-                                              &kp LGUI      &mo NAV       &kp SPACE       &kp RET       &mo SYM       &kp RALT
+                                              &lt MOS LGUI  &mo NAV       &kp SPACE       &kp RET       &mo SYM       &kp RALT
 //                                          ╰─────────────┴─────────────┴─────────────╯ ╰─────────────┴─────────────┴─────────────╯
 )
 
