@@ -43,7 +43,7 @@ ZMK_BEHAVIOR(hml, hold_tap,
     flavor = "balanced";
     tapping-term-ms = <5000>;
     quick-tap-ms = <175>;                // repeat on tap-into-hold
-    require-prior-idle-ms = <150>;
+    require-prior-idle-ms = <260>;
     bindings = <&kp>, <&kp>;
     hold-trigger-on-release;             // delay positional check until key-release
     hold-trigger-key-positions = <KEYS_R THUMBS>;
@@ -54,7 +54,7 @@ ZMK_BEHAVIOR(hmr, hold_tap,
     flavor = "balanced";
     tapping-term-ms = <5000>;
     quick-tap-ms = <175>;                // repeat on tap-into-hold
-    require-prior-idle-ms = <150>;
+    require-prior-idle-ms = <260>;
     bindings = <&kp>, <&kp>;
     hold-trigger-on-release;             // delay positional check until key-release
     hold-trigger-key-positions = <KEYS_L THUMBS>;
