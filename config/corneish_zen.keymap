@@ -40,19 +40,23 @@ SHIFT_MACRO(s_bt_sel_4, &bt BT_SEL 4, &bt BT_SEL 4 &bt BT_CLR)
 
 /* left-hand HRMs */
 ZMK_BEHAVIOR(hml, hold_tap,
-    flavor = "tap-unless-interrupted";
+    flavor = "balanced";
     tapping-term-ms = <280>;
-    quick-tap-ms = <200>;                // repeat on tap-into-hold
+    quick-tap-ms = <175>;                // repeat on tap-into-hold
+    require-prior-idle-ms = <150>;
     bindings = <&kp>, <&kp>;
+    hold-trigger-on-release;             // delay positional check until key-release
     hold-trigger-key-positions = <KEYS_R THUMBS>;
 )
 
 /* right-hand HRMs */
 ZMK_BEHAVIOR(hmr, hold_tap,
-    flavor = "tap-unless-interrupted";
+    flavor = "balanced";
     tapping-term-ms = <280>;
-    quick-tap-ms = <200>;                // repeat on tap-into-hold
+    quick-tap-ms = <175>;                // repeat on tap-into-hold
+    require-prior-idle-ms = <150>;
     bindings = <&kp>, <&kp>;
+    hold-trigger-on-release;             // delay positional check until key-release
     hold-trigger-key-positions = <KEYS_L THUMBS>;
 )
 
