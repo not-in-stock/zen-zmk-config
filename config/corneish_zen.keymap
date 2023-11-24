@@ -41,7 +41,7 @@ SHIFT_MACRO(s_bt_sel_4, &bt BT_SEL 4, &bt BT_SEL 4 &bt BT_CLR)
 /* left-hand HRMs */
 ZMK_BEHAVIOR(hml, hold_tap,
     flavor = "tap-unless-interrupted";
-    tapping-term-ms = <100>;
+    tapping-term-ms = <280>;
     quick-tap-ms = <200>;                // repeat on tap-into-hold
     bindings = <&kp>, <&kp>;
     hold-trigger-key-positions = <KEYS_R THUMBS>;
@@ -50,7 +50,7 @@ ZMK_BEHAVIOR(hml, hold_tap,
 /* right-hand HRMs */
 ZMK_BEHAVIOR(hmr, hold_tap,
     flavor = "tap-unless-interrupted";
-    tapping-term-ms = <100>;
+    tapping-term-ms = <280>;
     quick-tap-ms = <200>;                // repeat on tap-into-hold
     bindings = <&kp>, <&kp>;
     hold-trigger-key-positions = <KEYS_L THUMBS>;
