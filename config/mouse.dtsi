@@ -15,3 +15,14 @@
     delay-ms = <0>;                   // 0
 };
 
+/* movement shortcuts */
+#define MV_D MOVE_DOWN
+#define MV_U MOVE_UP
+#define MV_L MOVE_LEFT
+#define MV_R MOVE_RIGHT
+
+/* scorll shortcuts */
+#define SC_U SCRL_UP
+#define SC_D SCRL_DOWN
+#define SC_L SCRL_LEFT
+#define SC_R SCRL_RIGHT
