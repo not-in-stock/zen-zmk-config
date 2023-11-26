@@ -1,0 +1,88 @@
+layout:
+  qmk_keyboard: corne_rotated
+  qmk_layout: LAYOUT_split_3x5_3
+layers:
+  DEF:
+    - [Q, W, E, R, T]
+    - [Y, U, I, O, P]
+
+    - [{h: Gui, t: A}, {h: Alt, t: S}, {h: Ctrl, t: D}, {h: Shift, t: F}, G]
+    - [H, {h: Shift, t: J}, {h: Ctrl, t: K}, {h: Alt, t: L}, {h: Gui, t: "'"}]
+
+    - [Z, X, C, V, B]
+    - [N, M, ",", ., /]
+
+    - [{h: Gui, t: Esc}, {h: Ctrl, t: Tab}, {h: SYM, t: Space}]
+    - [{h: NUM,t: Enter}, {h: Shift, t: BSpace}, {h: Alt, t: Delete}]
+  SYM:
+    - ["", "", "", "", ""]
+    - [{t: "-", s: "_"}, {t: "(", s: "<"}, {t: "'", s: "\""}, {t: ")", s: ">"}, ""]
+
+    - ["Gui", "Alt", "Ctrl", "Shift"]
+    - ["", {t: "?", s: "!"}, {t: "[", s: "{"}, {t: "\\", s: "/"}, {t: "]", s: "}"}, ""]
+
+    - ["", "", "", "", ""]
+    - ["", "", "", "", ""]
+
+    - ["", "", {type: held}]
+    - ["", "", ""]
+  NUM:
+    - ["", {t: "7", s: "&" }, {t: "8", s: "*" }, {t: "9", s: "(" }, ""]
+    - ["", "", "", "", ""]
+
+    - ["", {t: "4", s: "$" }, {t: "5", s: "%" }, {t: "6", s: "^" }, ""]
+    - ["", Shift, Ctrl, Alt, Gui]
+
+    - ["", {t: "1", s: "!" }, {t: "2", s: "@" }, {t: "3", s: "#" }, ""]
+    - ["", "", "", "", ""]
+
+    - ["", {t: "0", s: ")" }, null]
+    - [{type: held}, "", ""]
+  NAV:
+    - ["", "", "", "", ""]
+    - ["", "", "", "", ""]
+    
+    - [Gui, Ctrl, Alt, Shift, ""]
+    - ["", $$mdi:arrow-left-bold$$, $$mdi:arrow-down-bold$$, $$mdi:arrow-up-bold$$, $$mdi:arrow-right-bold$$]
+   
+    - ["", "", "", "", ""]
+    - ["", "", "", "", ""]
+    
+    - ["", {type: held}, ""]
+    - ["", "", ""]
+  Mouse:
+    - ["", "", "", "", ""]
+    - ["", $$mdi:transfer-left$$, $$mdi:transfer-up$$, $$mdi:transfer-right$$, ""]
+ 
+    - [Gui, Ctrl, Alt, Shift, ""]
+    - ["", $$mdi:arrow-left-bold-outline$$, $$mdi:arrow-down-bold-outline$$, $$mdi:arrow-up-bold-outline$$, $$mdi:arrow-right-bold-outline$$]
+
+    - ["", "", "", "", ""]
+    - ["", "", $$mdi:transfer-down$$", "", ""]
+   
+    - [{type: held}, "", ""]
+    - ["Left Click", "Right Click", "Middle Click"]
+  FN:
+    - [F1, F2, F3, F4, F5]
+    - ["Caps Lock", "", "", "", ""]
+
+    - [F6, F7, F8, F9, F10]
+    - ["", "", "", "", ""]
+
+    - ["", "", "", "", ""]
+    - [ "", "", "Print Scrn", "", ""]
+
+    - ["", "", ""]
+    - ["", {type: held}, ""]
+  BT:
+    - ["", "", "", "", ""]
+    - ["", "", "", "", ""]
+
+    - [{t: "BT0", s: "Clr BT0" }, {t: "BT1", s: "Clr BT1" }, {t: "BT2", s: "Clr BT2" }, {t: "BT3", s: "Clr BT3" }, {t: "BT4", s: "Clr BT4" }]
+    - ["", Shift, Ctrl, Alt, Gui]
+
+    - ["", "", "", "", ""]
+    - ["", "", "", "", ""]
+
+    - [{type: held}, "", ""]
+    - ["", "", ""]
