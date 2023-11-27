@@ -93,7 +93,7 @@ layers:
    
     - [{type: held}, "", ""]
     - ["Left Click", "Right Click", "Middle Click"]
-  BT:
+  CFG:
     - ["", "", "", "", ""]
     - ["", "Volume Up", "Volume Down", "Brighter", "Darker"]
 
@@ -104,8 +104,8 @@ layers:
        {t: "BT4", s: "Clr BT4"}]
     - ["", Shift, Ctrl, Alt, Gui]
 
-    - ["", "", "", "", ""]
-    - ["", "", "", "", ""]
+    - ["", "", "", "Reset", "Boot"]
+    - ["Boot", "Reset", "", "", ""]
 
     - ["", "", ""]
     - ["", "", {type: held}]
