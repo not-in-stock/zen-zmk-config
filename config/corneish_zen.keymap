@@ -58,8 +58,6 @@ SHIFT_MACRO(s_bt_sel_4, &bt BT_SEL 4, &bt BT_SEL 4 &bt BT_CLR)
 #define MOS 5
 #define CFG 6
 
-
-
 /* smart mouse */
 ZMK_BEHAVIOR(s_mouse, tri_state,
     bindings = <&tog MOS>, <&none>, <&tog MOS>;
