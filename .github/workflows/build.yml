@@ -1,3 +1,5 @@
+name: Build ZMK firmware
+
 on: 
   push:
     paths-ignore:
