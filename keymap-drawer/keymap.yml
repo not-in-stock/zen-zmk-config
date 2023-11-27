@@ -94,14 +94,14 @@ layers:
     - [{type: held}, "", ""]
     - ["Left Click", "Right Click", "Middle Click"]
   CFG:
-    - ["", "", "", "", ""]
-    - ["Volume Mute", "Volume Up", "Volume Down", "Brightness Up", "Brightness Down"]
-
     - [{t: "BT0", s: "Clr BT0"},
        {t: "BT1", s: "Clr BT1"},
        {t: "BT2", s: "Clr BT2"},
        {t: "BT3", s: "Clr BT3"},
        {t: "BT4", s: "Clr BT4"}]
+    - ["", "", "", "", ""]
+
+    - ["Brightness Down", "Brightness Up", "Volume Down", "Volume Up", "Volume Mute"]
     - ["", Shift, Ctrl, Alt, Gui]
 
     - ["", "", "", "Reset", "Boot"]
