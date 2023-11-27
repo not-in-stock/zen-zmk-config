@@ -63,14 +63,13 @@ layers:
     - ["", {type: held}, ""]
   NAV:
     - ["", "", "", "", ""]
-    - ["", "", "", "", ""]
+    - [Home, "Page Down", "Page Up", End, ""]
     
     - [Gui, Ctrl, Alt, Shift, ""]
-    - [ 
-       {t: $$mdi:arrow-left-bold$$, s: Home}, 
-       {t: $$mdi:arrow-down-bold$$, s: "Page Down"}, 
-       {t: $$mdi:arrow-up-bold$$, s: "Page Up"}, 
-       {t: $$mdi:arrow-right-bold$$, s: End},
+    - [$$mdi:arrow-left-bold$$,
+       $$mdi:arrow-down-bold$$,
+       $$mdi:arrow-up-bold$$,
+       $$mdi:arrow-right-bold$$,
        ""]
    
     - ["", "", "", "", ""]
