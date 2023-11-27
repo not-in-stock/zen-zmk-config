@@ -1,4 +1,4 @@
-name: Update keymap
+name: Update keymap image
 
 on:
   push:
