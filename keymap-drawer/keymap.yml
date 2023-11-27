@@ -95,7 +95,7 @@ layers:
     - ["Left Click", "Right Click", "Middle Click"]
   CFG:
     - ["", "", "", "", ""]
-    - ["", "Volume Up", "Volume Down", "Brighter", "Darker"]
+    - ["Volume Mute", "Volume Up", "Volume Down", "Brightness Up", "Brightness Down"]
 
     - [{t: "BT0", s: "Clr BT0"},
        {t: "BT1", s: "Clr BT1"},
