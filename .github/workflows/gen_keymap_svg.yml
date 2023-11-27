@@ -11,10 +11,10 @@ jobs:
 
     steps:
     - name: Checkout Repository
-      uses: actions/checkout@v2
+      uses: actions/checkout@v4
 
     - name: Set up Python
-      uses: actions/setup-python@v2
+      uses: actions/setup-python@v4
       with:
         python-version: '3.x'
 
@@ -25,10 +25,12 @@ jobs:
 
     - name: Run keymap-drawer
       run: |
-        keymap draw keymap-drawer/keymap.yml > keymap.svg
+        keymap draw keymap-drawer/keymap.yml > generated/keymap.svg
 
-    - name: Upload SVG as Artifact
-      uses: actions/upload-artifact@v2
-      with:
-        name: keymap-svg
-        path: keymap.svg
+    - name: Commit and Push Changes
+      run: |
+        git config --global user.email "actions@github.com"
+        git config --global user.name "GitHub Actions"
+        git add generated/keymap.svg
+        git commit -m "Update generated/keymap.svg"
+        git push
