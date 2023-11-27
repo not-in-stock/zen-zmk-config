@@ -66,11 +66,12 @@ layers:
     - ["", "", "", "", ""]
     
     - [Gui, Ctrl, Alt, Shift, ""]
-    - ["", 
+    - [ 
        {t: $$mdi:arrow-left-bold$$, s: Home}, 
        {t: $$mdi:arrow-down-bold$$, s: "Page Down"}, 
        {t: $$mdi:arrow-up-bold$$, s: "Page Up"}, 
-       {t: $$mdi:arrow-right-bold$$, s: End}]
+       {t: $$mdi:arrow-right-bold$$, s: End},
+       ""]
    
     - ["", "", "", "", ""]
     - ["", "", "", "", ""]
@@ -79,14 +80,18 @@ layers:
     - ["", "", ""]
   MOS:
     - ["", "", "", "", ""]
-    - ["", $$mdi:transfer-left$$, $$mdi:transfer-down$$, $$mdi:transfer-up$$, $$mdi:transfer-right$$]
+    - [$$mdi:transfer-left$$,
+       $$mdi:transfer-down$$,
+       $$mdi:transfer-up$$,
+       $$mdi:transfer-right$$,
+       ""]
  
     - [Gui, Ctrl, Alt, Shift, ""]
-    - ["", 
-       $$mdi:arrow-left-bold-outline$$, 
+    - [$$mdi:arrow-left-bold-outline$$, 
        $$mdi:arrow-down-bold-outline$$, 
        $$mdi:arrow-up-bold-outline$$,
-       $$mdi:arrow-right-bold-outline$$]
+       $$mdi:arrow-right-bold-outline$$,
+       ""]
 
     - ["", "", "", "", ""]
     - ["", "", "", "", ""]
