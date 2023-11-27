@@ -7,82 +7,105 @@ layers:
     - [Y, U, I, O, P]
 
     - [{h: Gui, t: A}, {h: Alt, t: S}, {h: Ctrl, t: D}, {h: Shift, t: F}, G]
-    - [H, {h: Shift, t: J}, {h: Ctrl, t: K}, {h: Alt, t: L}, {h: Gui, t: "'"}]
+    - [H, {h: Shift, t: J}, {h: Ctrl, t: K}, {h: Alt, t: L}, {t: "'", h: Gui, s: "\""}]
 
     - [Z, X, C, V, B]
-    - [N, M, ",", ., /]
+    - [N, M, {t: ",", s: ";"}, {t: ".", s: ":"}, /]
 
-    - [{h: Gui, t: Esc}, {h: Ctrl, t: Tab}, {h: SYM, t: Space}]
-    - [{h: NUM,t: Enter}, {h: Shift, t: BSpace}, {h: Alt, t: Delete}]
+    - [{t: Esc, h: MOS}, {t: Tab, h: NAV}, {t: Space, h: SYM}]
+    - [{t: Enter, h: NUM}, {t: BSpace, h: FN}, {t: Delete, h: BT}]
   SYM:
     - ["", "", "", "", ""]
-    - [{t: "-", s: "_"}, {t: "(", s: "<"}, {t: "'", s: "\""}, {t: ")", s: ">"}, ""]
+    - [{t: "-", s: "+"},
+       {t: "(", s: "<"},
+       {t: "'", s: "\""},
+       {t: ")", s: ">"},
+       {t: "~", s: "&"}]
 
-    - ["Gui", "Alt", "Ctrl", "Shift"]
-    - ["", {t: "?", s: "!"}, {t: "[", s: "{"}, {t: "\\", s: "/"}, {t: "]", s: "}"}, ""]
+    - ["Gui", "Alt", "Ctrl", "Shift", ""]
+    - [{t: "?", s: "!"},
+       {t: "[", s: "{"},
+       {t: "\\", s: "/"},
+       {t: "]", s: "}"},
+       {t: "^", s: "$"}]
 
     - ["", "", "", "", ""]
-    - ["", "", "", "", ""]
+    - [{t: "*", s: "#"},
+       {t: "@", s: "%"},
+       "`",
+       {t: "|", s: "_"}, ":"]
 
     - ["", "", {type: held}]
     - ["", "", ""]
   NUM:
-    - ["", {t: "7", s: "&" }, {t: "8", s: "*" }, {t: "9", s: "(" }, ""]
+    - [{t: "1", s: "!"}, {t: "2", s: "@"}, {t: "3", s: "#"}, {t: "4", s: "$"}, ""]
     - ["", "", "", "", ""]
 
-    - ["", {t: "4", s: "$" }, {t: "5", s: "%" }, {t: "6", s: "^" }, ""]
+    - [{t: "5", s: "%"}, {t: "6", s: "^"}, {t: "7", s: "&"}, {t: "8", s: "*"}, ""]
     - ["", Shift, Ctrl, Alt, Gui]
 
-    - ["", {t: "1", s: "!" }, {t: "2", s: "@" }, {t: "3", s: "#" }, ""]
+    - [{t: "9", s: "("}, {t: "0", s: ")"}, {t: "-", s: "_"}, {t: "=", s: "+"}, ""]
     - ["", "", "", "", ""]
 
-    - ["", {t: "0", s: ")" }, null]
+    - ["", "", ""]
     - [{type: held}, "", ""]
+  FN:
+    - [F1, F2, F3, F4, "Print Screen"]
+    - ["", "", "", "", ""]
+
+    - [F5, F6, F7, F8, "Scroll Lock"]
+    - ["", Shift, Ctrl, Alt, Gui]
+
+    - [F9, F10, "F11", "F12" , "Pause Break"]
+    - [ "", "", "", "", ""]
+
+    - ["", "", ""]
+    - ["", {type: held}, ""]
   NAV:
     - ["", "", "", "", ""]
     - ["", "", "", "", ""]
     
     - [Gui, Ctrl, Alt, Shift, ""]
-    - ["", $$mdi:arrow-left-bold$$, $$mdi:arrow-down-bold$$, $$mdi:arrow-up-bold$$, $$mdi:arrow-right-bold$$]
+    - ["", 
+       {t: $$mdi:arrow-left-bold$$, s: Home}, 
+       {t: $$mdi:arrow-down-bold$$, s: "Page Down"}, 
+       {t: $$mdi:arrow-up-bold$$, s: "Page Up"}, 
+       {t: $$mdi:arrow-right-bold$$, s: End}]
    
     - ["", "", "", "", ""]
     - ["", "", "", "", ""]
     
     - ["", {type: held}, ""]
     - ["", "", ""]
-  Mouse:
+  MOS:
     - ["", "", "", "", ""]
-    - ["", $$mdi:transfer-left$$, $$mdi:transfer-up$$, $$mdi:transfer-right$$, ""]
+    - ["", $$mdi:transfer-left$$, $$mdi:transfer-down$$, $$mdi:transfer-up$$, $$mdi:transfer-right$$]
  
     - [Gui, Ctrl, Alt, Shift, ""]
-    - ["", $$mdi:arrow-left-bold-outline$$, $$mdi:arrow-down-bold-outline$$, $$mdi:arrow-up-bold-outline$$, $$mdi:arrow-right-bold-outline$$]
+    - ["", 
+       $$mdi:arrow-left-bold-outline$$, 
+       $$mdi:arrow-down-bold-outline$$, 
+       $$mdi:arrow-up-bold-outline$$,
+       $$mdi:arrow-right-bold-outline$$]
 
     - ["", "", "", "", ""]
-    - ["", "", $$mdi:transfer-down$$", "", ""]
+    - ["", "", "", "", ""]
    
     - [{type: held}, "", ""]
     - ["Left Click", "Right Click", "Middle Click"]
-  FN:
-    - [F1, F2, F3, F4, F5]
-    - ["Caps Lock", "", "", "", ""]
-
-    - [F6, F7, F8, F9, F10]
-    - ["", "", "", "", ""]
-
-    - ["", "", "", "", ""]
-    - [ "", "", "Print Scrn", "", ""]
-
-    - ["", "", ""]
-    - ["", {type: held}, ""]
   BT:
     - ["", "", "", "", ""]
-    - ["", "", "", "", ""]
+    - ["", "Volume Up", "Volume Down", "Brighter", "Darker"]
 
-    - [{t: "BT0", s: "Clr BT0" }, {t: "BT1", s: "Clr BT1" }, {t: "BT2", s: "Clr BT2" }, {t: "BT3", s: "Clr BT3" }, {t: "BT4", s: "Clr BT4" }]
+    - [{t: "BT0", s: "Clr BT0"},
+       {t: "BT1", s: "Clr BT1"},
+       {t: "BT2", s: "Clr BT2"},
+       {t: "BT3", s: "Clr BT3"},
+       {t: "BT4", s: "Clr BT4"}]
     - ["", Shift, Ctrl, Alt, Gui]
 
     - ["", "", "", "", ""]
     - ["", "", "", "", ""]
 
-    - [{type: held}, "", ""]
     - ["", "", ""]
+    - ["", "", {type: held}]
