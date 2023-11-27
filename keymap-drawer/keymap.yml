@@ -13,7 +13,7 @@ layers:
     - [N, M, {t: ",", s: ";"}, {t: ".", s: ":"}, /]
 
     - [{t: Esc, h: MOS}, {t: Tab, h: NAV}, {t: Space, h: SYM}]
-    - [{t: Enter, h: NUM}, {t: BSpace, h: FN}, {t: Delete, h: BT}]
+    - [{t: Enter, h: NUM}, {t: BSpace, h: FN}, {t: Delete, h: CFG}]
   SYM:
     - ["", "", "", "", ""]
     - [{t: "-", s: "+"},
