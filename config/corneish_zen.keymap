@@ -59,11 +59,12 @@ SHIFT_MACRO(s_bt_sel_4, &bt BT_SEL 4, &bt BT_SEL 4 &bt BT_CLR)
 #define CFG 6
 
 
+
 /* smart mouse */
 ZMK_BEHAVIOR(s_mouse, tri_state,
     bindings = <&tog MOS>, <&none>, <&tog MOS>;
     ignored-key-positions = <LM4 LM3 LM2 LM1 RT1 RT2 RT3 RT4 RM1 RM2 RM3 RM4 RH0 RH1 RH2>;
-    ignored-layers = <MOUSE>;
+    ignored-layers = <MOS>;
 )
 
 /* left-hand HRMs */
