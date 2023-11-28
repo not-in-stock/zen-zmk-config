@@ -60,8 +60,8 @@ SHIFT_MACRO(s_bt_sel_3, &bt BT_SEL 3, &bt BT_SEL 3 &bt BT_CLR)
 SHIFT_MACRO(s_bt_sel_4, &bt BT_SEL 4, &bt BT_SEL 4 &bt BT_CLR)
 
 // shift macros for alternative shit actions
-SHIFT_MACRO(s_cm_scol, &kp COMMA, &kp SEMI)
-SHIFT_MACRO(s_dot_col, &kp DOT, &COLON)
+SHIFT_MACRO(s_cm_scol, &kp COMMA, &kp SC)
+SHIFT_MACRO(s_dot_col, &kp DOT, &kp COLON)
 
 /* smart mouse */
 ZMK_BEHAVIOR(s_mouse, tri_state,
