@@ -40,7 +40,7 @@ layers:
        {t: "", type: ghost}]
 
     - ["", "", {type: held}]
-    - ["", "", ""]
+    - ["", {t: BSpace, h: FN, type: trans}, {t: Delete, h: CFG, type: trans}]
   NUM:
     - [{t: "", type: ghost}, {t: "1", s: "!"}, {t: "2", s: "@"}, {t: "3", s: "#"}, {t: "4", s: "$"}, ""]
     - ["", "", "", "", "", {t: "", type: ghost}]
@@ -52,7 +52,7 @@ layers:
     - ["", "", "", "", "", {t: "", type: ghost}]
 
     - ["", "", ""]
-    - [{type: held}, "", ""]
+    - [{type: held}, {t: BSpace, h: FN, type: trans}, {t: Delete, h: CFG, type: trans}]
   FN:
     - [{t: "", type: ghost}, F1, F2, F3, F4, "Print Screen"]
     - ["", "", "", "", "", {t: "", type: ghost}]
@@ -63,7 +63,7 @@ layers:
     - [{t: "", type: ghost}, F9, F10, "F11", "F12" , "Pause Break"]
     - [ "", "", "", "", "", {t: "", type: ghost}]
 
-    - ["", "", ""]
+    - [{t: Esc, h: MOS}, "", ""]
     - ["", {type: held}, ""]
   NAV:
     - [{t: "", type: ghost}, "", "", "", "", ""]
@@ -81,7 +81,7 @@ layers:
     - ["", "", "", "", "", {t: "", type: ghost}]
     
     - ["", {type: held}, ""]
-    - ["", "", ""]
+    - ["", {t: BSpace, h: FN, type: trans}, {t: Delete, h: CFG, type: trans}]
   MOS:
     - [{t: "", type: ghost}, "", "", "", "", ""]
     - [$$mdi:transfer-left$$,
