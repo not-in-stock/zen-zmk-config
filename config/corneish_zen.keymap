@@ -59,25 +59,21 @@ SHIFT_MACRO(s_bt_sel_3, &bt BT_SEL 3, &bt BT_SEL 3 &bt BT_CLR)
 SHIFT_MACRO(s_bt_sel_4, &bt BT_SEL 4, &bt BT_SEL 4 &bt BT_CLR)
 
 // shift macros for sym layer
-SHIFT_MACRO(s_qm_excl, &kp QMARK, &kp EXCL)
-SHIFT_MACRO(s_min_pls, &kp MINUS, &kp PLUS)
-
-SHIFT_MACRO(s_hsh_ast, &kp HASH, &kp STAR)
-SHIFT_MACRO(s_lbkt_lbrs, &kp LEFT_BRACKET, &kp LEFT_BRACE)
-SHIFT_MACRO(s_lpar_lt, &kp LEFT_PARENTHESIS, &kp LESS_THAN)
-SHIFT_MACRO(s_car_pc, &kp CARET, &kp PERCENT)
-
-SHIFT_MACRO(s_sqt_dql, &kp SINGLE_QUOTE, &kp DOUBLE_QUOTES)
-SHIFT_MACRO(s_slh_bslh, &kp SLASH, &kp BACKSLASH)
-SHIFT_MACRO(s_pip_unscr, &kp PIPE, &kp UNDERSCORE)
-
-SHIFT_MACRO(s_rpar_gt, &kp RIGHT_PARENTHESIS, &kp GREATER_THAN)  
-SHIFT_MACRO(s_rbkt_rbrs, &kp RIGHT_BRACKET, &kp RIGHT_BRACE)
-SHIFT_MACRO(s_dlr_grv, &kp DOLLAR, &kp GRAVE)
-
-SHIFT_MACRO(s_eq_tld, &kp EQUAL, &kp TILDE)
-SHIFT_MACRO(s_at_amp, &kp AT_SIGN, &kp AMPERSAND)
-SHIFT_MACRO(s_col_scol, &kp COLON, &kp SEMICOLON)
+SHIFT_FUNCTION(s_qm_excl, &kp QMARK, &kp EXCL)
+SHIFT_FUNCTION(s_min_pls, &kp MINUS, &kp PLUS)
+SHIFT_FUNCTION(s_hsh_ast, &kp HASH, &kp STAR)
+SHIFT_FUNCTION(s_lbkt_lbrs, &kp LEFT_BRACKET, &kp LEFT_BRACE)
+SHIFT_FUNCTION(s_lpar_lt, &kp LEFT_PARENTHESIS, &kp LESS_THAN)
+SHIFT_FUNCTION(s_car_pc, &kp CARET, &kp PERCENT)
+SHIFT_FUNCTION(s_sqt_dql, &kp SINGLE_QUOTE, &kp DOUBLE_QUOTES)
+SHIFT_FUNCTION(s_slh_bslh, &kp SLASH, &kp BACKSLASH)
+SHIFT_FUNCTION(s_pip_unscr, &kp PIPE, &kp UNDERSCORE)
+SHIFT_FUNCTION(s_rpar_gt, &kp RIGHT_PARENTHESIS, &kp GREATER_THAN)  
+SHIFT_FUNCTION(s_rbkt_rbrs, &kp RIGHT_BRACKET, &kp RIGHT_BRACE)
+SHIFT_FUNCTION(s_dlr_grv, &kp DOLLAR, &kp GRAVE)
+SHIFT_FUNCTION(s_eq_tld, &kp EQUAL, &kp TILDE)
+SHIFT_FUNCTION(s_at_amp, &kp AT_SIGN, &kp AMPERSAND)
+SHIFT_FUNCTION(s_col_scol, &kp COLON, &kp SEMICOLON)
 
 // ZMK_UNICODE_PAIR(u_hsh_ast,     N0, N0, N2, N3,    N0, N0, N2, A) // # 0023 * 002A
 // ZMK_UNICODE_PAIR(u_lbkt_lbrs,   N0, N0, N2, N3,    N0, N0, N2, A) // [ 005B { 007B
