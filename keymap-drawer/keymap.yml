@@ -14,41 +14,29 @@ layers:
 
     - [{t: Esc, h: MOS}, {t: Tab, h: NAV}, {t: Space, h: SYM}]
     - [{t: Enter, h: NUM}, {t: BSpace, h: FN}, {t: Delete, h: CFG}]
-  DEF_CYR:
-    - [{t: "Ё", type: ghost}, Й, Ц, У, К, Е]
-    - [Н, Г, Ш, Щ, З, {t: "Х", type: ghost}]
-
-    - [{t: "", type: ghost}, {t: Ф, h: Gui}, {t: Ы, h: Alt}, {t: В, h: Ctrl}, {t: А, h: Shift}, П]
-    - [Р, {t: О, h: Shift}, {t: Л, h: Ctrl}, {t: Д, h: Alt}, {t: Ж, h: Gui}, {t: Э, type: ghost}]
-
-    - [{t: "", type: ghost}, Я, Ч, С, М, И]
-    - [Т, Ь, Б, Ю, /, {t: "Ъ", type: ghost}]
-
-    - [{t: Esc, h: MOS}, {t: Tab, h: NAV}, {t: Space, h: SYM}]
-    - [{t: Enter, h: NUM}, {t: BSpace, h: FN}, {t: Delete, h: CFG}]
   SYM:
     - [{t: "", type: ghost}, "", "", "", "", ""]
     - [{t: "-", s: "+"},
        {t: "(", s: "<"},
        {t: "'", s: "\""},
        {t: ")", s: ">"},
-       {t: "~", s: "&"},
+       {t: "=", s: "~"},
        {t: "", type: ghost}]
 
     - [{t: "", type: ghost}, "Gui", "Alt", "Ctrl", "Shift", ""]
     - [{t: "?", s: "!"},
        {t: "[", s: "{"},
-       {t: "\\", s: "/"},
+       {t: "/", s: "\\"},
        {t: "]", s: "}"},
-       {t: "^", s: "$"},
+       {t: "@", s: "&"},
        {t: "", type: ghost}]
 
     - [{t: "", type: ghost}, "", "", "", "", ""]
     - [{t: "*", s: "#"},
-       {t: "@", s: "%"},
-       "`",
+       {t: "^", s: "%"},
        {t: "|", s: "_"},
-       ":",
+       {t: "$", s: "`"},
+       {t: ":", s: ";"},
        {t: "", type: ghost}]
 
     - ["", "", {type: held}]
