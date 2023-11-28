@@ -10,7 +10,7 @@ layers:
     - [H, {t: J, h: Shift}, {t: K, h: Ctrl}, {t: L, h: Alt}, {t: "'", h: Gui, s: "\""}, {t: "", type: ghost}]
 
     - [{t: "", type: ghost}, Z, X, C, V, B]
-    - [N, M, {t: ",", s: ";"}, {t: ".", s: ":"}, /, {t: "", type: ghost}]
+    - [N, M, ",", ".", /, {t: "", type: ghost}]
 
     - [{t: Esc, h: MOS}, {t: Tab, h: NAV}, {t: Space, h: SYM}]
     - [{t: Enter, h: NUM}, {t: BSpace, h: FN}, {t: Delete, h: CFG}]
