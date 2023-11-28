@@ -10,23 +10,6 @@
 
 #define QUICK_TAP_MS 175
 
-&lt {  // layer-tap config
-    flavor = "balanced";
-    tapping-term-ms = <200>;
-    quick-tap-ms = <QUICK_TAP_MS>;
-};
-
-//shift macros for BT contorols
-SHIFT_MACRO(s_bt_sel_0, &bt BT_SEL 0, &bt BT_SEL 0 &bt BT_CLR)
-SHIFT_MACRO(s_bt_sel_1, &bt BT_SEL 1, &bt BT_SEL 1 &bt BT_CLR)
-SHIFT_MACRO(s_bt_sel_2, &bt BT_SEL 2, &bt BT_SEL 2 &bt BT_CLR)
-SHIFT_MACRO(s_bt_sel_3, &bt BT_SEL 3, &bt BT_SEL 3 &bt BT_CLR)
-SHIFT_MACRO(s_bt_sel_4, &bt BT_SEL 4, &bt BT_SEL 4 &bt BT_CLR)
-
-
-SHIFT_MACRO(s_cm_scol, &kp COMMA, &kp SC)
-SHIFT_MACRO(s_dot_col, &kp DOT, &COLON)
-
 // left-hand keys
 #define KEYS_L LT0 LT1 LT2 LT3 LT4 LT5 LM0 LM1 LM2 LM3 LM4 LM5 LB0 LB1 LB2 LB3 LB4 LB5
 /* ╭─────────────────────────╮
@@ -61,6 +44,24 @@ SHIFT_MACRO(s_dot_col, &kp DOT, &COLON)
 #define NAV 4
 #define MOS 5
 #define CFG 6
+
+// layer-tap config
+&lt {  
+    flavor = "balanced";
+    tapping-term-ms = <200>;
+    quick-tap-ms = <QUICK_TAP_MS>;
+};
+
+// shift macros for BT contorols
+SHIFT_MACRO(s_bt_sel_0, &bt BT_SEL 0, &bt BT_SEL 0 &bt BT_CLR)
+SHIFT_MACRO(s_bt_sel_1, &bt BT_SEL 1, &bt BT_SEL 1 &bt BT_CLR)
+SHIFT_MACRO(s_bt_sel_2, &bt BT_SEL 2, &bt BT_SEL 2 &bt BT_CLR)
+SHIFT_MACRO(s_bt_sel_3, &bt BT_SEL 3, &bt BT_SEL 3 &bt BT_CLR)
+SHIFT_MACRO(s_bt_sel_4, &bt BT_SEL 4, &bt BT_SEL 4 &bt BT_CLR)
+
+// shift macros for alternative shit actions
+SHIFT_MACRO(s_cm_scol, &kp COMMA, &kp SC)
+SHIFT_MACRO(s_dot_col, &kp DOT, &COLON)
 
 /* smart mouse */
 ZMK_BEHAVIOR(s_mouse, tri_state,
