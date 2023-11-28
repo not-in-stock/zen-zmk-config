@@ -60,7 +60,7 @@ SHIFT_MACRO(s_bt_sel_3, &bt BT_SEL 3, &bt BT_SEL 3 &bt BT_CLR)
 SHIFT_MACRO(s_bt_sel_4, &bt BT_SEL 4, &bt BT_SEL 4 &bt BT_CLR)
 
 // shift macros for alternative shit actions
-SHIFT_MACRO(s_cm_scol, &kp COMMA, &kp SC)
+SHIFT_MACRO(s_cm_scol, &kp COMMA, &kp SEMI)
 SHIFT_MACRO(s_dot_col, &kp DOT, &COLON)
 
 /* smart mouse */
@@ -98,7 +98,7 @@ ZMK_LAYER(BASE,
 //├.............┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼.............┤
     &s_mouse      &hml LGUI A   &hml LALT S   &hml LCTRL D  &hml LSHFT F  &kp G           &kp H         &hmr RSHFT J  &hmr RCTRL K  &hmr RALT L   &hmr RGUI SC  &kp SQT
 //├.............┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼.............┤
-    ___           &kp Z         &kp X         &kp C         &kp V         &kp B           &kp N         &kp M         &s_cm_scol    &s_dot_col       &kp FSLH   &kp RBKT
+    ___           &kp Z         &kp X         &kp C         &kp V         &kp B           &kp N         &kp M         &s_cm_scol    &s_dot_col    &kp FSLH      &kp RBKT
 //╰.............┼─────────────┴─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────┴.............╯
                                               &lt MOS ESC   &lt NAV TAB   &lt SYM SPACE   &lt NUM RET   &lt FN BSPC   &lt CFG DEL
 //                                          ╰─────────────┴─────────────┴─────────────╯ ╰─────────────┴─────────────┴─────────────╯
