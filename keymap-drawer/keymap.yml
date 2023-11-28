@@ -63,7 +63,7 @@ layers:
     - [{t: "", type: ghost}, F9, F10, "F11", "F12" , "Pause Break"]
     - [ "", "", "", "", "", {t: "", type: ghost}]
 
-    - [{t: Esc, h: MOS}, "", ""]
+    - [{t: Esc, h: MOS, type: trans}, "", ""]
     - ["", {type: held}, ""]
   NAV:
     - [{t: "", type: ghost}, "", "", "", "", ""]
