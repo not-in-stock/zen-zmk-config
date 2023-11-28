@@ -61,37 +61,37 @@ SHIFT_MACRO(s_bt_sel_4, &bt BT_SEL 4, &bt BT_SEL 4 &bt BT_CLR)
 // shift macros for sym layer
 SHIFT_MACRO(s_qm_excl, &kp QMARK, &kp EXCL)
 SHIFT_MACRO(s_min_pls, &kp MINUS, &kp PLUS)
-// SHIFT_MACRO(s_hsh_ast, &kp HASH, &kp STAR)
 
-// SHIFT_MACRO(s_lbkt_lbrs, &kp LEFT_BRACKET, &kp LEFT_BRACE)
-// SHIFT_MACRO(s_lpar_lt, &kp LEFT_PARENTHESIS, &kp LESS_THAN)
-// SHIFT_MACRO(s_car_pc, &kp CARET, &kp PERCENT)
+SHIFT_MACRO(s_hsh_ast, &kp HASH, &kp STAR)
+SHIFT_MACRO(s_lbkt_lbrs, &kp LEFT_BRACKET, &kp LEFT_BRACE)
+SHIFT_MACRO(s_lpar_lt, &kp LEFT_PARENTHESIS, &kp LESS_THAN)
+SHIFT_MACRO(s_car_pc, &kp CARET, &kp PERCENT)
 
-// SHIFT_MACRO(s_sqt_dql, &kp SINGLE_QUOTE, &kp DOUBLE_QUOTES)
-// SHIFT_MACRO(s_slh_bslh, &kp SLASH, &kp BACKSLASH)
-// SHIFT_MACRO(s_pip_unscr, &kp PIPE, &kp UNDERSCORE)
+SHIFT_MACRO(s_sqt_dql, &kp SINGLE_QUOTE, &kp DOUBLE_QUOTES)
+SHIFT_MACRO(s_slh_bslh, &kp SLASH, &kp BACKSLASH)
+SHIFT_MACRO(s_pip_unscr, &kp PIPE, &kp UNDERSCORE)
 
-// SHIFT_MACRO(s_rpar_gt, &kp RIGHT_PARENTHESIS, &kp GREATER_THAN)  
-// SHIFT_MACRO(s_rbkt_rbrs, &kp RIGHT_BRACKET, &kp RIGHT_BRACE)
-// SHIFT_MACRO(s_dlr_grv, &kp DOLLAR, &kp GRAVE)
+SHIFT_MACRO(s_rpar_gt, &kp RIGHT_PARENTHESIS, &kp GREATER_THAN)  
+SHIFT_MACRO(s_rbkt_rbrs, &kp RIGHT_BRACKET, &kp RIGHT_BRACE)
+SHIFT_MACRO(s_dlr_grv, &kp DOLLAR, &kp GRAVE)
 
-// SHIFT_MACRO(s_eq_tld, &kp EQUAL, &kp TILDE)
-// SHIFT_MACRO(s_at_amp, &kp AT_SIGN, &kp AMPERSAND)
-// SHIFT_MACRO(s_col_scol, &kp COLON, &kp SEMICOLON)
+SHIFT_MACRO(s_eq_tld, &kp EQUAL, &kp TILDE)
+SHIFT_MACRO(s_at_amp, &kp AT_SIGN, &kp AMPERSAND)
+SHIFT_MACRO(s_col_scol, &kp COLON, &kp SEMICOLON)
 
-ZMK_UNICODE_PAIR(u_hsh_ast,     N0, N0, N2, N3,    N0, N0, N2, A) // # 0023 * 002A
-ZMK_UNICODE_PAIR(u_lbkt_lbrs,   N0, N0, N2, N3,    N0, N0, N2, A) // [ 005B { 007B
-ZMK_UNICODE_PAIR(u_lpar_lt,     N0, N0, N2, N3,    N0, N0, N2, A) // ( 0028 < 003C
-ZMK_UNICODE_PAIR(u_car_pc,      N0, N0, N2, N3,    N0, N0, N2, A) // ^ 005E % 0025
-ZMK_UNICODE_PAIR(u_sqt_dql,     N0, N0, N2, N3,    N0, N0, N2, A) // ' 0027 " 0022
-ZMK_UNICODE_PAIR(u_slh_bslh,    N0, N0, N2, N3,    N0, N0, N2, A) // / 002F \ 005C
-ZMK_UNICODE_PAIR(u_pip_unscr,   N0, N0, N2, N3,    N0, N0, N2, A) // | 007C _ 005F
-ZMK_UNICODE_PAIR(u_rbkt_rbrs,   N0, N0, N2, N3,    N0, N0, N2, A) // ] 005D } 007D
-ZMK_UNICODE_PAIR(u_rpar_gt,     N0, N0, N2, N3,    N0, N0, N2, A) // ) 0029 > 003E
-ZMK_UNICODE_PAIR(u_dlr_grv,     N0, N0, N2, N3,    N0, N0, N2, A) // $ 0024 ` 0060
-ZMK_UNICODE_PAIR(u_eq_tld,      N0, N0, N2, N3,    N0, N0, N2, A) // = 003D ~ 007E
-ZMK_UNICODE_PAIR(u_at_amp,      N0, N0, N2, N3,    N0, N0, N2, A) // @ 0040 & 0026
-ZMK_UNICODE_PAIR(u_col_scol,    N0, N0, N2, N3,    N0, N0, N2, A) // : 003A ; 003B
+// ZMK_UNICODE_PAIR(u_hsh_ast,     N0, N0, N2, N3,    N0, N0, N2, A) // # 0023 * 002A
+// ZMK_UNICODE_PAIR(u_lbkt_lbrs,   N0, N0, N2, N3,    N0, N0, N2, A) // [ 005B { 007B
+// ZMK_UNICODE_PAIR(u_lpar_lt,     N0, N0, N2, N3,    N0, N0, N2, A) // ( 0028 < 003C
+// ZMK_UNICODE_PAIR(u_car_pc,      N0, N0, N2, N3,    N0, N0, N2, A) // ^ 005E % 0025
+// ZMK_UNICODE_PAIR(u_sqt_dql,     N0, N0, N2, N3,    N0, N0, N2, A) // ' 0027 " 0022
+// ZMK_UNICODE_PAIR(u_slh_bslh,    N0, N0, N2, N3,    N0, N0, N2, A) // / 002F \ 005C
+// ZMK_UNICODE_PAIR(u_pip_unscr,   N0, N0, N2, N3,    N0, N0, N2, A) // | 007C _ 005F
+// ZMK_UNICODE_PAIR(u_rbkt_rbrs,   N0, N0, N2, N3,    N0, N0, N2, A) // ] 005D } 007D
+// ZMK_UNICODE_PAIR(u_rpar_gt,     N0, N0, N2, N3,    N0, N0, N2, A) // ) 0029 > 003E
+// ZMK_UNICODE_PAIR(u_dlr_grv,     N0, N0, N2, N3,    N0, N0, N2, A) // $ 0024 ` 0060
+// ZMK_UNICODE_PAIR(u_eq_tld,      N0, N0, N2, N3,    N0, N0, N2, A) // = 003D ~ 007E
+// ZMK_UNICODE_PAIR(u_at_amp,      N0, N0, N2, N3,    N0, N0, N2, A) // @ 0040 & 0026
+// ZMK_UNICODE_PAIR(u_col_scol,    N0, N0, N2, N3,    N0, N0, N2, A) // : 003A ; 003B
 
 
 /* smart mouse */
@@ -139,11 +139,11 @@ ZMK_LAYER(BASE,
 
 ZMK_LAYER(SYMBOL,
 //╭.............┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬.............╮
-    ___           ___           ___           ___           ___           ___             &s_qm_excl    &u_lbkt_lbrs  &u_sqt_dql    &u_rbkt_rbrs  &u_eq_tld     ___
+    ___           ___           ___           ___           ___           ___             &s_qm_excl    &s_lbkt_lbrs  &s_sqt_dql    &s_rbkt_rbrs  &s_eq_tld     ___
 //├.............┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼.............┤
-    ___           &kp LGUI      &kp LALT      &kp LCTRL     &kp LSHFT     ___             &s_min_pls    &u_lpar_lt    &u_slh_bslh   &u_rpar_gt    &u_at_amp     ___
+    ___           &kp LGUI      &kp LALT      &kp LCTRL     &kp LSHFT     ___             &s_min_pls    &s_lpar_lt    &s_slh_bslh   &s_rpar_gt    &s_at_amp     ___
 //├.............┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼.............┤
-    ___           ___           ___           ___           ___           ___             &u_hsh_ast    &u_car_pc     &u_pip_unscr  &u_dlr_grv    &u_col_scol   ___
+    ___           ___           ___           ___           ___           ___             &s_hsh_ast    &s_car_pc     &s_pip_unscr  &s_dlr_grv    &s_col_scol   ___
 //╰.............┼─────────────┴─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────┴.............╯
                                               ___           ___           ___             ___           ___           ___
 //                                          ╰─────────────┴─────────────┴─────────────╯ ╰─────────────┴─────────────┴─────────────╯
