@@ -75,21 +75,6 @@ SHIFT_FUNCTION(s_eq_tld, &kp KP_EQUAL, &kp TILDE)
 SHIFT_FUNCTION(s_at_amp, &kp AT_SIGN, &kp AMPERSAND)
 SHIFT_FUNCTION(s_col_scol, &kp COLON, &kp SEMICOLON)
 
-// ZMK_UNICODE_PAIR(u_hsh_ast,     N0, N0, N2, N3,    N0, N0, N2, A) // # 0023 * 002A
-// ZMK_UNICODE_PAIR(u_lbkt_lbrs,   N0, N0, N2, N3,    N0, N0, N2, A) // [ 005B { 007B
-// ZMK_UNICODE_PAIR(u_lpar_lt,     N0, N0, N2, N3,    N0, N0, N2, A) // ( 0028 < 003C
-// ZMK_UNICODE_PAIR(u_car_pc,      N0, N0, N2, N3,    N0, N0, N2, A) // ^ 005E % 0025
-// ZMK_UNICODE_PAIR(u_sqt_dql,     N0, N0, N2, N3,    N0, N0, N2, A) // ' 0027 " 0022
-// ZMK_UNICODE_PAIR(u_slh_bslh,    N0, N0, N2, N3,    N0, N0, N2, A) // / 002F \ 005C
-// ZMK_UNICODE_PAIR(u_pip_unscr,   N0, N0, N2, N3,    N0, N0, N2, A) // | 007C _ 005F
-// ZMK_UNICODE_PAIR(u_rbkt_rbrs,   N0, N0, N2, N3,    N0, N0, N2, A) // ] 005D } 007D
-// ZMK_UNICODE_PAIR(u_rpar_gt,     N0, N0, N2, N3,    N0, N0, N2, A) // ) 0029 > 003E
-// ZMK_UNICODE_PAIR(u_dlr_grv,     N0, N0, N2, N3,    N0, N0, N2, A) // $ 0024 ` 0060
-// ZMK_UNICODE_PAIR(u_eq_tld,      N0, N0, N2, N3,    N0, N0, N2, A) // = 003D ~ 007E
-// ZMK_UNICODE_PAIR(u_at_amp,      N0, N0, N2, N3,    N0, N0, N2, A) // @ 0040 & 0026
-// ZMK_UNICODE_PAIR(u_col_scol,    N0, N0, N2, N3,    N0, N0, N2, A) // : 003A ; 003B
-
-
 /* smart mouse */
 ZMK_BEHAVIOR(s_mouse, tri_state,
     bindings = <&tog MOS>, <&none>, <&tog MOS>;
