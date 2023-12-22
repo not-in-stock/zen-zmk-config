@@ -3,14 +3,14 @@ layout:
   qmk_layout: LAYOUT_split_3x6_3
 layers:
   DEF:
-    - [{t: "", type: ghost}, Q, W, E, R, T]
-    - [Y, U, I, O, P, {t: "", type: ghost}]
+    - [{t: "\\", type: ghost}, Q, W, E, R, T]
+    - [Y, U, I, O, P, {t: "[", type: ghost}]
 
-    - [{t: "", type: ghost}, {h: Gui, t: A}, {t: S, h: Alt}, {t: D, h: Ctrl}, {t: F, h: Shift}, G]
-    - [H, {t: J, h: Shift}, {t: K, h: Ctrl}, {t: L, h: Alt}, {t: "'", h: Gui, s: "\""}, {t: "", type: ghost}]
+    - [{t: "Smart Mouse", type: ghost}, {h: Gui, t: A}, {t: S, h: Alt}, {t: D, h: Ctrl}, {t: F, h: Shift}, G]
+    - [H, {t: J, h: Shift}, {t: K, h: Ctrl}, {t: L, h: Alt}, {t: "'", h: Gui, s: "\""}, {t: "'", type: ghost}]
 
     - [{t: "", type: ghost}, Z, X, C, V, B]
-    - [N, M, ",", ".", /, {t: "", type: ghost}]
+    - [N, M, ",", ".", /, {t: "]", type: ghost}]
 
     - [{t: Esc, h: MOS}, {t: Tab, h: NAV}, {t: Space, h: SYM}]
     - [{t: Enter, h: NUM}, {t: BSpace, h: FN}, {t: Delete, h: CFG}]
@@ -67,14 +67,14 @@ layers:
     - ["", {type: held}, ""]
   NAV:
     - [{t: "", type: ghost}, "", "", "", "", ""]
-    - [Home, "Page Down", "Page Up", End, "", {t: "", type: ghost}]
+    - ["", Home, "Page Down", "Page Up", End, {t: "", type: ghost}]
     
     - [{t: "", type: ghost}, Gui, Ctrl, Alt, Shift, ""]
-    - [$$mdi:arrow-left-bold$$,
+    - ["",
+       $$mdi:arrow-left-bold$$,
        $$mdi:arrow-down-bold$$,
        $$mdi:arrow-up-bold$$,
        $$mdi:arrow-right-bold$$,
-       "",
        {t: "", type: ghost}]
    
     - [{t: "", type: ghost}, "", "", "", "", ""]
@@ -84,20 +84,20 @@ layers:
     - ["", {t: BSpace, h: FN, type: trans}, {t: Delete, h: CFG, type: trans}]
   MOS:
     - [{t: "", type: ghost}, "", "", "", "", ""]
-    - [$$mdi:transfer-left$$,
+    - ["",
        $$mdi:transfer-down$$,
        $$mdi:transfer-up$$,
-       $$mdi:transfer-right$$,
+       "",
        "",
        {t: "", type: ghost}]
  
     - [{t: "", type: ghost}, Gui, Ctrl, Alt, Shift, ""]
-    - [$$mdi:arrow-left-bold-outline$$, 
+    - ["",
+       $$mdi:arrow-left-bold-outline$$, 
        $$mdi:arrow-down-bold-outline$$, 
        $$mdi:arrow-up-bold-outline$$,
        $$mdi:arrow-right-bold-outline$$,
-       "",
-       {t: "", type: ghost}]
+        {t: "", type: ghost}]
 
     - [{t: "", type: ghost}, "", "", "", "", ""]
     - ["", "", "", "", "",{t: "", type: ghost}]
