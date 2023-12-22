@@ -12,8 +12,8 @@ layers:
     - [{t: "", type: ghost}, Z, X, C, V, B]
     - [N, M, ",", ".", /, {t: "]", type: ghost}]
 
-    - [{t: Esc, h: MOS}, {t: Tab, h: NAV}, {t: Space, h: SYM}]
-    - [{t: Enter, h: NUM}, {t: BSpace, h: FN}, {t: Delete, h: CFG}]
+    - [{t: $$mdi:keyboard-esc$$, h: MOS}, {t: $$mdi:keyboard-tab$$, h: NAV}, {t: $$mdi:keyboard-space$$, h: SYM}]
+    - [{t: $$mdi:keyboard-return$$, h: NUM}, {t: $$mdi:backspace-outline$$, h: FN}, {t: $$mdi:backspace-reverse-outline$$, h: CFG}]
   SYM:
     - [{t: "", type: ghost}, "", "", "", "", ""]
     - [{t: "?", s: "!"},
@@ -40,7 +40,7 @@ layers:
        {t: "", type: ghost}]
 
     - ["", "", {type: held}]
-    - ["", BSpace, Delete]
+    - ["", $$mdi:backspace-outline$$, $$mdi:backspace-reverse-outline$$]
   NUM:
     - [{t: "", type: ghost}, {t: "1", s: "!"}, {t: "2", s: "@"}, {t: "3", s: "#"}, {t: "4", s: "$"}, ""]
     - ["", "", "", "", "", {t: "", type: ghost}]
@@ -52,7 +52,7 @@ layers:
     - ["", "", "", "", "", {t: "", type: ghost}]
 
     - ["", "", ""]
-    - [{type: held}, BSpace, Delete]
+    - [{type: held}, $$mdi:backspace-outline$$, $$mdi:backspace-reverse-outline$$]
   FN:
     - [{t: "", type: ghost}, F1, F2, F3, F4, "Print Screen"]
     - ["", "", "", "", "", {t: "", type: ghost}]
@@ -63,7 +63,7 @@ layers:
     - [{t: "", type: ghost}, F9, F10, "F11", "F12" , "Pause Break"]
     - [ "", "", "", "", "", {t: "", type: ghost}]
 
-    - [Esc, "", ""]
+    - [$$mdi:keyboard-esc$$, "", ""]
     - ["", {type: held}, ""]
   NAV:
     - [{t: "", type: ghost}, "", "", "", "", ""]
@@ -81,7 +81,7 @@ layers:
     - ["", "", "", "", "", {t: "", type: ghost}]
     
     - ["", {type: held}, ""]
-    - ["", BSpace, Delete]
+    - ["", $$mdi:backspace-outline$$, $$mdi:backspace-reverse-outline$$]
   MOS:
     - [{t: "", type: ghost}, "", "", "", "", ""]
     - ["",
