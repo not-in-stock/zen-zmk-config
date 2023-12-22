@@ -7,7 +7,7 @@ layers:
     - [Y, U, I, O, P, {t: "[", type: ghost}]
 
     - [{t: "Smart Mouse", type: ghost}, {h: Gui, t: A}, {t: S, h: Alt}, {t: D, h: Ctrl}, {t: F, h: Shift}, G]
-    - [H, {t: J, h: Shift}, {t: K, h: Ctrl}, {t: L, h: Alt}, {t: "'", h: Gui, s: "\""}, {t: "'", type: ghost}]
+    - [H, {t: J, h: Shift}, {t: K, h: Ctrl}, {t: L, h: Alt}, {t: ";", h: Gui, s: ";"}, {t: "'", type: ghost}]
 
     - [{t: "", type: ghost}, Z, X, C, V, B]
     - [N, M, ",", ".", /, {t: "]", type: ghost}]
