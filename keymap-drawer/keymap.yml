@@ -106,11 +106,11 @@ layers:
     - ["Left Click", "Right Click", "Middle Click"]
   CFG:
     - [{t: "", type: ghost},
-       {t: "BT0", s: "Clr BT0"},
-       {t: "BT1", s: "Clr BT1"},
-       {t: "BT2", s: "Clr BT2"},
-       {t: "BT3", s: "Clr BT3"},
-       {t: "BT4", s: "Clr BT4"}]
+       {t: "$$mdi:bluetooth$$1", s: "Clr BT1"},
+       {t: "$$mdi:bluetooth$$2", s: "Clr BT2"},
+       {t: "$$mdi:bluetooth$$3", s: "Clr BT3"},
+       {t: "$$mdi:bluetooth$$4", s: "Clr BT4"},
+       {t: "$$mdi:bluetooth$$5", s: "Clr BT5"}]
     - ["", "", "", "", "", {t: "", type: ghost}]
 
     - [{t: "", type: ghost}, 
