@@ -113,7 +113,12 @@ layers:
        {t: "BT4", s: "Clr BT4"}]
     - ["", "", "", "", "", {t: "", type: ghost}]
 
-    - [{t: "", type: ghost}, "Brightness Down", "Brightness Up", "Volume Down", "Volume Up", "Volume Mute"]
+    - [{t: "", type: ghost}, 
+       $$mdi:brightness-5$$,
+       $$mdi:brightness-7$$,
+       $$mdi:volume-medium$$,
+       $$mdi:volume-high$$,
+       $$mdi:volume-variant-off$$]
     - ["", Shift, Ctrl, Alt, Gui, {t: "", type: ghost}]
 
     - [{t: "", type: ghost}, "", "", "", "Reset", "Boot"]
