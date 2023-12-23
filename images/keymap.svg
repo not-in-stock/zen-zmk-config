@@ -30,9 +30,6 @@
 <svg id="mdi:backspace-reverse-outline">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-backspace-reverse-outline" viewBox="0 0 24 24"><path d="M5,15.59L6.41,17L10,13.41L13.59,17L15,15.59L11.41,12L15,8.41L13.59,7L10,10.59L6.41,7L5,8.41L8.59,12L5,15.59M2,3A2,2 0 0,0 0,5V19A2,2 0 0,0 2,21H17C17.69,21 18.23,20.64 18.59,20.11L24,12L18.59,3.88C18.23,3.35 17.69,3 17,3H2M2,5H17L21.72,12L17,19H2V5Z" /></svg>
 </svg>
-<svg id="mdi:bluetooth">
-<svg xmlns="http://www.w3.org/2000/svg" id="mdi-bluetooth" viewBox="0 0 24 24"><path d="M14.88,16.29L13,18.17V14.41M13,5.83L14.88,7.71L13,9.58M17.71,7.71L12,2H11V9.58L6.41,5L5,6.41L10.59,12L5,17.58L6.41,19L11,14.41V22H12L17.71,16.29L13.41,12L17.71,7.71Z" /></svg>
-</svg>
 <svg id="mdi:brightness-5">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-brightness-5" viewBox="0 0 24 24"><path d="M12,18A6,6 0 0,1 6,12A6,6 0 0,1 12,6A6,6 0 0,1 18,12A6,6 0 0,1 12,18M20,15.31L23.31,12L20,8.69V4H15.31L12,0.69L8.69,4H4V8.69L0.69,12L4,15.31V20H8.69L12,23.31L15.31,20H20V15.31Z" /></svg>
 </svg>
@@ -1150,35 +1147,35 @@ path.combo {
 <g transform="translate(84, 49)" class="key keypos-1">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">
-<tspan x="0" dy="-0.0em" style="font-size: 60%">$$mdi:bluetooth$$</tspan><tspan x="0" dy="1.2em" style="font-size: 60%">1</tspan>
+<tspan x="0" dy="-0.0em">BT</tspan><tspan x="0" dy="1.2em">1</tspan>
 </text>
 <text x="0" y="-24" class="key shifted">Clr BT1</text>
 </g>
 <g transform="translate(140, 35)" class="key keypos-2">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">
-<tspan x="0" dy="-0.0em" style="font-size: 60%">$$mdi:bluetooth$$</tspan><tspan x="0" dy="1.2em" style="font-size: 60%">2</tspan>
+<tspan x="0" dy="-0.0em">BT</tspan><tspan x="0" dy="1.2em">2</tspan>
 </text>
 <text x="0" y="-24" class="key shifted">Clr BT2</text>
 </g>
 <g transform="translate(196, 28)" class="key keypos-3">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">
-<tspan x="0" dy="-0.0em" style="font-size: 60%">$$mdi:bluetooth$$</tspan><tspan x="0" dy="1.2em" style="font-size: 60%">3</tspan>
+<tspan x="0" dy="-0.0em">BT</tspan><tspan x="0" dy="1.2em">3</tspan>
 </text>
 <text x="0" y="-24" class="key shifted">Clr BT3</text>
 </g>
 <g transform="translate(252, 35)" class="key keypos-4">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">
-<tspan x="0" dy="-0.0em" style="font-size: 60%">$$mdi:bluetooth$$</tspan><tspan x="0" dy="1.2em" style="font-size: 60%">4</tspan>
+<tspan x="0" dy="-0.0em">BT</tspan><tspan x="0" dy="1.2em">4</tspan>
 </text>
 <text x="0" y="-24" class="key shifted">Clr BT4</text>
 </g>
 <g transform="translate(308, 42)" class="key keypos-5">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">
-<tspan x="0" dy="-0.0em" style="font-size: 60%">$$mdi:bluetooth$$</tspan><tspan x="0" dy="1.2em" style="font-size: 60%">5</tspan>
+<tspan x="0" dy="-0.0em">BT</tspan><tspan x="0" dy="1.2em">5</tspan>
 </text>
 <text x="0" y="-24" class="key shifted">Clr BT5</text>
 </g>
