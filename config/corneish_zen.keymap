@@ -51,7 +51,7 @@
 };
 
 
-// shift macros for BT contorols
+// shift macros for BT contorls
 SHIFT_MACRO(s_bt_sel_0, &bt BT_SEL 0, &bt BT_SEL 0 &bt BT_CLR)
 SHIFT_MACRO(s_bt_sel_1, &bt BT_SEL 1, &bt BT_SEL 1 &bt BT_CLR)
 SHIFT_MACRO(s_bt_sel_2, &bt BT_SEL 2, &bt BT_SEL 2 &bt BT_CLR)
@@ -106,13 +106,22 @@ ZMK_BEHAVIOR(hmr, hold_tap,
     hold-trigger-key-positions = <KEYS_L THUMBS>;
 )
 
+&num_word {  // num-word, requires PR #1451
+    layers = <NUM>;
+    continue-list = <BSPC DEL DOT COMMA PLUS MINUS STAR FSLH EQUAL>;
+};
+
+&caps_word {  // mods deactivate caps-word, requires PR #1451
+    /delete-property/ ignore-modifiers;
+};
+
 ZMK_LAYER(BASE,
 //╭.............┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬.............╮
     &kp BSLH      &kp Q         &kp W         &kp E         &kp R         &kp T           &kp Y         &kp U         &kp I         &kp O         &kp P         &kp LBKT
 //├.............┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼.............┤
-    &s_mouse      &hml LGUI A   &hml LALT S   &hml LCTRL D  &hml LSHFT F  &kp G           &kp H         &hmr RSHFT J  &hmr RCTRL K  &hmr RALT L   &hmr RGUI SC  &kp SQT
+    &caps_word    &hml LGUI A   &hml LALT S   &hml LCTRL D  &hml LSHFT F  &kp G           &kp H         &hmr RSHFT J  &hmr RCTRL K  &hmr RALT L   &hmr RGUI SC  &kp SQT
 //├.............┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼.............┤
-    ___           &kp Z         &kp X         &kp C         &kp V         &kp B           &kp N         &kp M         &kp COMMA     &kp DOT       &kp FSLH      &kp RBKT
+    &num_word     &kp Z         &kp X         &kp C         &kp V         &kp B           &kp N         &kp M         &kp COMMA     &kp DOT       &kp FSLH      &kp RBKT
 //╰.............┼─────────────┴─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────┴.............╯
                                               &lt MOS ESC   &lt NAV TAB   &lt SYM SPACE   &lt NUM RET   &lt FN BSPC   &lt CFG DEL
 //                                          ╰─────────────┴─────────────┴─────────────╯ ╰─────────────┴─────────────┴─────────────╯
