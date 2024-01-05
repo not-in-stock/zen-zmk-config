@@ -165,11 +165,11 @@ parse_config:
     LGUI: '$$mdi:apple-keyboard-command$$'
     LALT: '$$mdi:apple-keyboard-option$$'
     LCTRL: '$$mdi:apple-keyboard-control$$'
-    LSHIFT: '$$mdi:apple-keyboard-shift$$'
+    LSHFT: '$$mdi:apple-keyboard-shift$$'
     RGUI: '$$mdi:apple-keyboard-command$$'
     RALT: '$$mdi:apple-keyboard-option$$'
     RCTRL: '$$mdi:apple-keyboard-control$$'
-    RSHIFT: '$$mdi:apple-keyboard-shift$$'
+    RSHFT: '$$mdi:apple-keyboard-shift$$'
     HASH: '#'
     POUND: '#'
     DOLLAR: $
