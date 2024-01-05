@@ -170,6 +170,11 @@ parse_config:
     RALT: '$$mdi:apple-keyboard-option$$'
     RCTRL: '$$mdi:apple-keyboard-control$$'
     RSHFT: '$$mdi:apple-keyboard-shift$$'
+    BRI_DN: '$$mdi:brightness-5$$'
+    BRI_UP: '$$mdi:brightness-7$$'
+    VOL_DN: '$$mdi:volume-medium$$'
+    VOL_UP: '$$mdi:volume-high$$'
+    MUTE: '$$mdi:volume-variant-off$$'
     HASH: '#'
     POUND: '#'
     DOLLAR: $
