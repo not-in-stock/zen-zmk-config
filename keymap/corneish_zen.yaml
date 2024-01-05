@@ -13,19 +13,19 @@ layers:
   - O
   - P
   - '['
-  - '&caps_word'
-  - {t: A, h: LGUI}
-  - {t: S, h: LALT}
-  - {t: D, h: LCTRL}
-  - {t: F, h: LSHFT}
+  - $$mdi:keyboard-caps$$
+  - {t: A, h: '$$mdi:apple-keyboard-command$$'}
+  - {t: S, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: D, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: F, h: '$$mdi:apple-keyboard-shift$$'}
   - G
   - H
-  - {t: J, h: RSHFT}
-  - {t: K, h: RCTRL}
-  - {t: L, h: RALT}
-  - {t: ;, h: RGUI}
+  - {t: J, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: K, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: L, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: ;, h: '$$mdi:apple-keyboard-command$$'}
   - ''''
-  - '&smart_mouse'
+  - $$mdi:mouse-outline$$
   - Z
   - X
   - C
@@ -37,12 +37,12 @@ layers:
   - .
   - /
   - ']'
-  - {t: ESC, h: MOUSE}
-  - {t: TAB, h: NAV}
-  - {t: SPACE, h: SYM}
-  - {t: RET, h: NUM}
-  - {t: BSPC, h: FN}
-  - {t: DEL, h: CONF}
+  - {t: '$$mdi:keyboard-esc$$', h: MOUSE}
+  - {t: '$$mdi:keyboard-tab$$', h: NAV}
+  - {t: '$$mdi:keyboard-space$$', h: SYM}
+  - {t: '$$mdi:keyboard-return$$', h: NUM}
+  - {t: '$$mdi:backspace-outline$$', h: FN}
+  - {t: '$$mdi:backspace-reverse-outline$$', h: CONF}
   SYM:
   - ''
   - ''
@@ -54,18 +54,18 @@ layers:
   - {t: '[', s: '{'}
   - {t: '''', s: '"'}
   - {t: ']', s: '}'}
-  - {t: KP EQUAL, s: '~'}
+  - {t: '=', s: '~'}
   - ''
   - ''
-  - LGUI
-  - LALT
-  - LCTRL
-  - LSHFT
+  - $$mdi:apple-keyboard-command$$
+  - $$mdi:apple-keyboard-option$$
+  - $$mdi:apple-keyboard-control$$
+  - $$mdi:apple-keyboard-shift$$
   - ''
-  - {t: KP MINUS, s: KP PLUS}
-  - {t: KP LEFT PARENTHESIS, s: <}
-  - {t: KP SLASH, s: \}
-  - {t: KP RIGHT PARENTHESIS, s: '>'}
+  - {t: '-', s: +}
+  - {t: (, s: <}
+  - {t: /, s: \}
+  - {t: ), s: '>'}
   - {t: '@', s: '&'}
   - ''
   - ''
@@ -74,18 +74,18 @@ layers:
   - ''
   - ''
   - ''
-  - {t: '#', s: KP ASTERISK}
+  - {t: '#', s: '*'}
   - {t: ^, s: '%'}
   - {t: '|', s: _}
   - {t: $, s: '`'}
   - {t: ':', s: ;}
   - ''
-  - ESC
-  - TAB
+  - $$mdi:keyboard-esc$$
+  - $$mdi:keyboard-tab$$
   - {type: held}
   - ''
-  - BSPC
-  - DEL
+  - $$mdi:backspace-outline$$
+  - $$mdi:backspace-reverse-outline$$
   NUM:
   - ''
   - '1'
@@ -106,10 +106,10 @@ layers:
   - '8'
   - ''
   - ''
-  - RSHFT
-  - RCTRL
-  - RALT
-  - RGUI
+  - $$mdi:apple-keyboard-shift$$
+  - $$mdi:apple-keyboard-control$$
+  - $$mdi:apple-keyboard-option$$
+  - $$mdi:apple-keyboard-command$$
   - ''
   - ''
   - '9'
@@ -125,10 +125,10 @@ layers:
   - ''
   - ''
   - ''
-  - SPACE
+  - $$mdi:keyboard-space$$
   - {type: held}
-  - BSPC
-  - DEL
+  - $$mdi:backspace-outline$$
+  - $$mdi:backspace-reverse-outline$$
   FN:
   - ''
   - F1
@@ -149,10 +149,10 @@ layers:
   - F8
   - ''
   - ''
-  - RSHFT
-  - RCTRL
-  - RALT
-  - RGUI
+  - $$mdi:apple-keyboard-shift$$
+  - $$mdi:apple-keyboard-control$$
+  - $$mdi:apple-keyboard-option$$
+  - $$mdi:apple-keyboard-command$$
   - ''
   - ''
   - F9
@@ -166,7 +166,7 @@ layers:
   - ''
   - ''
   - ''
-  - ESC
+  - $$mdi:keyboard-esc$$
   - ''
   - ''
   - ''
@@ -180,22 +180,22 @@ layers:
   - ''
   - ''
   - ''
-  - HOME
-  - PG DN
-  - PG UP
-  - END
+  - Home
+  - Page Down
+  - Page Up
+  - End
   - ''
   - ''
-  - LGUI
-  - LALT
-  - LCTRL
-  - LSHFT
+  - $$mdi:apple-keyboard-command$$
+  - $$mdi:apple-keyboard-option$$
+  - $$mdi:apple-keyboard-control$$
+  - $$mdi:apple-keyboard-shift$$
   - ''
   - ''
-  - LEFT
-  - DOWN
-  - UP
-  - RIGHT
+  - $$mdi:arrow-left-bold$$
+  - $$mdi:arrow-down-bold$$
+  - $$mdi:arrow-up-bold$$
+  - $$mdi:arrow-up-bold$$
   - ''
   - ''
   - ''
@@ -213,8 +213,8 @@ layers:
   - {type: held}
   - ''
   - ''
-  - BSPC
-  - DEL
+  - $$mdi:backspace-outline$$
+  - $$mdi:backspace-reverse-outline$$
   MOUSE:
   - ''
   - ''
@@ -223,22 +223,22 @@ layers:
   - ''
   - ''
   - ''
-  - SCROLL DOWN
-  - SCROLL UP
+  - $$mdi:transfer-down$$
+  - $$mdi:transfer-up$$
   - ''
   - ''
   - ''
   - ''
-  - LGUI
-  - LALT
-  - LCTRL
-  - LSHFT
+  - $$mdi:apple-keyboard-command$$
+  - $$mdi:apple-keyboard-option$$
+  - $$mdi:apple-keyboard-control$$
+  - $$mdi:apple-keyboard-shift$$
   - ''
   - ''
-  - '&mmv MOVE_LEFT'
-  - '&mmv MOVE_DOWN'
-  - '&mmv MOVE_UP'
-  - '&mmv MOVE_RIGHT'
+  - $$mdi:arrow-left-bold-outline$$
+  - $$mdi:arrow-down-bold-outline$$
+  - $$mdi:arrow-up-bold-outline$$
+  - $$mdi:arrow-right-bold-outline$$
   - ''
   - ''
   - ''
@@ -255,16 +255,16 @@ layers:
   - {type: held}
   - ''
   - ''
-  - '&mkp LCLK'
-  - '&mkp RCLK'
-  - '&mkp MCLK'
+  - $$mdi:mouse-left-click$$
+  - $$mdi:mouse-right-click$$
+  - $$mdi:mouse-scroll-wheel$$
   CONF:
   - ''
-  - {t: BT, h: '0', s: '&u_macro_s_bt_sel_0'}
-  - {t: BT, h: '1', s: '&u_macro_s_bt_sel_1'}
-  - {t: BT, h: '2', s: '&u_macro_s_bt_sel_2'}
-  - {t: BT, h: '3', s: '&u_macro_s_bt_sel_3'}
-  - {t: BT, h: '4', s: '&u_macro_s_bt_sel_4'}
+  - {t: BT, h: '0', s: Clr BT 0}
+  - {t: BT, h: '1', s: Clr BT 1}
+  - {t: BT, h: '2', s: Clr BT 2}
+  - {t: BT, h: '3', s: Clr BT 3}
+  - {t: BT, h: '4', s: Clr BT 4}
   - ''
   - ''
   - ''
@@ -272,25 +272,25 @@ layers:
   - ''
   - ''
   - ''
-  - BRI DN
-  - BRI UP
-  - VOL DN
-  - VOL UP
-  - MUTE
+  - $$mdi:brightness-5$$
+  - $$mdi:brightness-7$$
+  - $$mdi:volume-medium$$
+  - $$mdi:volume-high$$
+  - $$mdi:volume-variant-off$$
   - ''
-  - RSHFT
-  - RCTRL
-  - RALT
-  - RGUI
-  - ''
-  - ''
+  - $$mdi:apple-keyboard-shift$$
+  - $$mdi:apple-keyboard-control$$
+  - $$mdi:apple-keyboard-option$$
+  - $$mdi:apple-keyboard-command$$
   - ''
   - ''
   - ''
-  - '&sys_reset'
-  - '&bootloader'
-  - '&sys_reset'
-  - '&bootloader'
+  - ''
+  - ''
+  - Reset
+  - Boot
+  - Reset
+  - Boot
   - ''
   - ''
   - ''
