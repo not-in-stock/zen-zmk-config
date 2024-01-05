@@ -180,10 +180,10 @@ layers:
   - ''
   - ''
   - ''
-  - HOME
-  - PG DN
-  - PG UP
-  - END
+  - Home
+  - Page Down
+  - Page Up
+  - End
   - ''
   - ''
   - $$mdi:apple-keyboard-command$$
