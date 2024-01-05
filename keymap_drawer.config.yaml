@@ -143,7 +143,16 @@ draw_config:
 parse_config:
   preprocess: true
   skip_binding_parsing: false
-  raw_binding_map: {}
+  raw_binding_map: 
+    "&bootloader": "Boot"
+    "&sys_reset": "Reset"
+    "&mkp LCLK": "$$mdi:mouse-left-click$$"
+    "&mkp RCLK": "$$mdi:mouse-right-click$$"
+    "&mkp MCLK": "$$mdi:mouse-scroll-wheel$$""
+    "&mmv MOVE_LEFT": "$$mdi:arrow-left-bold-outline$$"
+    "&mmv MOVE_RIGHT": "$$mdi:arrow-right-bold-outline$$"
+    "&mmv MOVE_UP": "$$mdi:arrow-up-bold-outline$$"
+    "&mmv MOVE_DOWN": "$$mdi:arrow-down-bold-outline$$"    
   sticky_label: sticky
   toggle_label: toggle
   trans_legend:
@@ -183,6 +192,8 @@ parse_config:
     PG_DN: 'Page Down'
     HOME: 'Home'
     END: 'End'
+    SCROLL_DOWN: "$$mdi:transfer-down$$"
+    SCROLL_UP: "$$mdi:transfer-up$$"
     HASH: '#'
     POUND: '#'
     DOLLAR: $
