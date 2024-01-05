@@ -54,7 +54,7 @@ layers:
   - {t: '[', s: '{'}
   - {t: '''', s: '"'}
   - {t: ']', s: '}'}
-  - {t: ' EQUAL', s: '~'}
+  - {t: KP EQUAL, s: '~'}
   - ''
   - ''
   - $$mdi:apple-keyboard-command$$
@@ -62,10 +62,10 @@ layers:
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-shift$$
   - ''
-  - {t: ' MINUS', s: ' PLUS'}
-  - {t: ' LEFT PARENTHESIS', s: <}
-  - {t: ' SLASH', s: \}
-  - {t: ' RIGHT PARENTHESIS', s: '>'}
+  - {t: KP MINUS, s: KP PLUS}
+  - {t: KP LEFT PARENTHESIS, s: <}
+  - {t: KP SLASH, s: \}
+  - {t: KP RIGHT PARENTHESIS, s: '>'}
   - {t: '@', s: '&'}
   - ''
   - ''
@@ -74,7 +74,7 @@ layers:
   - ''
   - ''
   - ''
-  - {t: '#', s: ' ASTERISK'}
+  - {t: '#', s: KP ASTERISK}
   - {t: ^, s: '%'}
   - {t: '|', s: _}
   - {t: $, s: '`'}

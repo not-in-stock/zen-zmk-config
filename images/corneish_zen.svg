@@ -362,7 +362,9 @@ path.combo {
 </g>
 <g transform="translate(756, 49)" class="key keypos-10">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">EQUAL</text>
+<text x="0" y="0" class="key tap">
+<tspan x="0" dy="-0.0em">KP</tspan><tspan x="0" dy="1.2em">EQUAL</tspan>
+</text>
 <text x="0" y="-24" class="key shifted">~</text>
 </g>
 <g transform="translate(812, 49)" class="key keypos-11">
@@ -392,25 +394,31 @@ path.combo {
 </g>
 <g transform="translate(532, 98)" class="key keypos-18">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">MINUS</text>
-<text x="0" y="-24" class="key shifted"> PLUS</text>
+<text x="0" y="0" class="key tap">
+<tspan x="0" dy="-0.0em">KP</tspan><tspan x="0" dy="1.2em">MINUS</tspan>
+</text>
+<text x="0" y="-24" class="key shifted">KP PLUS</text>
 </g>
 <g transform="translate(588, 91)" class="key keypos-19">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">
-<tspan x="0" dy="-0.0em" style="font-size: 64%">LEFT</tspan><tspan x="0" dy="1.2em" style="font-size: 64%">PARENTHESIS</tspan>
+<tspan x="0" dy="-1.2em" style="font-size: 64%">KP</tspan><tspan x="0" dy="1.2em" style="font-size: 64%">LEFT</tspan>
+<tspan x="0" dy="1.2em" style="font-size: 64%">PARENTHESIS</tspan>
 </text>
 <text x="0" y="-24" class="key shifted">&lt;</text>
 </g>
 <g transform="translate(644, 84)" class="key keypos-20">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">SLASH</text>
+<text x="0" y="0" class="key tap">
+<tspan x="0" dy="-0.0em">KP</tspan><tspan x="0" dy="1.2em">SLASH</tspan>
+</text>
 <text x="0" y="-24" class="key shifted">\</text>
 </g>
 <g transform="translate(700, 91)" class="key keypos-21">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">
-<tspan x="0" dy="-0.0em" style="font-size: 64%">RIGHT</tspan><tspan x="0" dy="1.2em" style="font-size: 64%">PARENTHESIS</tspan>
+<tspan x="0" dy="-1.2em" style="font-size: 64%">KP</tspan><tspan x="0" dy="1.2em" style="font-size: 64%">RIGHT</tspan>
+<tspan x="0" dy="1.2em" style="font-size: 64%">PARENTHESIS</tspan>
 </text>
 <text x="0" y="-24" class="key shifted">&gt;</text>
 </g>
@@ -443,7 +451,7 @@ path.combo {
 <g transform="translate(532, 154)" class="key keypos-30">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">#</text>
-<text x="0" y="-24" class="key shifted"><tspan style="font-size: 78%"> ASTERISK</tspan></text>
+<text x="0" y="-24" class="key shifted"><tspan style="font-size: 64%">KP ASTERISK</tspan></text>
 </g>
 <g transform="translate(588, 147)" class="key keypos-31">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
