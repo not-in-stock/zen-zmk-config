@@ -12,14 +12,23 @@
 <svg id="mdi:apple-keyboard-shift">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-apple-keyboard-shift" viewBox="0 0 24 24"><path d="M15,18V12H17.17L12,6.83L6.83,12H9V18H15M12,4L22,14H17V20H7V14H2L12,4Z" /></svg>
 </svg>
+<svg id="mdi:arrow-down-bold">
+<svg xmlns="http://www.w3.org/2000/svg" id="mdi-arrow-down-bold" viewBox="0 0 24 24"><path d="M9,4H15V12H19.84L12,19.84L4.16,12H9V4Z" /></svg>
+</svg>
 <svg id="mdi:arrow-down-bold-outline">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-arrow-down-bold-outline" viewBox="0 0 24 24"><path d="M22,11L12,21L2,11H8V3H16V11H22M12,18L17,13H14V5H10V13H7L12,18Z" /></svg>
+</svg>
+<svg id="mdi:arrow-left-bold">
+<svg xmlns="http://www.w3.org/2000/svg" id="mdi-arrow-left-bold" viewBox="0 0 24 24"><path d="M20,9V15H12V19.84L4.16,12L12,4.16V9H20Z" /></svg>
 </svg>
 <svg id="mdi:arrow-left-bold-outline">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-arrow-left-bold-outline" viewBox="0 0 24 24"><path d="M13,22L3,12L13,2V8H21V16H13V22M6,12L11,17V14H19V10H11V7L6,12Z" /></svg>
 </svg>
 <svg id="mdi:arrow-right-bold-outline">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-arrow-right-bold-outline" viewBox="0 0 24 24"><path d="M11,16H3V8H11V2L21,12L11,22V16M13,7V10H5V14H13V17L18,12L13,7Z" /></svg>
+</svg>
+<svg id="mdi:arrow-up-bold">
+<svg xmlns="http://www.w3.org/2000/svg" id="mdi-arrow-up-bold" viewBox="0 0 24 24"><path d="M15,20H9V12H4.16L12,4.16L19.84,12H15V20Z" /></svg>
 </svg>
 <svg id="mdi:arrow-up-bold-outline">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-arrow-up-bold-outline" viewBox="0 0 24 24"><path d="M16,13V21H8V13H2L12,3L22,13H16M7,11H10V19H14V11H17L12,6L7,11Z" /></svg>
@@ -908,19 +917,19 @@ path.combo {
 </g>
 <g transform="translate(588, 91)" class="key keypos-19">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<use href="#mdi:arrow-left-bold-outline" xlink:href="#mdi:arrow-left-bold-outline" x="-7" y="-7" height="14" width="14.0" class="key tap glyph mdi:arrow-left-bold-outline"/>
+<use href="#mdi:arrow-left-bold" xlink:href="#mdi:arrow-left-bold" x="-7" y="-7" height="14" width="14.0" class="key tap glyph mdi:arrow-left-bold"/>
 </g>
 <g transform="translate(644, 84)" class="key keypos-20">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<use href="#mdi:arrow-down-bold-outline" xlink:href="#mdi:arrow-down-bold-outline" x="-7" y="-7" height="14" width="14.0" class="key tap glyph mdi:arrow-down-bold-outline"/>
+<use href="#mdi:arrow-down-bold" xlink:href="#mdi:arrow-down-bold" x="-7" y="-7" height="14" width="14.0" class="key tap glyph mdi:arrow-down-bold"/>
 </g>
 <g transform="translate(700, 91)" class="key keypos-21">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<use href="#mdi:arrow-up-bold-outline" xlink:href="#mdi:arrow-up-bold-outline" x="-7" y="-7" height="14" width="14.0" class="key tap glyph mdi:arrow-up-bold-outline"/>
+<use href="#mdi:arrow-up-bold" xlink:href="#mdi:arrow-up-bold" x="-7" y="-7" height="14" width="14.0" class="key tap glyph mdi:arrow-up-bold"/>
 </g>
 <g transform="translate(756, 105)" class="key keypos-22">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<use href="#mdi:arrow-up-bold-outline" xlink:href="#mdi:arrow-up-bold-outline" x="-7" y="-7" height="14" width="14.0" class="key tap glyph mdi:arrow-up-bold-outline"/>
+<use href="#mdi:arrow-up-bold" xlink:href="#mdi:arrow-up-bold" x="-7" y="-7" height="14" width="14.0" class="key tap glyph mdi:arrow-up-bold"/>
 </g>
 <g transform="translate(812, 105)" class="key keypos-23">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
