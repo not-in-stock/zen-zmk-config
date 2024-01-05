@@ -34,14 +34,14 @@
 
 #define SC SEMICOLON
 
-/* layer names */
+/* short layer names */
 #define BAS 0
 #define SYM 1
 #define NUM 2
 #define FN 3
-#define NAV 4
+#define NV 4
 #define MOS 5
-#define CFG 6
+#define MED 6
 
 // layer-tap config
 &lt {
@@ -128,7 +128,7 @@ ZMK_LAYER(BASE,
 //├.............┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼.............┤
     &s_mouse      &kp Z         &kp X         &kp C         &kp V         &kp B           &kp N         &kp M         &kp COMMA     &kp DOT       &kp FSLH      &kp RBKT
 //╰.............┼─────────────┴─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────┴.............╯
-                                              &lt MOS ESC   &lt NAV TAB   &lt SYM SPACE   &lt NUM RET   &lt FN BSPC   &lt CFG DEL
+                                              &lt MOS ESC   &lt NV TAB    &lt SYM SPACE   &lt NUM RET   &lt FN BSPC   &lt CFG DEL
 //                                          ╰─────────────┴─────────────┴─────────────╯ ╰─────────────┴─────────────┴─────────────╯
 )
 
