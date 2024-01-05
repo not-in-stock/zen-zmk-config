@@ -6,10 +6,10 @@ layers:
     - [{t: "\\", type: ghost}, Q, W, E, R, T]
     - [Y, U, I, O, P, {t: "[", type: ghost}]
 
-    - [{t: "$$mdi:mouse$$", type: ghost}, {h: Gui, t: A}, {t: S, h: Alt}, {t: D, h: Ctrl}, {t: F, h: Shift}, G]
+    - [{t: "$$mdi:keyboard-caps$$", type: ghost}, {h: Gui, t: A}, {t: S, h: Alt}, {t: D, h: Ctrl}, {t: F, h: Shift}, G]
     - [H, {t: J, h: Shift}, {t: K, h: Ctrl}, {t: L, h: Alt}, {t: ";", s: ":", h: Gui }, {t: "'", type: ghost}]
 
-    - [{t: "", type: ghost}, Z, X, C, V, B]
+    - [{t: "$$mdi:mouse$$", type: ghost}, Z, X, C, V, B]
     - [N, M, ",", ".", /, {t: "]", type: ghost}]
 
     - [{t: $$mdi:keyboard-esc$$, h: MOS}, {t: $$mdi:keyboard-tab$$, h: NAV}, {t: $$mdi:keyboard-space$$, h: SYM}]
