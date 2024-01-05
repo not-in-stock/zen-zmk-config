@@ -6,7 +6,7 @@ layers:
     - [{t: "\\", type: ghost}, Q, W, E, R, T]
     - [Y, U, I, O, P, {t: "[", type: ghost}]
 
-    - [{t: "Smart Mouse", type: ghost}, {h: Gui, t: A}, {t: S, h: Alt}, {t: D, h: Ctrl}, {t: F, h: Shift}, G]
+    - [{t: "$$mdi:mouse$$", type: ghost}, {h: Gui, t: A}, {t: S, h: Alt}, {t: D, h: Ctrl}, {t: F, h: Shift}, G]
     - [H, {t: J, h: Shift}, {t: K, h: Ctrl}, {t: L, h: Alt}, {t: ";", s: ":", h: Gui }, {t: "'", type: ghost}]
 
     - [{t: "", type: ghost}, Z, X, C, V, B]
@@ -103,7 +103,7 @@ layers:
     - ["", "", "", "", "",{t: "", type: ghost}]
    
     - [{type: held}, "", ""]
-    - ["Left Click", "Right Click", "Middle Click"]
+    - ["$$mdi:mouse-left-click$$", "$$mdi:mouse-right-click$$", "$$mdi:mouse-scroll-wheel$$"]
   CFG:
     - [{t: "", type: ghost},
        {t: "BT 1", s: "Clr BT1"},
