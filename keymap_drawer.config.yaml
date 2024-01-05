@@ -148,7 +148,7 @@ parse_config:
     "&sys_reset": "Reset"
     "&mkp LCLK": "$$mdi:mouse-left-click$$"
     "&mkp RCLK": "$$mdi:mouse-right-click$$"
-    "&mkp MCLK": "$$mdi:mouse-scroll-wheel$$""
+    "&mkp MCLK": "$$mdi:mouse-scroll-wheel$$"
     "&mmv MOVE_LEFT": "$$mdi:arrow-left-bold-outline$$"
     "&mmv MOVE_RIGHT": "$$mdi:arrow-right-bold-outline$$"
     "&mmv MOVE_UP": "$$mdi:arrow-up-bold-outline$$"
