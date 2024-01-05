@@ -150,13 +150,26 @@ parse_config:
     t: ▽
     type: trans
   mark_alternate_layer_activators: false
-  zmk_remove_keycode_prefix: []
+  zmk_remove_keycode_prefix: ['KP']
   zmk_keycode_map:
     EXCLAMATION: '!'
     EXCL: '!'
     AT_SIGN: '@'
     AT: '@'
     BSPC: '$$mdi:backspace-outline$$'
+    DEL: '$$mdi:backspace-reverse-outline$$'
+    RET: '$$mdi:keyboard-return$$'
+    SPACE: '$$mdi:keyboard-space$$'
+    ESC: '$$mdi:keyboard-esc$$'
+    TAB: '$$mdi:keyboard-tab$$'
+    LGUI: '$$mdi:apple-keyboard-command$$'
+    LALT: '$$mdi:apple-keyboard-option$$'
+    LCTRL: '$$mdi:apple-keyboard-control$$'
+    LSHIFT: '$$mdi:apple-keyboard-shift$$'
+    RGUI: '$$mdi:apple-keyboard-command$$'
+    RALT: '$$mdi:apple-keyboard-option$$'
+    RCTRL: '$$mdi:apple-keyboard-control$$'
+    RSHIFT: '$$mdi:apple-keyboard-shift$$'
     HASH: '#'
     POUND: '#'
     DOLLAR: $
