@@ -38,11 +38,11 @@ layers:
   - /
   - ']'
   - {t: '$$mdi:keyboard-esc$$', h: MOUSE}
-  - {t: '$$mdi:keyboard-tab$$', h: NAVIGATION}
+  - {t: '$$mdi:keyboard-tab$$', h: '4'}
   - {t: '$$mdi:keyboard-space$$', h: SYMBOL}
   - {t: '$$mdi:keyboard-return$$', h: NUMBER}
-  - {t: '$$mdi:backspace-outline$$', h: FUNCTION}
-  - {t: '$$mdi:backspace-reverse-outline$$', h: CONFIG}
+  - {t: '$$mdi:backspace-outline$$', h: FUN}
+  - {t: '$$mdi:backspace-reverse-outline$$', h: MEDIA}
   SYMBOL:
   - ''
   - ''
@@ -129,7 +129,7 @@ layers:
   - {type: held}
   - $$mdi:backspace-outline$$
   - $$mdi:backspace-reverse-outline$$
-  FUNCTION:
+  FUN:
   - ''
   - F1
   - F2
@@ -172,7 +172,7 @@ layers:
   - ''
   - {type: held}
   - ''
-  NAVIGATION:
+  '4':
   - ''
   - ''
   - ''
@@ -258,7 +258,7 @@ layers:
   - $$mdi:mouse-left-click$$
   - $$mdi:mouse-right-click$$
   - $$mdi:mouse-scroll-wheel$$
-  CONFIG:
+  MEDIA:
   - ''
   - {t: BT, h: '0', s: Clr BT 0}
   - {t: BT, h: '1', s: Clr BT 1}

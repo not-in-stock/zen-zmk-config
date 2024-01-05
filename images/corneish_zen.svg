@@ -343,7 +343,7 @@ path.combo {
 <g transform="translate(286, 213) rotate(15.0)" class="key keypos-37">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <use href="#mdi:keyboard-tab" xlink:href="#mdi:keyboard-tab" x="-7" y="-7" height="14" width="14.0" class="key tap glyph mdi:keyboard-tab"/>
-<text x="0" y="24" class="key hold"><tspan style="font-size: 70%">NAVIGATION</tspan></text>
+<text x="0" y="24" class="key hold">4</text>
 </g>
 <g transform="translate(351, 224) rotate(30.0)" class="key keypos-38">
 <rect rx="6" ry="6" x="-26" y="-40" width="52" height="80" class="key"/>
@@ -358,12 +358,12 @@ path.combo {
 <g transform="translate(554, 213) rotate(-15.0)" class="key keypos-40">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <use href="#mdi:backspace-outline" xlink:href="#mdi:backspace-outline" x="-7" y="-7" height="14" width="14.0" class="key tap glyph mdi:backspace-outline"/>
-<text x="0" y="24" class="key hold"><tspan style="font-size: 88%">FUNCTION</tspan></text>
+<text x="0" y="24" class="key hold">FUN</text>
 </g>
 <g transform="translate(616, 205)" class="key keypos-41">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <use href="#mdi:backspace-reverse-outline" xlink:href="#mdi:backspace-reverse-outline" x="-7" y="-7" height="14" width="14.0" class="key tap glyph mdi:backspace-reverse-outline"/>
-<text x="0" y="24" class="key hold">CONFIG</text>
+<text x="0" y="24" class="key hold">MEDIA</text>
 </g>
 </g>
 </g>
@@ -686,8 +686,8 @@ path.combo {
 </g>
 </g>
 </g>
-<g transform="translate(30, 992)" class="layer-FUNCTION">
-<text x="0" y="28" class="label">FUNCTION:</text>
+<g transform="translate(30, 992)" class="layer-FUN">
+<text x="0" y="28" class="label">FUN:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 49)" class="key keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -834,8 +834,8 @@ path.combo {
 </g>
 </g>
 </g>
-<g transform="translate(30, 1323)" class="layer-NAVIGATION">
-<text x="0" y="28" class="label">NAVIGATION:</text>
+<g transform="translate(30, 1323)" class="layer-4">
+<text x="0" y="28" class="label">4:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 49)" class="key keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -1127,8 +1127,8 @@ path.combo {
 </g>
 </g>
 </g>
-<g transform="translate(30, 1984)" class="layer-CONFIG">
-<text x="0" y="28" class="label">CONFIG:</text>
+<g transform="translate(30, 1984)" class="layer-MEDIA">
+<text x="0" y="28" class="label">MEDIA:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 49)" class="key keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
