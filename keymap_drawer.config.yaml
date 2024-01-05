@@ -175,6 +175,10 @@ parse_config:
     VOL_DN: '$$mdi:volume-medium$$'
     VOL_UP: '$$mdi:volume-high$$'
     MUTE: '$$mdi:volume-variant-off$$'
+    LEFT: '$$mdi:arrow-left-bold-outline$$'
+    DOWN: '$$mdi:arrow-down-bold-outline$$'
+    UP: '$$mdi:arrow-up-bold-outline$$'
+    RIGHT: '$$mdi:arrow-up-bold-outline$$'
     HASH: '#'
     POUND: '#'
     DOLLAR: $
