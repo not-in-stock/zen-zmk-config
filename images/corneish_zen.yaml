@@ -14,16 +14,16 @@ layers:
   - P
   - '['
   - '&caps_word'
-  - {t: A, h: LGUI}
-  - {t: S, h: LALT}
-  - {t: D, h: LCTRL}
+  - {t: A, h: '$$mdi:apple-keyboard-command$$'}
+  - {t: S, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: D, h: '$$mdi:apple-keyboard-control$$'}
   - {t: F, h: LSHFT}
   - G
   - H
   - {t: J, h: RSHFT}
-  - {t: K, h: RCTRL}
-  - {t: L, h: RALT}
-  - {t: ;, h: RGUI}
+  - {t: K, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: L, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: ;, h: '$$mdi:apple-keyboard-command$$'}
   - ''''
   - '&s_mouse'
   - Z
@@ -37,12 +37,12 @@ layers:
   - .
   - /
   - ']'
-  - {t: ESC, h: MOUSE}
-  - {t: TAB, h: NAVIGATION}
-  - {t: SPACE, h: SYMBOL}
-  - {t: RET, h: NUMBER}
+  - {t: '$$mdi:keyboard-esc$$', h: MOUSE}
+  - {t: '$$mdi:keyboard-tab$$', h: NAVIGATION}
+  - {t: '$$mdi:keyboard-space$$', h: SYMBOL}
+  - {t: '$$mdi:keyboard-return$$', h: NUMBER}
   - {t: '$$mdi:backspace-outline$$', h: FUNCTION}
-  - {t: DEL, h: CONFIG}
+  - {t: '$$mdi:backspace-reverse-outline$$', h: CONFIG}
   SYMBOL:
   - ''
   - ''
@@ -54,18 +54,18 @@ layers:
   - {t: '[', s: '{'}
   - {t: '''', s: '"'}
   - {t: ']', s: '}'}
-  - {t: KP EQUAL, s: '~'}
+  - {t: ' EQUAL', s: '~'}
   - ''
   - ''
-  - LGUI
-  - LALT
-  - LCTRL
+  - $$mdi:apple-keyboard-command$$
+  - $$mdi:apple-keyboard-option$$
+  - $$mdi:apple-keyboard-control$$
   - LSHFT
   - ''
-  - {t: KP MINUS, s: KP PLUS}
-  - {t: KP LEFT PARENTHESIS, s: <}
-  - {t: KP SLASH, s: \}
-  - {t: KP RIGHT PARENTHESIS, s: '>'}
+  - {t: ' MINUS', s: ' PLUS'}
+  - {t: ' LEFT PARENTHESIS', s: <}
+  - {t: ' SLASH', s: \}
+  - {t: ' RIGHT PARENTHESIS', s: '>'}
   - {t: '@', s: '&'}
   - ''
   - ''
@@ -74,18 +74,18 @@ layers:
   - ''
   - ''
   - ''
-  - {t: '#', s: KP ASTERISK}
+  - {t: '#', s: ' ASTERISK'}
   - {t: ^, s: '%'}
   - {t: '|', s: _}
   - {t: $, s: '`'}
   - {t: ':', s: ;}
   - ''
-  - ESC
-  - TAB
+  - $$mdi:keyboard-esc$$
+  - $$mdi:keyboard-tab$$
   - {type: held}
   - ''
   - $$mdi:backspace-outline$$
-  - DEL
+  - $$mdi:backspace-reverse-outline$$
   NUMBER:
   - ''
   - '1'
@@ -107,9 +107,9 @@ layers:
   - ''
   - ''
   - RSHFT
-  - RCTRL
-  - RALT
-  - RGUI
+  - $$mdi:apple-keyboard-control$$
+  - $$mdi:apple-keyboard-option$$
+  - $$mdi:apple-keyboard-command$$
   - ''
   - ''
   - '9'
@@ -125,10 +125,10 @@ layers:
   - ''
   - ''
   - ''
-  - SPACE
+  - $$mdi:keyboard-space$$
   - {type: held}
   - $$mdi:backspace-outline$$
-  - DEL
+  - $$mdi:backspace-reverse-outline$$
   FUNCTION:
   - ''
   - F1
@@ -150,9 +150,9 @@ layers:
   - ''
   - ''
   - RSHFT
-  - RCTRL
-  - RALT
-  - RGUI
+  - $$mdi:apple-keyboard-control$$
+  - $$mdi:apple-keyboard-option$$
+  - $$mdi:apple-keyboard-command$$
   - ''
   - ''
   - F9
@@ -166,7 +166,7 @@ layers:
   - ''
   - ''
   - ''
-  - ESC
+  - $$mdi:keyboard-esc$$
   - ''
   - ''
   - ''
@@ -186,9 +186,9 @@ layers:
   - END
   - ''
   - ''
-  - LGUI
-  - LALT
-  - LCTRL
+  - $$mdi:apple-keyboard-command$$
+  - $$mdi:apple-keyboard-option$$
+  - $$mdi:apple-keyboard-control$$
   - LSHFT
   - ''
   - ''
@@ -214,7 +214,7 @@ layers:
   - ''
   - ''
   - $$mdi:backspace-outline$$
-  - DEL
+  - $$mdi:backspace-reverse-outline$$
   MOUSE:
   - ''
   - ''
@@ -229,9 +229,9 @@ layers:
   - ''
   - ''
   - ''
-  - LGUI
-  - LALT
-  - LCTRL
+  - $$mdi:apple-keyboard-command$$
+  - $$mdi:apple-keyboard-option$$
+  - $$mdi:apple-keyboard-control$$
   - LSHFT
   - ''
   - ''
@@ -279,9 +279,9 @@ layers:
   - MUTE
   - ''
   - RSHFT
-  - RCTRL
-  - RALT
-  - RGUI
+  - $$mdi:apple-keyboard-control$$
+  - $$mdi:apple-keyboard-option$$
+  - $$mdi:apple-keyboard-command$$
   - ''
   - ''
   - ''
