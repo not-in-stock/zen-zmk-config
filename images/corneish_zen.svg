@@ -372,7 +372,7 @@ path.combo {
 <g transform="translate(616, 205)" class="key keypos-41">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <use href="#mdi:backspace-reverse-outline" xlink:href="#mdi:backspace-reverse-outline" x="-7" y="-7" height="14" width="14.0" class="key tap glyph mdi:backspace-reverse-outline"/>
-<text x="0" y="24" class="key hold">CONFIG</text>
+<text x="0" y="24" class="key hold">CONF</text>
 </g>
 </g>
 </g>
@@ -1136,8 +1136,8 @@ path.combo {
 </g>
 </g>
 </g>
-<g transform="translate(30, 1984)" class="layer-CONFIG">
-<text x="0" y="28" class="label">CONFIG:</text>
+<g transform="translate(30, 1984)" class="layer-CONF">
+<text x="0" y="28" class="label">CONF:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 49)" class="key keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>

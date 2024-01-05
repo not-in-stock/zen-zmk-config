@@ -42,7 +42,7 @@ layers:
   - {t: '$$mdi:keyboard-space$$', h: SYM}
   - {t: '$$mdi:keyboard-return$$', h: NUM}
   - {t: '$$mdi:backspace-outline$$', h: FN}
-  - {t: '$$mdi:backspace-reverse-outline$$', h: CONFIG}
+  - {t: '$$mdi:backspace-reverse-outline$$', h: CONF}
   SYM:
   - ''
   - ''
@@ -258,7 +258,7 @@ layers:
   - $$mdi:mouse-left-click$$
   - $$mdi:mouse-right-click$$
   - $$mdi:mouse-scroll-wheel$$
-  CONFIG:
+  CONF:
   - ''
   - {t: BT, h: '0', s: Clr BT 0}
   - {t: BT, h: '1', s: Clr BT 1}
