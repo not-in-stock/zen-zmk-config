@@ -143,7 +143,7 @@ draw_config:
 parse_config:
   preprocess: true
   skip_binding_parsing: false
-  raw_binding_map: 
+  raw_binding_map:
     "&bootloader": "Boot"
     "&sys_reset": "Reset"
     "&mkp LCLK": "$$mdi:mouse-left-click$$"
@@ -152,7 +152,9 @@ parse_config:
     "&mmv MOVE_LEFT": "$$mdi:arrow-left-bold-outline$$"
     "&mmv MOVE_RIGHT": "$$mdi:arrow-right-bold-outline$$"
     "&mmv MOVE_UP": "$$mdi:arrow-up-bold-outline$$"
-    "&mmv MOVE_DOWN": "$$mdi:arrow-down-bold-outline$$"    
+    "&mmv MOVE_DOWN": "$$mdi:arrow-down-bold-outline$$"
+    "&caps_word": "$$mdi:keyboard-caps$$"
+    "&s_mouse": "$$mdi:mouse-outline$$"
   sticky_label: sticky
   toggle_label: toggle
   trans_legend:
