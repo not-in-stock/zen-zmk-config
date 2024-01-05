@@ -150,7 +150,7 @@ parse_config:
     t: ▽
     type: trans
   mark_alternate_layer_activators: false
-  zmk_remove_keycode_prefix: ['KP_']
+  zmk_remove_keycode_prefix: ['KP_', 'C_']
   zmk_keycode_map:
     EXCLAMATION: '!'
     EXCL: '!'
