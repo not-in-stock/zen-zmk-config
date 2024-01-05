@@ -155,6 +155,11 @@ parse_config:
     "&mmv MOVE_DOWN": "$$mdi:arrow-down-bold-outline$$"
     "&caps_word": "$$mdi:keyboard-caps$$"
     "&s_mouse": "$$mdi:mouse-outline$$"
+    "&s_bt_sel_0": "Clr BT 0"   
+    "&s_bt_sel_1": "Clr BT 1"
+    "&s_bt_sel_2": "Clr BT 2"
+    "&s_bt_sel_3: "Clr BT 3"
+    "&s_bt_sel_4: "Clr BT 4"
   sticky_label: sticky
   toggle_label: toggle
   trans_legend:
