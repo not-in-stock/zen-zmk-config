@@ -41,7 +41,7 @@ layers:
   - {t: TAB, h: NAVIGATION}
   - {t: SPACE, h: SYMBOL}
   - {t: RET, h: NUMBER}
-  - {t: BSPC, h: FUNCTION}
+  - {t: '$$mdi:backspace-outline$$', h: FUNCTION}
   - {t: DEL, h: CONFIG}
   SYMBOL:
   - ''
@@ -84,7 +84,7 @@ layers:
   - TAB
   - {type: held}
   - ''
-  - BSPC
+  - $$mdi:backspace-outline$$
   - DEL
   NUMBER:
   - ''
@@ -127,7 +127,7 @@ layers:
   - ''
   - SPACE
   - {type: held}
-  - BSPC
+  - $$mdi:backspace-outline$$
   - DEL
   FUNCTION:
   - ''
@@ -213,7 +213,7 @@ layers:
   - {type: held}
   - ''
   - ''
-  - BSPC
+  - $$mdi:backspace-outline$$
   - DEL
   MOUSE:
   - ''
