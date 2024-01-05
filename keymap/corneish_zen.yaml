@@ -1,0 +1,303 @@
+layout: {qmk_keyboard: corne_rotated, qmk_layout: LAYOUT_split_3x6_3}
+layers:
+  BASE:
+  - \
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - '['
+  - '&caps_word'
+  - {t: A, h: LGUI}
+  - {t: S, h: LALT}
+  - {t: D, h: LCTRL}
+  - {t: F, h: LSHFT}
+  - G
+  - H
+  - {t: J, h: RSHFT}
+  - {t: K, h: RCTRL}
+  - {t: L, h: RALT}
+  - {t: ;, h: RGUI}
+  - ''''
+  - '&smart_mouse'
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - N
+  - M
+  - ','
+  - .
+  - /
+  - ']'
+  - {t: ESC, h: MOUSE}
+  - {t: TAB, h: NAV}
+  - {t: SPACE, h: SYM}
+  - {t: RET, h: NUM}
+  - {t: BSPC, h: FN}
+  - {t: DEL, h: CONF}
+  SYM:
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: '?', s: '!'}
+  - {t: '[', s: '{'}
+  - {t: '''', s: '"'}
+  - {t: ']', s: '}'}
+  - {t: KP EQUAL, s: '~'}
+  - ''
+  - ''
+  - LGUI
+  - LALT
+  - LCTRL
+  - LSHFT
+  - ''
+  - {t: KP MINUS, s: KP PLUS}
+  - {t: KP LEFT PARENTHESIS, s: <}
+  - {t: KP SLASH, s: \}
+  - {t: KP RIGHT PARENTHESIS, s: '>'}
+  - {t: '@', s: '&'}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: '#', s: KP ASTERISK}
+  - {t: ^, s: '%'}
+  - {t: '|', s: _}
+  - {t: $, s: '`'}
+  - {t: ':', s: ;}
+  - ''
+  - ESC
+  - TAB
+  - {type: held}
+  - ''
+  - BSPC
+  - DEL
+  NUM:
+  - ''
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - '5'
+  - '6'
+  - '7'
+  - '8'
+  - ''
+  - ''
+  - RSHFT
+  - RCTRL
+  - RALT
+  - RGUI
+  - ''
+  - ''
+  - '9'
+  - '0'
+  - '-'
+  - '='
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - SPACE
+  - {type: held}
+  - BSPC
+  - DEL
+  FN:
+  - ''
+  - F1
+  - F2
+  - F3
+  - F4
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - F5
+  - F6
+  - F7
+  - F8
+  - ''
+  - ''
+  - RSHFT
+  - RCTRL
+  - RALT
+  - RGUI
+  - ''
+  - ''
+  - F9
+  - F10
+  - F11
+  - F12
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ESC
+  - ''
+  - ''
+  - ''
+  - {type: held}
+  - ''
+  NAV:
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - HOME
+  - PG DN
+  - PG UP
+  - END
+  - ''
+  - ''
+  - LGUI
+  - LALT
+  - LCTRL
+  - LSHFT
+  - ''
+  - ''
+  - LEFT
+  - DOWN
+  - UP
+  - RIGHT
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {type: held}
+  - ''
+  - ''
+  - BSPC
+  - DEL
+  MOUSE:
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - SCROLL DOWN
+  - SCROLL UP
+  - ''
+  - ''
+  - ''
+  - ''
+  - LGUI
+  - LALT
+  - LCTRL
+  - LSHFT
+  - ''
+  - ''
+  - '&mmv MOVE_LEFT'
+  - '&mmv MOVE_DOWN'
+  - '&mmv MOVE_UP'
+  - '&mmv MOVE_RIGHT'
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {type: held}
+  - ''
+  - ''
+  - '&mkp LCLK'
+  - '&mkp RCLK'
+  - '&mkp MCLK'
+  CONF:
+  - ''
+  - {t: BT, h: '0', s: '&u_macro_s_bt_sel_0'}
+  - {t: BT, h: '1', s: '&u_macro_s_bt_sel_1'}
+  - {t: BT, h: '2', s: '&u_macro_s_bt_sel_2'}
+  - {t: BT, h: '3', s: '&u_macro_s_bt_sel_3'}
+  - {t: BT, h: '4', s: '&u_macro_s_bt_sel_4'}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - BRI DN
+  - BRI UP
+  - VOL DN
+  - VOL UP
+  - MUTE
+  - ''
+  - RSHFT
+  - RCTRL
+  - RALT
+  - RGUI
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - '&sys_reset'
+  - '&bootloader'
+  - '&sys_reset'
+  - '&bootloader'
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {type: held}
