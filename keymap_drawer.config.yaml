@@ -185,19 +185,25 @@ parse_config:
     AMPERSAND: '&'
     AMPS: '&'
     ASTERISK: '*'
+    KP_ASTERISK: '*'
     ASTRK: '*'
     STAR: '*'
     LEFT_PARENTHESIS: (
+    KP_LEFT_PARENTHESIS: (
     LPAR: (
     RIGHT_PARENTHESIS: )
+    KP_RIGHT_PARENTHESIS: )
     RPAR: )
     EQUAL: '='
     KP_EQUAL: '=' 
     PLUS: +
+    KP_PLUS: +
     MINUS: '-'
+    KP_MINUS: '-'
     UNDERSCORE: _
     UNDER: _
     SLASH: /
+    KP_SLASH: /
     FSLH: /
     QUESTION: '?'
     QMARK: '?'
