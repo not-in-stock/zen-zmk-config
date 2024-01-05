@@ -17,10 +17,10 @@ layers:
   - {t: A, h: '$$mdi:apple-keyboard-command$$'}
   - {t: S, h: '$$mdi:apple-keyboard-option$$'}
   - {t: D, h: '$$mdi:apple-keyboard-control$$'}
-  - {t: F, h: LSHFT}
+  - {t: F, h: '$$mdi:apple-keyboard-shift$$'}
   - G
   - H
-  - {t: J, h: RSHFT}
+  - {t: J, h: '$$mdi:apple-keyboard-shift$$'}
   - {t: K, h: '$$mdi:apple-keyboard-control$$'}
   - {t: L, h: '$$mdi:apple-keyboard-option$$'}
   - {t: ;, h: '$$mdi:apple-keyboard-command$$'}
@@ -60,7 +60,7 @@ layers:
   - $$mdi:apple-keyboard-command$$
   - $$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-control$$
-  - LSHFT
+  - $$mdi:apple-keyboard-shift$$
   - ''
   - {t: ' MINUS', s: ' PLUS'}
   - {t: ' LEFT PARENTHESIS', s: <}
@@ -106,7 +106,7 @@ layers:
   - '8'
   - ''
   - ''
-  - RSHFT
+  - $$mdi:apple-keyboard-shift$$
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-command$$
@@ -149,7 +149,7 @@ layers:
   - F8
   - ''
   - ''
-  - RSHFT
+  - $$mdi:apple-keyboard-shift$$
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-command$$
@@ -189,7 +189,7 @@ layers:
   - $$mdi:apple-keyboard-command$$
   - $$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-control$$
-  - LSHFT
+  - $$mdi:apple-keyboard-shift$$
   - ''
   - ''
   - LEFT
@@ -232,7 +232,7 @@ layers:
   - $$mdi:apple-keyboard-command$$
   - $$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-control$$
-  - LSHFT
+  - $$mdi:apple-keyboard-shift$$
   - ''
   - ''
   - '&mmv MOVE_LEFT'
@@ -278,7 +278,7 @@ layers:
   - VOL UP
   - MUTE
   - ''
-  - RSHFT
+  - $$mdi:apple-keyboard-shift$$
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-command$$
