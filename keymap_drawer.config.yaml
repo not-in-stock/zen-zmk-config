@@ -192,6 +192,7 @@ parse_config:
     RIGHT_PARENTHESIS: )
     RPAR: )
     EQUAL: '='
+    KP_EQUAL: '=' 
     PLUS: +
     MINUS: '-'
     UNDERSCORE: _
