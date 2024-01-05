@@ -1,3 +1,3 @@
 # zen-zmk-config
 
-![](images/keymap.svg)
+![](keymap/corneish_zen.svg)
