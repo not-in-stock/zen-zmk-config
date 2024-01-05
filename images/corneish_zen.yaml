@@ -272,11 +272,11 @@ layers:
   - ''
   - ''
   - ''
-  - BRI DN
-  - BRI UP
-  - VOL DN
-  - VOL UP
-  - MUTE
+  - $$mdi:brightness-5$$
+  - $$mdi:brightness-7$$
+  - $$mdi:volume-medium$$
+  - $$mdi:volume-high$$
+  - $$mdi:volume-variant-off$$
   - ''
   - $$mdi:apple-keyboard-shift$$
   - $$mdi:apple-keyboard-control$$
