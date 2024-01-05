@@ -192,10 +192,10 @@ layers:
   - $$mdi:apple-keyboard-shift$$
   - ''
   - ''
-  - LEFT
-  - DOWN
-  - UP
-  - RIGHT
+  - $$mdi:arrow-left-bold-outline$$
+  - $$mdi:arrow-down-bold-outline$$
+  - $$mdi:arrow-up-bold-outline$$
+  - $$mdi:arrow-up-bold-outline$$
   - ''
   - ''
   - ''
