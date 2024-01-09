@@ -29,10 +29,10 @@ layers:
   - Z
   - X
   - C
-  - {t: V, h: GLOBE}
+  - {t: V, h: '$$mdi:web$$'}
   - B
   - N
-  - {t: M, h: GLOBE}
+  - {t: M, h: '$$mdi:web$$'}
   - ','
   - .
   - /
