@@ -297,7 +297,7 @@ layers:
   - ''
   - ''
   - ''
-  - {t: GAME, h: toggle}
+  - $$mdi:controller$$
   - ''
   - ''
   - {type: held}
