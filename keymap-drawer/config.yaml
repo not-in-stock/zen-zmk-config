@@ -190,6 +190,9 @@ parse_config:
     BRI_UP: '$$mdi:brightness-7$$'
     VOL_DN: '$$mdi:volume-medium$$'
     VOL_UP: '$$mdi:volume-high$$'
+    PREVIOUS: '$$mdi:skip-previous$$'
+    NEXT: '$$mdi:skip-next$$'
+    PLAY_PAUSE: '$$mdi:play-pause$$'
     MUTE: '$$mdi:volume-variant-off$$'
     LEFT: '$$mdi:arrow-left-bold$$'
     DOWN: '$$mdi:arrow-down-bold$$'
@@ -199,11 +202,8 @@ parse_config:
     PG_DN: 'Page Down'
     HOME: 'Home'
     END: 'End'
-    SCROLL_DOWN: "$$mdi:transfer-down$$"
-    SCROLL_UP: "$$mdi:transfer-up$$"
-    PREVIOUS: "$$mdi:skip-previous$$"
-    NEXT: "$$mdi:skip-next$$"    
-    PLAY_PAUSE: "$$mdi:play-pause$$"
+    SCROLL_DOWN: '$$mdi:transfer-down$$'
+    SCROLL_UP: '$$mdi:transfer-up$$'  
     HASH: '#'
     POUND: '#'
     DOLLAR: $
