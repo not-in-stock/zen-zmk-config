@@ -33,8 +33,8 @@
 #define ___ &none
 
 #define SC SEMICOLON
-#define C_PLAY_PAUSE PLY_POS
-#define C_PREVIOUS C_PREV
+#define PLY_POS C_PLAY_PAUSE
+#define C_PREV C_PREVIOUS
 
 /* short layer names */
 #define SM 1
