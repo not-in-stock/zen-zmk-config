@@ -5,6 +5,10 @@ on:
     paths-ignore:
       - 'images/**'
       - 'keymap-drawer/**'
+      - 'keymap/**'
+      - '.vscode/**'
+      - 'README.md'
+      - '.gitattributes'    
 
 jobs:
   build:
