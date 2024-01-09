@@ -37,7 +37,7 @@
 #define C_PREV C_PREVIOUS
 
 /* short layer names */
-#define BAS
+#define BAS 0
 #define SM 1
 #define NM 2
 #define FUN 3
