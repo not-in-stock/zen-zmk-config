@@ -201,6 +201,9 @@ parse_config:
     END: 'End'
     SCROLL_DOWN: "$$mdi:transfer-down$$"
     SCROLL_UP: "$$mdi:transfer-up$$"
+    PREVIOUS: "$$mdi:skip-previous$$"
+    NEXT: "$$mdi:skip-next$$"    
+    PLAY_POUSE: "$$mdi:play-pause$$"
     HASH: '#'
     POUND: '#'
     DOLLAR: $
