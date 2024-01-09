@@ -287,10 +287,10 @@ layers:
   - ''
   - ''
   - ''
-  - Boot
-  - Reset
-  - Reset
-  - Boot
+  - $$mdi:chip$$
+  - $$mdi:cog-refresh$$
+  - $$mdi:cog-refresh$$
+  - $$mdi:chip$$
   - ''
   - ''
   - ''
