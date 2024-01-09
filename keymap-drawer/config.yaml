@@ -160,6 +160,8 @@ parse_config:
     "&u_macro_s_bt_sel_2": "Clr BT 2"
     "&u_macro_s_bt_sel_3": "Clr BT 3"
     "&u_macro_s_bt_sel_4": "Clr BT 4"
+    "&to GAME": "$$mdi:controller$$"
+    "&to BASE": "$$mdi:controller-off$$"
   sticky_label: sticky
   toggle_label: toggle
   trans_legend:
