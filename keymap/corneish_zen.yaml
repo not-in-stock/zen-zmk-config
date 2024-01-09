@@ -326,7 +326,7 @@ layers:
   - {t: L, h: '$$mdi:apple-keyboard-option$$'}
   - {t: ;, h: '$$mdi:apple-keyboard-command$$'}
   - ''''
-  - {t: BASE, h: toggle}
+  - $$mdi:controller-off$$
   - Z
   - X
   - C
