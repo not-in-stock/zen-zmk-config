@@ -1,6 +1,6 @@
 name: Build ZMK firmware
 
-on: 
+on:
   push:
     paths-ignore:
       - 'images/**'
@@ -8,7 +8,7 @@ on:
       - 'keymap/**'
       - '.vscode/**'
       - 'README.md'
-      - '.gitattributes'    
+      - '.gitattributes'
 
 jobs:
   build:
