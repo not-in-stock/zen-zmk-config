@@ -208,6 +208,7 @@ parse_config:
     END: 'End'
     SCROLL_DOWN: '$$mdi:transfer-down$$'
     SCROLL_UP: '$$mdi:transfer-up$$'
+    GLOBE: '$$mdi:web$$'
     HASH: '#'
     POUND: '#'
     DOLLAR: $
