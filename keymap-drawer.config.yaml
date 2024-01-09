@@ -162,6 +162,8 @@ parse_config:
     "&u_macro_s_bt_sel_4": "Clr BT 4"
     "&to 7": "$$mdi:controller$$"
     "&to 0": "$$mdi:controller-off$$"
+    "&sys_reset": "$$mdi:cog-refresh$$"
+    "&bootloader": "$$mdi:chip$$"
   sticky_label: sticky
   toggle_label: toggle
   trans_legend:
@@ -205,7 +207,7 @@ parse_config:
     HOME: 'Home'
     END: 'End'
     SCROLL_DOWN: '$$mdi:transfer-down$$'
-    SCROLL_UP: '$$mdi:transfer-up$$'  
+    SCROLL_UP: '$$mdi:transfer-up$$'
     HASH: '#'
     POUND: '#'
     DOLLAR: $
