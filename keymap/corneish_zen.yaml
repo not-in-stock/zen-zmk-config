@@ -29,10 +29,10 @@ layers:
   - Z
   - X
   - C
-  - V
+  - {t: V, h: GLOBE}
   - B
   - N
-  - M
+  - {t: M, h: GLOBE}
   - ','
   - .
   - /
