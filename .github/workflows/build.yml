@@ -4,7 +4,7 @@ on:
   push:
     paths-ignore:
       - 'images/**'
-      - 'keymap-drawer/**'
+      - 'keymap-drawer.config.yaml'
       - 'keymap/**'
       - '.vscode/**'
       - 'README.md'
