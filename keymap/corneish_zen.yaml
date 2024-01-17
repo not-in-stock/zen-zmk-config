@@ -344,3 +344,10 @@ layers:
   - $$mdi:keyboard-return$$
   - $$mdi:backspace-outline$$
   - $$mdi:backspace-reverse-outline$$
+combos:
+- p: [38, 39]
+  k: $$mdi:controller$$
+  l: [BASE]
+- p: [38, 39]
+  k: $$mdi:controller-off$$
+  l: [GAME]
