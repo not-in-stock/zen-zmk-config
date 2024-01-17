@@ -141,7 +141,7 @@ ZMK_BEHAVIOR(hmr, hold_tap,
 /* Horizontal combos - left hand */
 ZMK_COMBO(to_game, &to GM,     LH0 RH0, BAS,     COMBO_TERM_FAST)
 ZMK_COMBO(to_base, &to BAS,    LH0 RH0,      GM, COMBO_TERM_FAST)
-ZMK_COMBO(to_mouse,   &smart_mouse,   LH1 RT1, BAS, GM, COMBO_TERM_FAST)
+ZMK_COMBO(to_mouse,   &caps_word,   LH1 RH1, BAS, GM, COMBO_TERM_FAST)
 
 ZMK_LAYER(BASE,
 //╭.............┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬.............╮
