@@ -273,3 +273,4 @@ parse_config:
     combo_bas_inner_thmbs: {"align": "top", "offset": 0.5}
     combo_gm_inner_thmbs: {"align": "top", "offset": 0.5}
     combo_bas_mid_thmbs: {"align": "bottom", "offset": 0.8}
+    combo_bas_outer_thmbs: {"align": "bottom", "offset": 1.5}
