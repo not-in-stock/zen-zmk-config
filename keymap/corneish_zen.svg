@@ -407,10 +407,10 @@ path.combo {
 <use href="#mdi:keyboard-caps" xlink:href="#mdi:keyboard-caps" x="413" y="280" height="14" width="14.0" class="combo tap glyph mdi:keyboard-caps"/>
 </g>
 <g class="combo combopos-2">
-<path d="M420,213 l-116,0" class="combo"/>
-<path d="M420,213 l116,0" class="combo"/>
-<rect rx="6" ry="6" x="406" y="200" width="28" height="26" class="combo"/>
-<use href="#mdi:mouse-outline" xlink:href="#mdi:mouse-outline" x="413" y="206" height="14" width="14.0" class="combo tap glyph mdi:mouse-outline"/>
+<path d="M420,205 l-177,0" class="combo"/>
+<path d="M420,205 l177,0" class="combo"/>
+<rect rx="6" ry="6" x="406" y="192" width="28" height="26" class="combo"/>
+<use href="#mdi:mouse-outline" xlink:href="#mdi:mouse-outline" x="413" y="198" height="14" width="14.0" class="combo tap glyph mdi:mouse-outline"/>
 </g>
 </g>
 </g>

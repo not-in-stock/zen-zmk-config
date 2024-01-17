@@ -360,6 +360,6 @@ combos:
   l: [BASE]
   a: bottom
   o: 0.8
-- p: [37, 40]
+- p: [36, 41]
   k: $$mdi:mouse-outline$$
   l: [BASE]
