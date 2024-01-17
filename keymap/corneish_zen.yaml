@@ -223,10 +223,10 @@ layers:
   - ''
   - ''
   - ''
-  - $$mdi:transfer-down$$
-  - $$mdi:transfer-up$$
-  - ''
-  - ''
+  - '&msc SCRL_LEFT'
+  - '&msc SCRL_DOWN'
+  - '&msc SCRL_UP'
+  - '&msc SCRL_RIGHT'
   - ''
   - ''
   - $$mdi:apple-keyboard-command$$
