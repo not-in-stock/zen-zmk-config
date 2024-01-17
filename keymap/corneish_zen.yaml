@@ -348,9 +348,15 @@ combos:
 - p: [38, 39]
   k: $$mdi:controller$$
   l: [BASE]
+  a: top
+  o: 0.5
 - p: [38, 39]
   k: $$mdi:controller-off$$
   l: [GAME]
+  a: top
+  o: 0.5
 - p: [37, 40]
   k: $$mdi:keyboard-caps$$
   l: [BASE]
+  a: bottom
+  o: 0.8
