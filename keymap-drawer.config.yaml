@@ -271,5 +271,5 @@ parse_config:
     TILDE2: '~'
   zmk_combos: 
     "bas_inner_thmbs": {"align": "top", "offset": 0.5}
-    "gm_inner_thmbs": {"align": "top", "offset": 0.5},
-    "bas_mid_thmbs": {"align": "bottom", "offset": 0.8}}
+    "gm_inner_thmbs": {"align": "top", "offset": 0.5}
+    "bas_mid_thmbs": {"align": "bottom", "offset": 0.8}
