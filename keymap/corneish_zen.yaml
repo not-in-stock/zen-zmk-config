@@ -345,7 +345,7 @@ layers:
   - $$mdi:backspace-outline$$
   - GAME_N
   GAME_N:
-  - {t: ▽, type: trans}
+  - {t: '$$mdi:menu-down-outline$$', type: trans}
   - '1'
   - '2'
   - '3'
@@ -356,36 +356,36 @@ layers:
   - '8'
   - '9'
   - '0'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {t: '$$mdi:menu-down-outline$$', type: trans}
+  - {t: '$$mdi:menu-down-outline$$', type: trans}
+  - {t: '$$mdi:menu-down-outline$$', type: trans}
+  - {t: '$$mdi:menu-down-outline$$', type: trans}
+  - {t: '$$mdi:menu-down-outline$$', type: trans}
+  - {t: '$$mdi:menu-down-outline$$', type: trans}
+  - {t: '$$mdi:menu-down-outline$$', type: trans}
+  - {t: '$$mdi:menu-down-outline$$', type: trans}
+  - {t: '$$mdi:menu-down-outline$$', type: trans}
+  - {t: '$$mdi:menu-down-outline$$', type: trans}
+  - {t: '$$mdi:menu-down-outline$$', type: trans}
+  - {t: '$$mdi:menu-down-outline$$', type: trans}
+  - {t: '$$mdi:menu-down-outline$$', type: trans}
+  - {t: '$$mdi:menu-down-outline$$', type: trans}
+  - {t: '$$mdi:menu-down-outline$$', type: trans}
+  - {t: '$$mdi:menu-down-outline$$', type: trans}
+  - {t: '$$mdi:menu-down-outline$$', type: trans}
+  - {t: '$$mdi:menu-down-outline$$', type: trans}
+  - {t: '$$mdi:menu-down-outline$$', type: trans}
+  - {t: '$$mdi:menu-down-outline$$', type: trans}
+  - {t: '$$mdi:menu-down-outline$$', type: trans}
+  - {t: '$$mdi:menu-down-outline$$', type: trans}
+  - {t: '$$mdi:menu-down-outline$$', type: trans}
+  - {t: '$$mdi:menu-down-outline$$', type: trans}
+  - {t: '$$mdi:menu-down-outline$$', type: trans}
+  - {t: '$$mdi:menu-down-outline$$', type: trans}
+  - {t: '$$mdi:menu-down-outline$$', type: trans}
+  - {t: '$$mdi:menu-down-outline$$', type: trans}
+  - {t: '$$mdi:menu-down-outline$$', type: trans}
+  - {t: '$$mdi:menu-down-outline$$', type: trans}
   - {type: held}
 combos:
 - p: [38, 39]
