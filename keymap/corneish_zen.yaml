@@ -363,3 +363,5 @@ combos:
 - p: [36, 41]
   k: $$mdi:mouse-outline$$
   l: [BASE]
+  a: bottom
+  o: 1.5
