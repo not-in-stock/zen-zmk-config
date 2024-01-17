@@ -351,3 +351,6 @@ combos:
 - p: [38, 39]
   k: $$mdi:controller-off$$
   l: [GAME]
+- p: [37, 40]
+  k: $$mdi:keyboard-caps$$
+  l: [BASE]

@@ -406,6 +406,12 @@ path.combo {
 <rect rx="6" ry="6" x="406" y="211" width="28" height="26" class="combo"/>
 <use href="#mdi:controller" xlink:href="#mdi:controller" x="413" y="217" height="14" width="14.0" class="combo tap glyph mdi:controller"/>
 </g>
+<g class="combo combopos-1">
+<path d="M420,213 l-116,0" class="combo"/>
+<path d="M420,213 l116,0" class="combo"/>
+<rect rx="6" ry="6" x="406" y="200" width="28" height="26" class="combo"/>
+<use href="#mdi:keyboard-caps" xlink:href="#mdi:keyboard-caps" x="413" y="206" height="14" width="14.0" class="combo tap glyph mdi:keyboard-caps"/>
+</g>
 </g>
 </g>
 <g transform="translate(30, 331)" class="layer-SYM">
