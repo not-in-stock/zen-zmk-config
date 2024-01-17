@@ -138,7 +138,7 @@ ZMK_BEHAVIOR(hmr, hold_tap,
 #define COMBO_TERM_FAST 18
 #define COMBO_TERM_SLOW 30
 
-/* Horizontal combos - left hand */
+/* Horizontal combos - thumbs */
 ZMK_COMBO(bas_inner_thmbs, &to GM,     LH0 RH0, BAS,     COMBO_TERM_FAST)
 ZMK_COMBO(gm_inner_thmbs,  &to BAS,    LH0 RH0,      GM, COMBO_TERM_FAST)
 ZMK_COMBO(bas_mid_thmbs,   &caps_word, LH1 RH1, BAS,     COMBO_TERM_FAST)
