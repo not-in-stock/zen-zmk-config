@@ -302,7 +302,7 @@ layers:
   - ''
   - {type: held}
   GAME:
-  - ''
+  - $$mdi:keyboard-esc$$
   - Q
   - W
   - E
@@ -314,7 +314,7 @@ layers:
   - O
   - P
   - '['
-  - $$mdi:keyboard-esc$$
+  - $$mdi:keyboard-tab$$
   - A
   - S
   - D
@@ -326,7 +326,7 @@ layers:
   - {t: L, h: '$$mdi:apple-keyboard-option$$'}
   - {t: ;, h: '$$mdi:apple-keyboard-command$$'}
   - ''''
-  - ''
+  - $$mdi:apple-keyboard-shift$$
   - Z
   - X
   - C
@@ -343,7 +343,50 @@ layers:
   - $$mdi:keyboard-space$$
   - $$mdi:keyboard-return$$
   - $$mdi:backspace-outline$$
-  - $$mdi:backspace-reverse-outline$$
+  - GAME_N
+  GAME_N:
+  - {t: ▽, type: trans}
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+  - '6'
+  - '7'
+  - '8'
+  - '9'
+  - '0'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
 combos:
 - p: [38, 39]
   k: $$mdi:controller$$
