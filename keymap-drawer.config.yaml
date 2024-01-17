@@ -171,7 +171,7 @@ parse_config:
   sticky_label: sticky
   toggle_label: toggle
   trans_legend:
-    t: ▽
+    t: "$$mdi:menu-down-outline$$"
     type: trans
   mark_alternate_layer_activators: false
   zmk_remove_keycode_prefix: ['KP_', 'C_', 'K_']
