@@ -157,7 +157,7 @@ ZMK_BEHAVIOR(hmr, hold_tap,
                        <&macro_release &kp LALT>,
                        <&macro_press &kp LSHFT>
                        <&macro_tap &kp U>,
-                       <&macro_release &kp LSHFT>,
+                       <&macro_release &kp LSHFT>;
                        
         };
     };
