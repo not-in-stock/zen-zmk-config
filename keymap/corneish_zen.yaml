@@ -131,10 +131,10 @@ layers:
   - $$mdi:backspace-reverse-outline$$
   FN:
   - ''
-  - F1
-  - F2
-  - F3
-  - F4
+  - $$mdi:keyboard-f1$$
+  - $$mdi:keyboard-f2$$
+  - $$mdi:keyboard-f3$$
+  - $$mdi:keyboard-f4$$
   - ''
   - ''
   - ''
@@ -143,10 +143,10 @@ layers:
   - ''
   - ''
   - ''
-  - F5
-  - F6
-  - F7
-  - F8
+  - $$mdi:keyboard-f5$$
+  - $$mdi:keyboard-f6$$
+  - $$mdi:keyboard-f7$$
+  - $$mdi:keyboard-f8$$
   - ''
   - ''
   - $$mdi:apple-keyboard-shift$$
@@ -155,10 +155,10 @@ layers:
   - $$mdi:apple-keyboard-command$$
   - ''
   - ''
-  - F9
-  - F10
-  - F11
-  - F12
+  - $$mdi:keyboard-f9$$
+  - $$mdi:keyboard-f10$$
+  - $$mdi:keyboard-f11$$
+  - $$mdi:keyboard-f12$$
   - ''
   - ''
   - $$mdi:web$$
