@@ -301,8 +301,8 @@ layers:
   - ''
   - ''
   - {type: held}
-  GAME: ['$$mdi:keyboard-esc$$', Q, W, E, R, T, Y, U, I, O, P, '[', '$$mdi:keyboard-tab$$', A, S, D, F, G, H, J, K, L, ;, '''', '$$mdi:apple-keyboard-shift$$', Z,
-    X, C, V, B, N, M, ',', ., /, ']', '$$mdi:apple-keyboard-option$$', '$$mdi:apple-keyboard-control$$', '$$mdi:keyboard-space$$', '$$mdi:keyboard-return$$', '$$mdi:backspace-outline$$',
+  GAME: ['$$mdi:keyboard-esc$$', Q, W, E, R, T, Y, U, I, O, P, '', '$$mdi:keyboard-tab$$', A, S, D, F, G, H, J, K, L, ;, '', '$$mdi:apple-keyboard-shift$$', Z, X,
+    C, V, B, N, M, ',', ., /, '', '$$mdi:apple-keyboard-option$$', '$$mdi:apple-keyboard-control$$', '$$mdi:keyboard-space$$', '$$mdi:keyboard-return$$', '$$mdi:backspace-outline$$',
     GAME_N]
   GAME_N:
   - {t: '$$mdi:menu-down-outline$$', type: trans}
