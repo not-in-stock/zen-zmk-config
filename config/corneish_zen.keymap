@@ -86,7 +86,7 @@ ZMK_BEHAVIOR(smart_mouse, tri_state,
     ignored-key-positions = <                  RT1 RT2 RT3 RT4
                              LM4 LM3 LM2 LM1   RM1 RM2 RM3 RM4
                                                RH0 RH1 RH2>;
-    ignored-layers = <MOS>;
+    ignored-layers = <MOS, BAS>;
 )
 
 #define s_mouse smart_mouse
