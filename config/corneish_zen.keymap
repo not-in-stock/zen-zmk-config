@@ -133,38 +133,6 @@ ZMK_BEHAVIOR(hmr, hold_tap,
   ╰───────╮ LH2 LH1 LH0 │ │ RH0 RH1 RH2 ╭───────╯
           ╰─────────────╯ ╰─────────────╯ */
 
-
-/ {
-    macros {
-        u_umlaut: u_umlaut {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&macro_press &kp LALT>, 
-                       <&macro_tap &kp U>,
-                       <&macro_release &kp LALT>,
-                       <&macro_tap &kp U>;
-        };
-    };
-};
-
-/ {
-    macros {
-        u_umlaut_c: u_umlaut_C {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&macro_press &kp LALT>, 
-                       <&macro_tap &kp U>,
-                       <&macro_release &kp LALT>,
-                       <&macro_press &kp LSHFT>,
-                       <&macro_tap &kp U>,
-                       <&macro_release &kp LSHFT>;
-                       
-        };
-    };
-};
-
-SHIFT_FUNCTION(s_u_umlaut, &u_umlaut, &u_umlaut_c)
-
 // use require-prior-idle-ms for combos
 #undef COMBO_HOOK
 #define COMBO_HOOK require-prior-idle-ms = <150>;
@@ -184,7 +152,7 @@ ZMK_LAYER(BASE,
 //├.............┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼.............┤
     ___           &hml LGUI A   &hml LALT S   &hml LCTRL D  &hml LSHFT F  &kp G           &kp H         &hmr RSHFT J  &hmr RCTRL K  &hmr RALT L   &hmr RGUI SC  &kp SQT
 //├.............┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼.............┤
-    &s_u_umlaut   &kp Z         &kp X         &kp C         &hml GLOBE V  &kp B           &kp N         &hmr GLOBE M  &kp COMMA     &kp DOT       &kp FSLH      &kp RBKT
+    ___           &kp Z         &kp X         &kp C         &hml GLOBE V  &kp B           &kp N         &hmr GLOBE M  &kp COMMA     &kp DOT       &kp FSLH      &kp RBKT
 //╰.............┼─────────────┴─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────┴.............╯
                                               &lt MOS ESC   &lt NV TAB    &lt SM SPACE    &lt NM RET    &lt FUN BSPC   &lt CFG DEL
 //                                          ╰─────────────┴─────────────┴─────────────╯ ╰─────────────┴─────────────┴─────────────╯
