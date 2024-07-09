@@ -77,7 +77,7 @@ SHIFT_FUNCTION(s_eq_tld, &kp KP_EQUAL, &kp TILDE)
 SHIFT_FUNCTION(s_at_amp, &kp AT_SIGN, &kp AMPERSAND)
 SHIFT_FUNCTION(s_col_scol, &kp COLON, &kp SEMICOLON)
 
-/* smart mouse */
+/* smart mouse 
 ZMK_BEHAVIOR(s_mouse, tri_state,
     bindings = <&tog MOS>, <&none>, <&tog MOS>;
     ignored-key-positions = <                  RT0 RT1 RT2 RT3 
@@ -85,7 +85,7 @@ ZMK_BEHAVIOR(s_mouse, tri_state,
                                                RH0 RH1 RH2>;
     ignored-layers = <MOS>;
 )
-
+*/
 /* left-hand HRMs */
 ZMK_BEHAVIOR(hml, hold_tap,
     flavor = "balanced";
@@ -112,7 +112,7 @@ ZMK_LAYER(BASE,
 //╭.............┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬.............╮
     &kp BSLH      &kp Q         &kp W         &kp E         &kp R         &kp T           &kp Y         &kp U         &kp I         &kp O         &kp P         &kp LBKT
 //├.............┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼.............┤
-    &s_mouse      &hml LGUI A   &hml LALT S   &hml LCTRL D  &hml LSHFT F  &kp G           &kp H         &hmr RSHFT J  &hmr RCTRL K  &hmr RALT L   &hmr RGUI SC  &kp SQT
+    ___           &hml LGUI A   &hml LALT S   &hml LCTRL D  &hml LSHFT F  &kp G           &kp H         &hmr RSHFT J  &hmr RCTRL K  &hmr RALT L   &hmr RGUI SC  &kp SQT
 //├.............┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼.............┤
     ___           &kp Z         &kp X         &kp C         &kp V         &kp B           &kp N         &kp M         &kp COMMA     &kp DOT       &kp FSLH      &kp RBKT
 //╰.............┼─────────────┴─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────┴.............╯
