@@ -2,6 +2,8 @@ manifest:
   remotes:
     - name: caksoylar
       url-base: https://github.com/caksoylar
+    - name: not-in-stock
+      url-base: https://github.com/not-in-stock
   projects:
     - name: zmk
       remote: caksoylar
