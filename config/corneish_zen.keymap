@@ -113,12 +113,10 @@ ZMK_BEHAVIOR(hmr, hold_tap,
     hold-trigger-key-positions = <KEYS_L THUMBS>;
 )
 
-/*
 &num_word {  // num-word, requires PR #1451
     layers = <NM>;
     continue-list = <BSPC DEL DOT COMMA PLUS MINUS STAR FSLH EQUAL>;
 };
-*/
 
 &caps_word {
     /delete-property/ ignore-modifiers;
