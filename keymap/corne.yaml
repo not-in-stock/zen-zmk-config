@@ -223,8 +223,8 @@ layers:
   - ''
   - ''
   - ''
-  - SCROLL DOWN
-  - SCROLL UP
+  - ''
+  - ''
   - ''
   - ''
   - ''
@@ -255,9 +255,9 @@ layers:
   - {type: held}
   - ''
   - ''
-  - $$mdi:mouse-left-click$$
-  - $$mdi:mouse-right-click$$
-  - $$mdi:mouse-scroll-wheel$$
+  - ''
+  - ''
+  - ''
   CONFIG:
   - ''
   - {t: BT, h: '0', s: Clr BT 0}
