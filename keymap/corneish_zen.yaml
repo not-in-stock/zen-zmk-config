@@ -25,7 +25,7 @@ layers:
   - {t: L, h: '$$mdi:apple-keyboard-option$$'}
   - {t: ;, h: '$$mdi:apple-keyboard-command$$'}
   - ''''
-  - ''
+  - $$mdi:mouse-outline$$
   - Z
   - X
   - C
