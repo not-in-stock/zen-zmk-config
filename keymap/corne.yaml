@@ -223,10 +223,10 @@ layers:
   - ''
   - ''
   - ''
-  - ''
-  - ''
-  - ''
-  - ''
+  - $$mdi:transfer-left$$
+  - $$mdi:transfer-down$$
+  - $$mdi:transfer-up$$
+  - $$mdi:transfer-right$$
   - ''
   - ''
   - $$mdi:apple-keyboard-command$$
