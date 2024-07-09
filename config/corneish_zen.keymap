@@ -120,8 +120,9 @@ ZMK_BEHAVIOR(hmr, hold_tap,
 };
 */
 
-&caps_word {  // mods deactivate caps-word, requires PR #1451
+&caps_word {
     /delete-property/ ignore-modifiers;
+    continue-list = <UNDERSCORE BACKSPACE DELETE LSHFT RSHFT>;
 };
 
 /*                KEY POSITIONS
