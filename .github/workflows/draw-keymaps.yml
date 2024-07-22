@@ -7,7 +7,6 @@ on:
       - "config/*.keymap"
       - "config/*.dtsi"
       - "keymap-drawer.config.yaml"
-      # - 'config/boards/*/*/*.keymap'
 
 jobs:
   draw:
