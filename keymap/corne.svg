@@ -1,4 +1,4 @@
-<svg width="900" height="3088" viewBox="0 0 900 3088" class="keymap" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="900" height="3032" viewBox="0 0 900 3032" class="keymap" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <defs>/* start glyphs */
 <svg id="mdi:apple-keyboard-command">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-apple-keyboard-command" viewBox="0 0 24 24"><path d="M6,2A4,4 0 0,1 10,6V8H14V6A4,4 0 0,1 18,2A4,4 0 0,1 22,6A4,4 0 0,1 18,10H16V14H18A4,4 0 0,1 22,18A4,4 0 0,1 18,22A4,4 0 0,1 14,18V16H10V18A4,4 0 0,1 6,22A4,4 0 0,1 2,18A4,4 0 0,1 6,14H8V10H6A4,4 0 0,1 2,6A4,4 0 0,1 6,2M16,18A2,2 0 0,0 18,20A2,2 0 0,0 20,18A2,2 0 0,0 18,16H16V18M14,10H10V14H14V10M6,16A2,2 0 0,0 4,18A2,2 0 0,0 6,20A2,2 0 0,0 8,18V16H6M8,6A2,2 0 0,0 6,4A2,2 0 0,0 4,6A2,2 0 0,0 6,8H8V6M18,8A2,2 0 0,0 20,6A2,2 0 0,0 18,4A2,2 0 0,0 16,6V8H18Z" /></svg>
@@ -44,9 +44,6 @@
 </svg>
 <svg id="mdi:controller-off">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-controller-off" viewBox="0 0 24 24"><path d="M2,5.27L3.28,4L20,20.72L18.73,22L12.73,16H7.97L5,19C4.67,19.3 4.23,19.5 3.75,19.5A1.75,1.75 0 0,1 2,17.75V17.5L3,10.12C3.1,9.09 3.53,8.17 4.19,7.46L2,5.27M5,10V11H7V13H8V11.27L6.73,10H5M16.5,6C18.86,6 20.79,7.81 21,10.12L22,17.5V17.75C22,18.41 21.64,19 21.1,19.28L7.82,6H16.5M16.5,8A0.75,0.75 0 0,0 15.75,8.75A0.75,0.75 0 0,0 16.5,9.5A0.75,0.75 0 0,0 17.25,8.75A0.75,0.75 0 0,0 16.5,8M14.75,9.75A0.75,0.75 0 0,0 14,10.5A0.75,0.75 0 0,0 14.75,11.25A0.75,0.75 0 0,0 15.5,10.5A0.75,0.75 0 0,0 14.75,9.75M18.25,9.75A0.75,0.75 0 0,0 17.5,10.5A0.75,0.75 0 0,0 18.25,11.25A0.75,0.75 0 0,0 19,10.5A0.75,0.75 0 0,0 18.25,9.75M16.5,11.5A0.75,0.75 0 0,0 15.75,12.25A0.75,0.75 0 0,0 16.5,13A0.75,0.75 0 0,0 17.25,12.25A0.75,0.75 0 0,0 16.5,11.5Z" /></svg>
-</svg>
-<svg id="mdi:keyboard-caps">
-<svg xmlns="http://www.w3.org/2000/svg" id="mdi-keyboard-caps" viewBox="0 0 24 24"><path d="M6,18H18V16H6M12,8.41L16.59,13L18,11.58L12,5.58L6,11.58L7.41,13L12,8.41Z" /></svg>
 </svg>
 <svg id="mdi:keyboard-esc">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-keyboard-esc" viewBox="0 0 24 24"><path d="M1 7H7V9H3V11H7V13H3V15H7V17H1V7M11 7H15V9H11V11H13C14.11 11 15 11.9 15 13V15C15 16.11 14.11 17 13 17H9V15H13V13H11C9.9 13 9 12.11 9 11V9C9 7.9 9.9 7 11 7M19 7H21C22.11 7 23 7.9 23 9V10H21V9H19V15H21V14H23V15C23 16.11 22.11 17 21 17H19C17.9 17 17 16.11 17 15V9C17 7.9 17.9 7 19 7Z" /></svg>
@@ -426,15 +423,9 @@ path.combo {
 <rect rx="6" ry="6" x="406" y="140" width="28" height="26" class="combo"/>
 <use href="#mdi:controller" xlink:href="#mdi:controller" x="413" y="146" height="14" width="14.0" class="combo tap glyph mdi:controller"/>
 </g>
-<g class="combo combopos-1">
-<path d="M420,318 h-190 a6.0,6.0 0 0 1 -6.0,-6.0 v-88" class="combo"/>
-<path d="M420,318 h190 a6.0,6.0 0 0 0 6.0,-6.0 v-88" class="combo"/>
-<rect rx="6" ry="6" x="406" y="305" width="28" height="26" class="combo"/>
-<use href="#mdi:keyboard-caps" xlink:href="#mdi:keyboard-caps" x="413" y="311" height="14" width="14.0" class="combo tap glyph mdi:keyboard-caps"/>
 </g>
 </g>
-</g>
-<g transform="translate(30, 387)" class="layer-SYM">
+<g transform="translate(30, 331)" class="layer-SYM">
 <text x="0" y="28" class="label">SYM:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 49)" class="key keypos-0">
@@ -604,7 +595,7 @@ path.combo {
 </g>
 </g>
 </g>
-<g transform="translate(30, 718)" class="layer-NUM">
+<g transform="translate(30, 661)" class="layer-NUM">
 <text x="0" y="28" class="label">NUM:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 49)" class="key keypos-0">
@@ -755,7 +746,7 @@ path.combo {
 </g>
 </g>
 </g>
-<g transform="translate(30, 1048)" class="layer-FN">
+<g transform="translate(30, 992)" class="layer-FN">
 <text x="0" y="28" class="label">FN:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 49)" class="key keypos-0">
@@ -904,7 +895,7 @@ path.combo {
 </g>
 </g>
 </g>
-<g transform="translate(30, 1379)" class="layer-NAV">
+<g transform="translate(30, 1323)" class="layer-NAV">
 <text x="0" y="28" class="label">NAV:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 49)" class="key keypos-0">
@@ -1054,7 +1045,7 @@ path.combo {
 </g>
 </g>
 </g>
-<g transform="translate(30, 1709)" class="layer-MOUSE">
+<g transform="translate(30, 1653)" class="layer-MOUSE">
 <text x="0" y="28" class="label">MOUSE:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 49)" class="key keypos-0">
@@ -1192,7 +1183,7 @@ path.combo {
 </g>
 </g>
 </g>
-<g transform="translate(30, 2040)" class="layer-CONF">
+<g transform="translate(30, 1984)" class="layer-CONF">
 <text x="0" y="28" class="label">CONF:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 49)" class="key keypos-0">
@@ -1354,7 +1345,7 @@ path.combo {
 </g>
 </g>
 </g>
-<g transform="translate(30, 2371)" class="layer-GAME">
+<g transform="translate(30, 2315)" class="layer-GAME">
 <text x="0" y="28" class="label">GAME:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 49)" class="key keypos-0">
@@ -1530,7 +1521,7 @@ path.combo {
 </g>
 </g>
 </g>
-<g transform="translate(30, 2701)" class="layer-GAME_N">
+<g transform="translate(30, 2645)" class="layer-GAME_N">
 <text x="0" y="28" class="label">GAME_N:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 49)" class="key trans keypos-0">

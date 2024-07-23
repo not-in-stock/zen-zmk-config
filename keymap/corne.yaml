@@ -358,8 +358,3 @@ combos:
   l: [GAME]
   a: top
   o: 0.5
-- p: [36, 41]
-  k: $$mdi:keyboard-caps$$
-  l: [BASE]
-  a: bottom
-  o: 1.5
