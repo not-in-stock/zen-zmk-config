@@ -25,25 +25,25 @@ layers:
   - {t: L, h: '$$mdi:apple-keyboard-option$$'}
   - {t: ;, h: '$$mdi:apple-keyboard-command$$'}
   - ''''
-  - ''
+  - $$mdi:mouse-outline$$
   - Z
   - X
   - C
-  - V
+  - {t: V, h: '$$mdi:web$$'}
   - B
   - N
-  - M
+  - {t: M, h: '$$mdi:web$$'}
   - ','
   - .
   - /
   - ']'
   - {t: '$$mdi:keyboard-esc$$', h: MOUSE}
-  - {t: '$$mdi:keyboard-tab$$', h: NAVIGATION}
-  - {t: '$$mdi:keyboard-space$$', h: SYMBOL}
-  - {t: '$$mdi:keyboard-return$$', h: NUMBER}
-  - {t: '$$mdi:backspace-outline$$', h: FUNCTION}
-  - {t: '$$mdi:backspace-reverse-outline$$', h: CONFIG}
-  SYMBOL:
+  - {t: '$$mdi:keyboard-tab$$', h: NAV}
+  - {t: '$$mdi:keyboard-space$$', h: SYM}
+  - {t: '$$mdi:keyboard-return$$', h: NUM}
+  - {t: '$$mdi:backspace-outline$$', h: FN}
+  - {t: '$$mdi:backspace-reverse-outline$$', h: CONF}
+  SYM:
   - ''
   - ''
   - ''
@@ -72,7 +72,7 @@ layers:
   - ''
   - ''
   - ''
-  - ''
+  - $$mdi:web$$
   - ''
   - {t: '#', s: '*'}
   - {t: ^, s: '%'}
@@ -86,7 +86,7 @@ layers:
   - ''
   - $$mdi:backspace-outline$$
   - $$mdi:backspace-reverse-outline$$
-  NUMBER:
+  NUM:
   - ''
   - '1'
   - '2'
@@ -118,7 +118,7 @@ layers:
   - '='
   - ''
   - ''
-  - ''
+  - $$mdi:web$$
   - ''
   - ''
   - ''
@@ -129,7 +129,7 @@ layers:
   - {type: held}
   - $$mdi:backspace-outline$$
   - $$mdi:backspace-reverse-outline$$
-  FUNCTION:
+  FN:
   - ''
   - $$mdi:keyboard-f1$$
   - $$mdi:keyboard-f2$$
@@ -161,7 +161,7 @@ layers:
   - $$mdi:keyboard-f12$$
   - ''
   - ''
-  - ''
+  - $$mdi:web$$
   - ''
   - ''
   - ''
@@ -172,7 +172,7 @@ layers:
   - ''
   - {type: held}
   - ''
-  NAVIGATION:
+  NAV:
   - ''
   - ''
   - ''
@@ -201,7 +201,7 @@ layers:
   - ''
   - ''
   - ''
-  - ''
+  - $$mdi:web$$
   - ''
   - ''
   - ''
@@ -223,10 +223,10 @@ layers:
   - ''
   - ''
   - ''
-  - $$mdi:transfer-left$$
-  - $$mdi:transfer-down$$
-  - $$mdi:transfer-up$$
-  - $$mdi:transfer-right$$
+  - ''
+  - ''
+  - ''
+  - ''
   - ''
   - ''
   - $$mdi:apple-keyboard-command$$
@@ -235,10 +235,10 @@ layers:
   - $$mdi:apple-keyboard-shift$$
   - ''
   - ''
-  - $$mdi:arrow-left-bold-outline$$
-  - $$mdi:arrow-down-bold-outline$$
-  - $$mdi:arrow-up-bold-outline$$
-  - $$mdi:arrow-right-bold-outline$$
+  - ''
+  - ''
+  - ''
+  - ''
   - ''
   - ''
   - ''
@@ -258,8 +258,8 @@ layers:
   - $$mdi:mouse-left-click$$
   - $$mdi:mouse-right-click$$
   - $$mdi:mouse-scroll-wheel$$
-  CONFIG:
-  - ''
+  CONF:
+  - $$mdi:skip-next$$
   - {t: BT, h: '0', s: Clr BT 0}
   - {t: BT, h: '1', s: Clr BT 1}
   - {t: BT, h: '2', s: Clr BT 2}
@@ -271,7 +271,7 @@ layers:
   - ''
   - ''
   - ''
-  - ''
+  - $$mdi:play-pause$$
   - $$mdi:brightness-5$$
   - $$mdi:brightness-7$$
   - $$mdi:volume-medium$$
@@ -283,12 +283,12 @@ layers:
   - $$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-command$$
   - ''
+  - $$mdi:skip-previous$$
   - ''
   - ''
   - ''
-  - ''
-  - $$mdi:cog-refresh$$
   - $$mdi:chip$$
+  - $$mdi:cog-refresh$$
   - $$mdi:cog-refresh$$
   - $$mdi:chip$$
   - ''
@@ -301,3 +301,65 @@ layers:
   - ''
   - ''
   - {type: held}
+  GAME: ['$$mdi:keyboard-esc$$', Q, W, E, R, T, Y, U, I, O, P, '', '$$mdi:keyboard-tab$$', A, S, D, F, G, H, J, K, L, ;, '', '$$mdi:apple-keyboard-shift$$', Z, X,
+    C, V, B, N, M, ',', ., /, '', '$$mdi:apple-keyboard-option$$', '$$mdi:apple-keyboard-control$$', '$$mdi:keyboard-space$$', '$$mdi:keyboard-return$$', '$$mdi:backspace-outline$$',
+    GAME_N]
+  GAME_N:
+  - {t: '$$mdi:menu-down-outline$$', type: trans}
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+  - '6'
+  - '7'
+  - '8'
+  - '9'
+  - '0'
+  - {t: '$$mdi:menu-down-outline$$', type: trans}
+  - {t: '$$mdi:menu-down-outline$$', type: trans}
+  - {t: '$$mdi:menu-down-outline$$', type: trans}
+  - {t: '$$mdi:menu-down-outline$$', type: trans}
+  - {t: '$$mdi:menu-down-outline$$', type: trans}
+  - {t: '$$mdi:menu-down-outline$$', type: trans}
+  - {t: '$$mdi:menu-down-outline$$', type: trans}
+  - {t: '$$mdi:menu-down-outline$$', type: trans}
+  - {t: '$$mdi:menu-down-outline$$', type: trans}
+  - {t: '$$mdi:menu-down-outline$$', type: trans}
+  - {t: '$$mdi:menu-down-outline$$', type: trans}
+  - {t: '$$mdi:menu-down-outline$$', type: trans}
+  - {t: '$$mdi:menu-down-outline$$', type: trans}
+  - {t: '$$mdi:menu-down-outline$$', type: trans}
+  - {t: '$$mdi:menu-down-outline$$', type: trans}
+  - {t: '$$mdi:menu-down-outline$$', type: trans}
+  - {t: '$$mdi:menu-down-outline$$', type: trans}
+  - {t: '$$mdi:menu-down-outline$$', type: trans}
+  - {t: '$$mdi:menu-down-outline$$', type: trans}
+  - {t: '$$mdi:menu-down-outline$$', type: trans}
+  - {t: '$$mdi:menu-down-outline$$', type: trans}
+  - {t: '$$mdi:menu-down-outline$$', type: trans}
+  - {t: '$$mdi:menu-down-outline$$', type: trans}
+  - {t: '$$mdi:menu-down-outline$$', type: trans}
+  - {t: '$$mdi:menu-down-outline$$', type: trans}
+  - {t: '$$mdi:menu-down-outline$$', type: trans}
+  - {t: '$$mdi:menu-down-outline$$', type: trans}
+  - {t: '$$mdi:menu-down-outline$$', type: trans}
+  - {t: '$$mdi:menu-down-outline$$', type: trans}
+  - {t: '$$mdi:menu-down-outline$$', type: trans}
+  - {type: held}
+combos:
+- p: [38, 39]
+  k: $$mdi:controller$$
+  l: [BASE]
+  a: top
+  o: 0.5
+- p: [38, 39]
+  k: $$mdi:controller-off$$
+  l: [GAME]
+  a: top
+  o: 0.5
+- p: [36, 41]
+  k: $$mdi:keyboard-caps$$
+  l: [BASE]
+  a: bottom
+  o: 1.5
