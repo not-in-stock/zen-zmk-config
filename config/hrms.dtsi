@@ -1,0 +1,41 @@
+#define QUICK_TAP_MS 175
+
+#define THUMBS LH2 LH1 LH0 RH0 RH1 RH2
+
+// left-hand keys
+#define KEYS_L \
+     LT5 LT4 LT3 LT2 LT1 LT0 \
+     LM5 LM4 LM3 LM2 LM1 LM0 \
+     LB5 LB4 LB3 LB2 LB1 LB0
+/* ╰───────────╮ LH2 LH1 LH0 │
+               ╰─────────────╯ */
+
+// right-hand keys
+#define KEYS_R \
+     RT0 RT1 RT2 RT3 RT4 RT5 \
+     RM0 RM1 RM2 RM3 RM4 RM5 \
+     RB0 RB1 RB2 RB3 RB4 RB5
+/* │ RH0 RH1 RH2 ╭───────────╯
+   ╰─────────────╯ */
+
+/* left-hand HRMs */
+ZMK_BEHAVIOR(hml, hold_tap,
+    flavor = "balanced";
+    tapping-term-ms = <5000>;
+    quick-tap-ms = <QUICK_TAP_MS>;
+    require-prior-idle-ms = <260>;
+    bindings = <&kp>, <&kp>;
+    hold-trigger-on-release;
+    hold-trigger-key-positions = <KEYS_R THUMBS>;
+)
+
+/* right-hand HRMs */
+ZMK_BEHAVIOR(hmr, hold_tap,
+    flavor = "balanced";
+    tapping-term-ms = <5000>;
+    quick-tap-ms = <QUICK_TAP_MS>;
+    require-prior-idle-ms = <260>;
+    bindings = <&kp>, <&kp>;
+    hold-trigger-on-release;
+    hold-trigger-key-positions = <KEYS_L THUMBS>;
+)
