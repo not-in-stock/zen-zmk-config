@@ -1,6 +1,10 @@
 #include <dt-bindings/zmk/matrix_transform.h>
 #include <layouts/foostan/corne/6column.dtsi>
 
+&foostan_corne_6col_layout {
+     transform = <&default_transform>;
+};
+
 / {
     chosen {
         zmk,kscan = &mock_kscan;
@@ -25,9 +29,5 @@
                                          RC(3,3) RC(3,4) RC(3,5)  RC(3,6) RC(3,7) RC(3,8) >;
     };
     // Physical Layout
-
-    &foostan_corne_6col_layout {
-        transform = <&default_transform>;
-    };
     
 };
