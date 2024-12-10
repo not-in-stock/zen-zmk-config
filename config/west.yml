@@ -4,10 +4,15 @@ manifest:
       url-base: https://github.com/caksoylar
     - name: not-in-stock
       url-base: https://github.com/not-in-stock
+    - name: carrefinho                            # <--- add this
+      url-base: https://github.com/carrefinho     # <--- and this
   projects:
     - name: zmk
       remote: not-in-stock
       revision: caksoylar/zen-v1+v2+mmv+ts
       import: app/west.yml
+    - name: prospector-zmk-module                 # <--- and these
+      remote: carrefinho                          # <---
+      revision: main                              # <---
   self:
     path: config
