@@ -6,8 +6,8 @@ manifest:
       url-base: https://github.com/caksoylar
     - name: not-in-stock
       url-base: https://github.com/not-in-stock
-    - name: carrefinho                            # <--- add this
-      url-base: https://github.com/carrefinho     # <--- and this
+    - name: carrefinho
+      url-base: https://github.com/carrefinho
     - name: urob
       url-base: https://github.com/urob
   projects:
@@ -22,8 +22,8 @@ manifest:
     - name: zmk-helpers
       remote: urob
       revision: main
-    - name: prospector-zmk-module                 # <--- and these
-      remote: carrefinho                          # <---
-      revision: main                              # <---
+    - name: prospector-zmk-module
+      remote: carrefinho
+      revision: main
   self:
     path: config
