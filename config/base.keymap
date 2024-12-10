@@ -18,7 +18,6 @@
 
 #define SC SEMICOLON
 #define PLY_POS C_PLAY_PAUSE
-#define C_PREV C_PREVIOUS
 
 /* short layer names */
 #define BAS 0
