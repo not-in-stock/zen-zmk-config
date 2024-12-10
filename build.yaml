@@ -20,4 +20,4 @@ include:
   - board: nice_nano_v2
     shield: corne_right nice_view_adapter nice_view
   - board: seeeduino_xiao_ble
-    shield: corne_dongle prospector_adapter
+    shield: prospector_dongle prospector_adapter
