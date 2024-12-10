@@ -6,7 +6,17 @@ config ZMK_KEYBOARD_NAME
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
 
+config ZMK_USB
+    default y
+
+endif
+
+if SHIELD_PROSPECTOR_LEFT || SHIELD_PROSPECTOR_RIGHT || SHIELD_PROSPECTOR_DONGLE
+
 config ZMK_SPLIT
+    default y
+
+config ZMK_BLE
     default y
 
 endif
