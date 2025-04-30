@@ -3,8 +3,8 @@
 #include <dt-bindings/zmk/bt.h>
 
 
-#include "../helper/helpers.h"
-#include "zmk-helpers/key-labels/42.h"
+#include "../helper/helper.h"
+#include "../helper/key-labels/42.h"
 #include "../helper/macro.h"
 
 #include "mouse.dtsi"
