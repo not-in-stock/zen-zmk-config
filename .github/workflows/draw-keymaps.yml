@@ -14,7 +14,7 @@ jobs:
     permissions:
       contents: write  # allow workflow to commit to the repo
     with:
-      keymap_patterns: "config/*.keymap"        # path to the keymaps to parse
+      keymap_patterns: "config/base.keymap"        # path to the keymaps to parse
       config_path: "keymap-drawer.config.yaml"  # config file, ignored if not exists
       output_folder: "keymap"            # path to save produced SVG and keymap YAML files
       parse_args: ""  # map of extra args to pass to `keymap parse`, e.g. "corne:'-l Def Lwr Rse' cradio:''"
