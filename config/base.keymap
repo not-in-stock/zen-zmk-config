@@ -3,7 +3,7 @@
 #include <dt-bindings/zmk/bt.h>
 
 
-#include "zmk-helpers/helper.h"
+#include "../helper/helpers.h"
 #include "zmk-helpers/key-labels/42.h"
 #include "../helper/macro.h"
 
