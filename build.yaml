@@ -4,10 +4,11 @@ include:
     artifact-name: zen_left
   - board: corneish_zen_v2_right
     artifact-name: zen_right
-# dongle corne
+# dongle custom corne
   - board: seeeduino_xiao_ble
     shield: crpd_dongle prospector_adapter
     artifact-name: corne_dongle
+# custom corne
   - board: nice_nano_v2
     shield: crpd_central_left nice_view_adapter nice_view
     artifact-name: corne_central_left
