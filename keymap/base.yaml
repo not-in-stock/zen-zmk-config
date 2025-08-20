@@ -13,7 +13,7 @@ layers:
   - O
   - P
   - '['
-  - ''
+  - CAPS
   - {t: A, h: '$$mdi:apple-keyboard-control$$'}
   - {t: S, h: '$$mdi:apple-keyboard-option$$'}
   - {t: D, h: '$$mdi:apple-keyboard-command$$'}
@@ -57,9 +57,9 @@ layers:
   - {t: '=', s: '~'}
   - ''
   - ''
-  - $$mdi:apple-keyboard-command$$
-  - $$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-control$$
+  - $$mdi:apple-keyboard-option$$
+  - $$mdi:apple-keyboard-command$$
   - $$mdi:apple-keyboard-shift$$
   - ''
   - {t: '-', s: +}
@@ -107,9 +107,9 @@ layers:
   - ''
   - ''
   - $$mdi:apple-keyboard-shift$$
-  - $$mdi:apple-keyboard-control$$
-  - $$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-command$$
+  - $$mdi:apple-keyboard-option$$
+  - $$mdi:apple-keyboard-control$$
   - ''
   - ''
   - '9'
@@ -150,9 +150,9 @@ layers:
   - ''
   - ''
   - $$mdi:apple-keyboard-shift$$
-  - $$mdi:apple-keyboard-control$$
-  - $$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-command$$
+  - $$mdi:apple-keyboard-option$$
+  - $$mdi:apple-keyboard-control$$
   - ''
   - ''
   - $$mdi:keyboard-f9$$
@@ -186,16 +186,16 @@ layers:
   - End
   - ''
   - ''
-  - $$mdi:apple-keyboard-command$$
-  - $$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-control$$
+  - $$mdi:apple-keyboard-option$$
+  - $$mdi:apple-keyboard-command$$
   - $$mdi:apple-keyboard-shift$$
-  - ''
   - ''
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-up-bold$$
   - $$mdi:arrow-up-bold$$
+  - ''
   - ''
   - ''
   - ''
@@ -229,16 +229,16 @@ layers:
   - $$mdi:transfer-right$$
   - ''
   - ''
-  - $$mdi:apple-keyboard-command$$
-  - $$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-control$$
+  - $$mdi:apple-keyboard-option$$
+  - $$mdi:apple-keyboard-command$$
   - $$mdi:apple-keyboard-shift$$
-  - ''
   - ''
   - $$mdi:arrow-left-bold-outline$$
   - $$mdi:arrow-down-bold-outline$$
   - $$mdi:arrow-up-bold-outline$$
   - $$mdi:arrow-right-bold-outline$$
+  - ''
   - ''
   - ''
   - ''
@@ -279,9 +279,9 @@ layers:
   - $$mdi:volume-variant-off$$
   - ''
   - $$mdi:apple-keyboard-shift$$
-  - $$mdi:apple-keyboard-control$$
-  - $$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-command$$
+  - $$mdi:apple-keyboard-option$$
+  - $$mdi:apple-keyboard-control$$
   - ''
   - PREV
   - ''
