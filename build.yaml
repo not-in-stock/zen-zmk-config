@@ -1,6 +1,7 @@
 include:
-  # - board: corneish_zen_v2_left
-  # - board: corneish_zen_v2_right
+# zen kb
+  - board: corneish_zen_v2_left
+  - board: corneish_zen_v2_right
 # dongle corne
   - board: seeeduino_xiao_ble
     shield: crpd_dongle prospector_adapter
