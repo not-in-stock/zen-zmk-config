@@ -102,7 +102,7 @@ SHIFT_FUNCTION(s_col_scol, &kp COLON, &kp SEMICOLON)
 #define RMMOD RGUI
 #define LMMOD LGUI
 #define RSMOD RCTRL
-#define LSMOD RCTRL
+#define LSMOD LCTRL
 
 /* Horizontal combos - thumbs */
 ZMK_COMBO(bas_inner_thmbs, &to GM,     LH0 RH0, BAS,     COMBO_TERM_FAST)
