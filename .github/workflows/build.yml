@@ -1,6 +1,7 @@
 name: Build ZMK firmware
 
 on:
+  workflow_dispatch:  # can be triggered manually
   push:
     paths-ignore:
       - 'images/**'
