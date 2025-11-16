@@ -23,6 +23,9 @@ manifest:
     - name: prospector-zmk-module
       remote: not-in-stock
       revision: main
+    - name: crpd-zmk-module
+      remote: not-in-stock
+      revision: main
     - name: zmk-helpers
       remote: urob
       revision: main
