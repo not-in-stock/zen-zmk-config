@@ -26,5 +26,8 @@ manifest:
     - name: zmk-helpers
       remote: urob
       revision: main
+    - name: crpd-zmk-module
+      remote: not-in-stock
+      revision: main
   self:
     path: config
