@@ -20,7 +20,3 @@
     }; \
   }; \
 };
-
-#define SHIFT_MACRO(NAME, BINDING, SHIFT_BINDING) \
-U_MACRO(u_macro_ ## NAME, wait-ms = <0>; bindings = <SHIFT_BINDING>;) \
-SHIFT_FUNCTION(NAME, BINDING, &u_macro_ ## NAME)
