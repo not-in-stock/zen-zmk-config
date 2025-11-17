@@ -17,7 +17,6 @@
 
 /* ZMK_BEHAVIOR */
 
-#define ZMK_BEHAVIOR_CORE_adaptive_key    /* unused */ compatible = "zmk,behavior-adaptive-key";    #binding-cells = <0>
 #define ZMK_BEHAVIOR_CORE_hold_tap        compatible = "zmk,behavior-hold-tap";        #binding-cells = <2>
 
 #define ZMK_BEHAVIOR(name, type, ...) \
@@ -46,16 +45,7 @@
 
 /* ZMK_COMBOS */
 
-#define ALL 0xff
-#if !defined COMBO_TERM
-    #define COMBO_TERM 30
-#endif
-
 #define ZMK_COMBO(...) CONCAT(ZMK_COMBO_, VARGS(__VA_ARGS__))(__VA_ARGS__)
-#define ZMK_COMBO_3(name, combo_bindings, keypos) \
-    ZMK_COMBO_4(name, combo_bindings, keypos, ALL)
-#define ZMK_COMBO_4(name, combo_bindings, keypos, combo_layers) \
-    ZMK_COMBO_5(name, combo_bindings, keypos, combo_layers, COMBO_TERM)
 #define ZMK_COMBO_5(name, combo_bindings, keypos, combo_layers, combo_timeout) \
     ZMK_COMBO_6(name, combo_bindings, keypos, combo_layers, combo_timeout, 0)
 #define ZMK_COMBO_6(name, combo_bindings, keypos, combo_layers, combo_timeout, combo_idle) \
