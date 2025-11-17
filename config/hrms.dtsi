@@ -18,24 +18,30 @@
 /* │ RH0 RH1 RH2 ╭───────────╯
    ╰─────────────╯ */
 
-/* left-hand HRMs */
-ZMK_BEHAVIOR(hml, hold_tap,
-    flavor = "balanced";
-    tapping-term-ms = <5000>;
-    quick-tap-ms = <QUICK_TAP_MS>;
-    require-prior-idle-ms = <260>;
-    bindings = <&kp>, <&kp>;
-    hold-trigger-on-release;
-    hold-trigger-key-positions = <KEYS_R THUMBS>;
-)
-
-/* right-hand HRMs */
-ZMK_BEHAVIOR(hmr, hold_tap,
-    flavor = "balanced";
-    tapping-term-ms = <5000>;
-    quick-tap-ms = <QUICK_TAP_MS>;
-    require-prior-idle-ms = <260>;
-    bindings = <&kp>, <&kp>;
-    hold-trigger-on-release;
-    hold-trigger-key-positions = <KEYS_L THUMBS>;
-)
+/* left-hand and right-hand HRMs */
+/ {
+    behaviors {
+        hml: hml {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <5000>;
+            quick-tap-ms = <QUICK_TAP_MS>;
+            require-prior-idle-ms = <260>;
+            bindings = <&kp>, <&kp>;
+            hold-trigger-on-release;
+            hold-trigger-key-positions = <KEYS_R THUMBS>;
+        };
+        hmr: hmr {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <5000>;
+            quick-tap-ms = <QUICK_TAP_MS>;
+            require-prior-idle-ms = <260>;
+            bindings = <&kp>, <&kp>;
+            hold-trigger-on-release;
+            hold-trigger-key-positions = <KEYS_L THUMBS>;
+        };
+    };
+};

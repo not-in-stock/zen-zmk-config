@@ -14,18 +14,3 @@
 #define VARGS(...) VARGS_(__VA_ARGS__, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0)
 #define CONCAT_(a, b) a##b
 #define CONCAT(a, b) CONCAT_(a, b)
-
-/* ZMK_BEHAVIOR */
-
-#define ZMK_BEHAVIOR_CORE_hold_tap        compatible = "zmk,behavior-hold-tap";        #binding-cells = <2>
-
-#define ZMK_BEHAVIOR(name, type, ...) \
-    / { \
-        behaviors { \
-            name: name { \
-                ZMK_BEHAVIOR_CORE_ ## type; \
-                __VA_ARGS__ \
-            }; \
-        }; \
-    };
-
