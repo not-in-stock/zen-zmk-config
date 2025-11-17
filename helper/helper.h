@@ -29,20 +29,6 @@
         }; \
     };
 
-/* ZMK_LAYER */
-
-#define ZMK_LAYER(...) CONCAT(ZMK_LAYER_, VARGS(__VA_ARGS__))(__VA_ARGS__)
-#define ZMK_LAYER_2(_name, layout) \
-    / { \
-        keymap { \
-            compatible = "zmk,keymap"; \
-            layer_ ## _name { \
-                display-name = ZMK_HELPER_STRINGIFY(_name); \
-                bindings = <layout>; \
-            }; \
-        }; \
-    };
-
 /* ZMK_COMBOS */
 
 #define ZMK_COMBO(...) CONCAT(ZMK_COMBO_, VARGS(__VA_ARGS__))(__VA_ARGS__)
