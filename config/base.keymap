@@ -83,8 +83,25 @@ SHIFT_FUNCTION(s_col_scol, &kp COLON, &kp SEMICOLON)
 #define LSMOD LCTRL
 
 /* Horizontal combos - thumbs */
-ZMK_COMBO(bas_inner_thmbs, &to GM,     LH0 RH0, BAS,     COMBO_TERM_FAST)
-ZMK_COMBO(gm_inner_thmbs,  &to BAS,    LH0 RH0,      GM, COMBO_TERM_FAST)
+/ {
+    combos {
+        compatible = "zmk,combos";
+        combo_bas_inner_thmbs {
+            timeout-ms = <COMBO_TERM_FAST>;
+            bindings = <&to GM>;
+            key-positions = <LH0 RH0>;
+            layers = <BAS>;
+            require-prior-idle-ms = <0>;
+        };
+        combo_gm_inner_thmbs {
+            timeout-ms = <COMBO_TERM_FAST>;
+            bindings = <&to BAS>;
+            key-positions = <LH0 RH0>;
+            layers = <GM>;
+            require-prior-idle-ms = <0>;
+        };
+    };
+};
 
 / {
     keymap {

@@ -29,24 +29,3 @@
         }; \
     };
 
-/* ZMK_COMBOS */
-
-#define ZMK_COMBO(...) CONCAT(ZMK_COMBO_, VARGS(__VA_ARGS__))(__VA_ARGS__)
-#define ZMK_COMBO_5(name, combo_bindings, keypos, combo_layers, combo_timeout) \
-    ZMK_COMBO_6(name, combo_bindings, keypos, combo_layers, combo_timeout, 0)
-#define ZMK_COMBO_6(name, combo_bindings, keypos, combo_layers, combo_timeout, combo_idle) \
-    ZMK_COMBO_7(name, combo_bindings, keypos, combo_layers, combo_timeout, combo_idle, )
-#define ZMK_COMBO_7(name, combo_bindings, keypos, combo_layers, combo_timeout, combo_idle, combo_vaargs) \
-    / { \
-        combos { \
-            compatible = "zmk,combos"; \
-            combo_ ## name { \
-                timeout-ms = <combo_timeout>; \
-                bindings = <combo_bindings>; \
-                key-positions = <keypos>; \
-                layers = <combo_layers>; \
-                require-prior-idle-ms = <combo_idle>; \
-                combo_vaargs \
-            }; \
-        }; \
-    };
