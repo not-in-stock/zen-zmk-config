@@ -3,7 +3,6 @@
 #include <dt-bindings/zmk/bt.h>
 
 #include "../helper/key-labels/42.h"
-#include "../helper/macro.h"
 
 #include "mouse.dtsi"
 #include "hrms.dtsi"
@@ -138,21 +137,156 @@
 };
 
 // shift macros for sym layer
-SHIFT_FUNCTION(s_qm_excl, &kp QMARK, &kp EXCL)
-SHIFT_FUNCTION(s_min_pls, &kp MINUS, &kp PLUS)
-SHIFT_FUNCTION(s_hsh_ast, &kp HASH, &kp ASTERISK)
-SHIFT_FUNCTION(s_lbkt_lbrs, &kp LEFT_BRACKET, &kp LEFT_BRACE)
-SHIFT_FUNCTION(s_lpar_lt, &kp LPAR, &kp LESS_THAN)
-SHIFT_FUNCTION(s_car_pc, &kp CARET, &kp PERCENT)
-SHIFT_FUNCTION(s_sqt_dql, &kp SINGLE_QUOTE, &kp DOUBLE_QUOTES)
-SHIFT_FUNCTION(s_slh_bslh, &kp SLASH, &kp BACKSLASH)
-SHIFT_FUNCTION(s_pip_unscr, &kp PIPE, &kp UNDERSCORE)
-SHIFT_FUNCTION(s_rpar_gt, &kp RPAR, &kp GREATER_THAN)
-SHIFT_FUNCTION(s_rbkt_rbrs, &kp RIGHT_BRACKET, &kp RIGHT_BRACE)
-SHIFT_FUNCTION(s_dlr_grv, &kp DOLLAR, &kp GRAVE)
-SHIFT_FUNCTION(s_eq_tld, &kp EQUAL, &kp TILDE)
-SHIFT_FUNCTION(s_at_amp, &kp AT_SIGN, &kp AMPERSAND)
-SHIFT_FUNCTION(s_col_scol, &kp COLON, &kp SEMICOLON)
+/ {
+    behaviors {
+        s_qm_excl: s_qm_excl {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp QMARK>, <&kp EXCL>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+    };
+};
+/ {
+    behaviors {
+        s_min_pls: s_min_pls {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp MINUS>, <&kp PLUS>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+    };
+};
+/ {
+    behaviors {
+        s_hsh_ast: s_hsh_ast {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp HASH>, <&kp ASTERISK>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+    };
+};
+/ {
+    behaviors {
+        s_lbkt_lbrs: s_lbkt_lbrs {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_BRACKET>, <&kp LEFT_BRACE>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+    };
+};
+/ {
+    behaviors {
+        s_lpar_lt: s_lpar_lt {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp LPAR>, <&kp LESS_THAN>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+    };
+};
+/ {
+    behaviors {
+        s_car_pc: s_car_pc {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp CARET>, <&kp PERCENT>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+    };
+};
+/ {
+    behaviors {
+        s_sqt_dql: s_sqt_dql {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp SINGLE_QUOTE>, <&kp DOUBLE_QUOTES>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+    };
+};
+/ {
+    behaviors {
+        s_slh_bslh: s_slh_bslh {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp SLASH>, <&kp BACKSLASH>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+    };
+};
+/ {
+    behaviors {
+        s_pip_unscr: s_pip_unscr {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp PIPE>, <&kp UNDERSCORE>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+    };
+};
+/ {
+    behaviors {
+        s_rpar_gt: s_rpar_gt {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp RPAR>, <&kp GREATER_THAN>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+    };
+};
+/ {
+    behaviors {
+        s_rbkt_rbrs: s_rbkt_rbrs {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp RIGHT_BRACKET>, <&kp RIGHT_BRACE>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+    };
+};
+/ {
+    behaviors {
+        s_dlr_grv: s_dlr_grv {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp DOLLAR>, <&kp GRAVE>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+    };
+};
+/ {
+    behaviors {
+        s_eq_tld: s_eq_tld {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp EQUAL>, <&kp TILDE>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+    };
+};
+/ {
+    behaviors {
+        s_at_amp: s_at_amp {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp AT_SIGN>, <&kp AMPERSAND>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+    };
+};
+/ {
+    behaviors {
+        s_col_scol: s_col_scol {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp COLON>, <&kp SEMICOLON>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+    };
+};
 
 
 /*                KEY POSITIONS
