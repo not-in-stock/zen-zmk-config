@@ -22,7 +22,7 @@ manifest:
     #   import: app/west.yml
     - name: prospector-zmk-module
       remote: not-in-stock
-      revision: main
+      revision: perf/disable-fade-mask
     - name: zmk-helpers
       remote: urob
       revision: main
