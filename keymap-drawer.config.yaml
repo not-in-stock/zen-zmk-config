@@ -143,7 +143,6 @@ draw_config:
 parse_config:
   preprocess: true
   skip_binding_parsing: false
-  zmk_keyboard: corne
   raw_binding_map:
     "&bootloader": "Boot"
     "&sys_reset": "Reset"
