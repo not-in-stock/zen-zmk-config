@@ -1,0 +1,9 @@
+include:
+# reset settings
+  - board: nice_nano_v2
+    shield: settings_reset
+    artifact-name: nice_nano_reset
+  - board: seeeduino_xiao_ble
+    shield: settings_reset
+    artifact-name: xiao_reset
+

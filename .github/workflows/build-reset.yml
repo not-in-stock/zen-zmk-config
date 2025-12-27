@@ -1,0 +1,12 @@
+name: Build reset firmware
+
+on:
+  workflow_dispatch:  # can only be triggered manually
+
+jobs:
+  build:
+    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
+    with:
+      build_matrix_path: "build-reset.yaml"
+      archive_name: "firmware-reset"
+

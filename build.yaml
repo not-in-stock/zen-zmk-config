@@ -18,10 +18,3 @@ include:
   - board: nice_nano_v2
     shield: crpd_right nice_view_adapter nice_view
     artifact-name: corne_right
-# reset settings
-  - board: nice_nano_v2
-    shield: settings_reset
-    artifact-name: nice_nano_rest
-  - board: seeeduino_xiao_ble
-    shield: settings_reset
-    artifact-name: xioa_rest
