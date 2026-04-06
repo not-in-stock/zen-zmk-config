@@ -1,20 +1,20 @@
 include:
-# zen kb
-  - board: corneish_zen_v2_left
-    artifact-name: zen_left
-  - board: corneish_zen_v2_right
-    artifact-name: zen_right
+# zen kb (disabled: needs caksoylar/zen-v1+v2 which is not yet on Zephyr 4.1)
+#  - board: corneish_zen_v2_left
+#    artifact-name: zen_left
+#  - board: corneish_zen_v2_right
+#    artifact-name: zen_right
 # dongle custom corne
-  - board: seeeduino_xiao_ble
+  - board: xiao_ble/nrf52840/zmk
     shield: crpd_dongle prospector_adapter
     artifact-name: corne_dongle
 # custom corne
-  - board: nice_nano_v2
+  - board: nice_nano/nrf52840/zmk
     shield: crpd_central_left nice_view_adapter nice_view
     artifact-name: corne_central_left
-  - board: nice_nano_v2
+  - board: nice_nano/nrf52840/zmk
     shield: crpd_left nice_view_adapter nice_view
     artifact-name: corne_left
-  - board: nice_nano_v2
+  - board: nice_nano/nrf52840/zmk
     shield: crpd_right nice_view_adapter nice_view
     artifact-name: corne_right
