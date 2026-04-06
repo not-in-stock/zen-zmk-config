@@ -16,11 +16,11 @@
     # Files relevant to a ZMK build — same set as zmk-nix template.
     src = nixpkgs.lib.sourceFilesBySuffices self [
       ".board" ".cmake" ".conf" ".defconfig" ".dts" ".dtsi"
-      ".json" ".keymap" ".overlay" ".shield" ".yml" "_defconfig"
+      ".h" ".json" ".keymap" ".overlay" ".shield" ".yml" "_defconfig"
     ];
 
     # Bumped via `nix run .#update`. Placeholder until first build tells us.
-    zephyrDepsHash = nixpkgs.lib.fakeHash;
+    zephyrDepsHash = "sha256-Hy/Qiv3y87XfQlPiWumZW0V5Beb69t2XxsWmCYxGTdc=";
 
     meta = {
       description = "zen-zmk-config firmware";
