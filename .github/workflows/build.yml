@@ -7,9 +7,14 @@ on:
       - 'images/**'
       - 'keymap-drawer.config.yaml'
       - 'keymap/**'
+      - 'docs/**'
       - '.vscode/**'
       - 'README.md'
       - '.gitattributes'
+      - '.gitignore'
+      - 'flake.nix'
+      - 'flake.lock'
+      - 'justfile'
 
 jobs:
   build:
