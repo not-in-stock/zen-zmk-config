@@ -32,6 +32,26 @@
       buildKeyboard = zmk-nix.legacyPackages.${system}.buildKeyboard;
       mk = { name, board, shield }: buildKeyboard {
         inherit name src zephyrDepsHash meta board shield;
+
+        # Patch prospector's display_idle.c — its SYS_INIT callback uses the
+        # old `(const struct device *)` signature, which current Zephyr rejects
+        # (init_fn expects `int (*)(void)`). Upstream branch
+        # `feat/add-display-sleep` hasn't been updated yet.
+        # postConfigure runs after `cp westDeps/*` and `west build --cmake-only`,
+        # but before the actual ninja compile — which is when this file is read.
+        # We're inside the cmake build dir at this point, so the source lives at ../.
+        postConfigure = ''
+          f=../prospector-zmk-module/boards/shields/prospector_adapter/src/display_idle.c
+          if [ -e "$f" ]; then
+            substituteInPlace "$f" \
+              --replace-quiet \
+                "static int display_idle_init(const struct device *unused) {" \
+                "static int display_idle_init(void) {" \
+              --replace-quiet \
+                "ARG_UNUSED(unused);" \
+                ""
+          fi
+        '';
       };
     in rec {
       corne_dongle = mk {
