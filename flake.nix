@@ -29,6 +29,7 @@
     };
   in {
     packages = forAllSystems (system: let
+      pkgs = nixpkgs.legacyPackages.${system};
       buildKeyboard = zmk-nix.legacyPackages.${system}.buildKeyboard;
       mk = { name, board, shield }: buildKeyboard {
         inherit name src zephyrDepsHash meta board shield;
@@ -75,14 +76,43 @@
         shield = "crpd_right nice_view_adapter nice_view";
       };
 
-      default = corne_dongle;
+      # Classic wireless Corne: left half is central, right half is peripheral.
+      wireless = pkgs.linkFarm "zen-zmk-wireless" [
+        { name = "corne_central_left.uf2"; path = "${corne_central_left}/zmk.uf2"; }
+        { name = "corne_right.uf2";        path = "${corne_right}/zmk.uf2"; }
+      ];
+
+      # Wired dongle setup: USB dongle + two peripheral halves.
+      dongle = pkgs.linkFarm "zen-zmk-dongle" [
+        { name = "corne_dongle.uf2"; path = "${corne_dongle}/zmk.uf2"; }
+        { name = "corne_left.uf2";   path = "${corne_left}/zmk.uf2"; }
+        { name = "corne_right.uf2";  path = "${corne_right}/zmk.uf2"; }
+      ];
+
+      default = dongle;
 
       flash = zmk-nix.packages.${system}.flash.override { firmware = corne_dongle; };
       update = zmk-nix.packages.${system}.update;
     });
 
-    devShells = forAllSystems (system: {
-      default = zmk-nix.devShells.${system}.default;
+    devShells = forAllSystems (system: let
+      pkgs = nixpkgs.legacyPackages.${system};
+      base = zmk-nix.devShells.${system}.default.override {
+        extraPackages = [ pkgs.just ];
+      };
+    in {
+      # Drop straight into the user's zsh so their dotfiles (~/.zshrc etc.)
+      # are loaded, while keeping the Nix-provided PATH / env from the shell.
+      default = base.overrideAttrs (old: {
+        shellHook = (old.shellHook or "") + ''
+          # Only re-exec into zsh for interactive shells (not `nix develop -c …`).
+          if [ -z "$ZEN_ZMK_IN_ZSH" ] && [ -t 0 ] && [ -z "$NIX_DEVELOP_COMMAND" ] \
+             && command -v zsh >/dev/null; then
+            export ZEN_ZMK_IN_ZSH=1
+            exec zsh
+          fi
+        '';
+      });
     });
   };
 }
