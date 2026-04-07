@@ -10,6 +10,11 @@ dongle:
     mkdir -p build
     nix build .#dongle -o build/dongle
 
+# Settings-reset firmwares (nice_nano + xiao)
+reset:
+    mkdir -p build
+    nix build .#reset -o build/reset
+
 # Build both topologies
 all: wireless dongle
 

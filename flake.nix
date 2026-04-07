@@ -76,6 +76,23 @@
         shield = "crpd_right nice_view_adapter nice_view";
       };
 
+      # Settings-reset firmwares — flash these once to wipe BT pairings etc.
+      nice_nano_reset = mk {
+        name = "nice_nano_reset";
+        board = "nice_nano/nrf52840/zmk";
+        shield = "settings_reset";
+      };
+      xiao_reset = mk {
+        name = "xiao_reset";
+        board = "xiao_ble/nrf52840/zmk";
+        shield = "settings_reset";
+      };
+
+      reset = pkgs.linkFarm "zen-zmk-reset" [
+        { name = "nice_nano_reset.uf2"; path = "${nice_nano_reset}/zmk.uf2"; }
+        { name = "xiao_reset.uf2";      path = "${xiao_reset}/zmk.uf2"; }
+      ];
+
       # Classic wireless Corne: left half is central, right half is peripheral.
       wireless = pkgs.linkFarm "zen-zmk-wireless" [
         { name = "corne_central_left.uf2"; path = "${corne_central_left}/zmk.uf2"; }
