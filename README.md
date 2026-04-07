@@ -94,7 +94,71 @@ The CONF layer provides Bluetooth profile selection (0-4). Hold Shift while sele
 
 ## Building
 
-Firmware is built automatically via GitHub Actions. Download the latest artifacts from the [Actions tab](https://github.com/not-in-stock/zen-zmk-config/actions).
+### Local builds with Nix (recommended)
+
+A [`flake.nix`](./flake.nix) provides a reproducible build environment and
+firmware packages via [`zmk-nix`](https://github.com/lilyinstarlight/zmk-nix).
+Works on `x86_64-linux`, `aarch64-linux`, `x86_64-darwin` and `aarch64-darwin`.
+
+Two aggregate outputs bundle the firmwares for each supported topology:
+
+```sh
+nix build .#wireless   # classic wireless Corne: central left + peripheral right
+nix build .#dongle     # wired USB dongle + two peripheral halves
+```
+
+Or via the `justfile` (from inside `nix develop`, or with `just` installed):
+
+```sh
+just wireless   # → build/wireless/*.uf2
+just dongle     # → build/dongle/*.uf2
+just all        # build both
+just clean      # remove build/ and stray result symlinks
+```
+
+The resulting directory contains the relevant `.uf2` files named per role
+(e.g. `corne_central_left.uf2`, `corne_right.uf2`).
+
+Individual firmwares are also exposed:
+
+```sh
+nix build .#corne_dongle       # → result/zmk.uf2
+nix build .#corne_central_left
+nix build .#corne_left
+nix build .#corne_right
+```
+
+Flash the current `result/` to a connected bootloader:
+
+```sh
+nix run .#flash
+```
+
+Enter a dev shell (west, cmake, ninja, `arm-none-eabi-gcc`) for manual
+`west build` invocations:
+
+```sh
+nix develop
+```
+
+After bumping revisions in `config/west.yml`, update the fixed-output hash of
+the prefetched west dependencies:
+
+```sh
+nix run .#update
+```
+
+then copy the new `sha256-…` into `zephyrDepsHash` in `flake.nix`.
+
+**Note:** the flake patches `prospector-zmk-module`'s `display_idle.c` at build
+time to fix a `SYS_INIT` callback signature that is incompatible with current
+Zephyr. Once upstream `feat/add-display-sleep` is updated, that `postConfigure`
+hook can be removed from `flake.nix`.
+
+### GitHub Actions
+
+Firmware is also built automatically via GitHub Actions. Download the latest
+artifacts from the [Actions tab](https://github.com/not-in-stock/zen-zmk-config/actions).
 
 ## Credits
 
