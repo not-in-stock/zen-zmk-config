@@ -97,3 +97,15 @@ flash-crpd PART: dongle
       left|right) just _flash-uf2 build/dongle/corne_{{PART}}.uf2 'NICENANO*' 'CRPD {{PART}}' ;;
       *) echo "usage: just flash-crpd dongle|left|right" >&2; exit 2 ;;
     esac
+
+# Flash a settings-reset firmware. Split by SoC since the reset image is
+# board-specific (nice!nano for zen/corne halves, XIAO BLE for the CRPD dongle).
+# Usage: `just flash-reset nice-nano` / `just flash-reset xiao`.
+flash-reset SOC: reset
+    #!/usr/bin/env bash
+    set -e
+    case "{{SOC}}" in
+      nice-nano) just _flash-uf2 build/reset/nice_nano_reset.uf2 'NICENANO*' 'nice!nano reset' ;;
+      xiao)      just _flash-uf2 build/reset/xiao_reset.uf2      'XIAO-SENSE*' 'XIAO BLE reset' ;;
+      *) echo "usage: just flash-reset nice-nano|xiao" >&2; exit 2 ;;
+    esac
