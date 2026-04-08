@@ -20,7 +20,7 @@
     ];
 
     # Bumped via `nix run .#update`. Placeholder until first build tells us.
-    zephyrDepsHash = "sha256-Hy/Qiv3y87XfQlPiWumZW0V5Beb69t2XxsWmCYxGTdc=";
+    zephyrDepsHash = "sha256-10X9jPN7RVAtHTu1i5mIrXOnsARu1pftb3tl0PWBLTo=";
 
     meta = {
       description = "zen-zmk-config firmware";
@@ -31,29 +31,26 @@
     packages = forAllSystems (system: let
       pkgs = nixpkgs.legacyPackages.${system};
       buildKeyboard = zmk-nix.legacyPackages.${system}.buildKeyboard;
-      mk = { name, board, shield }: buildKeyboard {
-        inherit name src zephyrDepsHash meta board shield;
-
-        # Patch prospector's display_idle.c — its SYS_INIT callback uses the
-        # old `(const struct device *)` signature, which current Zephyr rejects
-        # (init_fn expects `int (*)(void)`). Upstream branch
-        # `feat/add-display-sleep` hasn't been updated yet.
-        # postConfigure runs after `cp westDeps/*` and `west build --cmake-only`,
-        # but before the actual ninja compile — which is when this file is read.
-        # We're inside the cmake build dir at this point, so the source lives at ../.
-        postConfigure = ''
-          f=../prospector-zmk-module/boards/shields/prospector_adapter/src/display_idle.c
-          if [ -e "$f" ]; then
-            substituteInPlace "$f" \
-              --replace-quiet \
-                "static int display_idle_init(const struct device *unused) {" \
-                "static int display_idle_init(void) {" \
-              --replace-quiet \
-                "ARG_UNUSED(unused);" \
-                ""
-          fi
-        '';
-      };
+      # Patch prospector's display_idle.c — see comment below.
+      prospectorPostConfigure = ''
+        f=../prospector-zmk-module/boards/shields/prospector_adapter/src/display_idle.c
+        if [ -e "$f" ]; then
+          substituteInPlace "$f" \
+            --replace-quiet \
+              "static int display_idle_init(const struct device *unused) {" \
+              "static int display_idle_init(void) {" \
+            --replace-quiet \
+              "ARG_UNUSED(unused);" \
+              ""
+        fi
+      '';
+      mk = { name, board, shield ? null }: buildKeyboard (
+        {
+          inherit name src zephyrDepsHash meta board;
+          postConfigure = prospectorPostConfigure;
+        }
+        // (if shield != null then { inherit shield; } else {})
+      );
     in rec {
       corne_dongle = mk {
         name = "corne_dongle";
@@ -87,6 +84,21 @@
         board = "xiao_ble/nrf52840/zmk";
         shield = "settings_reset";
       };
+
+      # Corne-ish Zen halves (HWMv2, lowprokb vendor)
+      zen_left = mk {
+        name = "zen_left";
+        board = "corneish_zen_left/nrf52840";
+      };
+      zen_right = mk {
+        name = "zen_right";
+        board = "corneish_zen_right/nrf52840";
+      };
+
+      zen = pkgs.linkFarm "zen-zmk-zen" [
+        { name = "zen_left.uf2";  path = "${zen_left}/zmk.uf2"; }
+        { name = "zen_right.uf2"; path = "${zen_right}/zmk.uf2"; }
+      ];
 
       reset = pkgs.linkFarm "zen-zmk-reset" [
         { name = "nice_nano_reset.uf2"; path = "${nice_nano_reset}/zmk.uf2"; }

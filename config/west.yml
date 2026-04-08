@@ -12,14 +12,12 @@ manifest:
       url-base: https://github.com/urob
   projects:
     - name: zmk
-      remote: zmkfirmware
-      revision: main
+      remote: not-in-stock
+      revision: zen
       import: app/west.yml
-    # - name: zmk-zen
-    #   remote: caksoylar
-    #   repo-path: zmk
-    #   revision: caksoylar/zen-v1+v2
-    #   import: app/west.yml
+    - name: zen-zmk-module
+      remote: not-in-stock
+      revision: hwmv2-migration
     - name: prospector-zmk-module
       remote: not-in-stock
       revision: feat/add-display-sleep
