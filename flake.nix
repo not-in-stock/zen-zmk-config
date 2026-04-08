@@ -84,6 +84,16 @@
         board = "xiao_ble/nrf52840/zmk";
         shield = "settings_reset";
       };
+      zen_left_reset = mk {
+        name = "zen_left_reset";
+        board = "corneish_zen_left/nrf52840";
+        shield = "settings_reset";
+      };
+      zen_right_reset = mk {
+        name = "zen_right_reset";
+        board = "corneish_zen_right/nrf52840";
+        shield = "settings_reset";
+      };
 
       # Corne-ish Zen halves (HWMv2, lowprokb vendor)
       zen_left = mk {
@@ -101,8 +111,10 @@
       ];
 
       reset = pkgs.linkFarm "zen-zmk-reset" [
-        { name = "nice_nano_reset.uf2"; path = "${nice_nano_reset}/zmk.uf2"; }
-        { name = "xiao_reset.uf2";      path = "${xiao_reset}/zmk.uf2"; }
+        { name = "nice_nano_reset.uf2";  path = "${nice_nano_reset}/zmk.uf2"; }
+        { name = "xiao_reset.uf2";       path = "${xiao_reset}/zmk.uf2"; }
+        { name = "zen_left_reset.uf2";   path = "${zen_left_reset}/zmk.uf2"; }
+        { name = "zen_right_reset.uf2";  path = "${zen_right_reset}/zmk.uf2"; }
       ];
 
       # Classic wireless Corne: left half is central, right half is peripheral.
