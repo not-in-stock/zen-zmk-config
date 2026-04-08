@@ -17,7 +17,7 @@ manifest:
       import: app/west.yml
     - name: zen-zmk-module
       remote: not-in-stock
-      revision: hwmv2-migration
+      revision: main
     - name: prospector-zmk-module
       remote: not-in-stock
       revision: feat/add-display-sleep
